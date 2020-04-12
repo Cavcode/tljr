@@ -1,0 +1,17 @@
+//::///////////////////////////////////////////////
+//:: FileName qx_craft_c1_cc
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 5/25/2009 2:29:17 AM
+//:://////////////////////////////////////////////
+#include "qx_craft_inc"
+int StartingConditional()
+{
+    // Inspect local variables
+    if(GetLocalInt(OBJECT_SELF, "CRAFT_CHEMICAL") < 1)
+    {
+        return FALSE;
+    }
+    return TRUE;
+}

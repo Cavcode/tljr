@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName pug_intimmedchek
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 24/05/2009 10:22:54 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+	// Perform skill checks
+	if(!(AutoDC(DC_MEDIUM, SKILL_INTIMIDATE, GetPCSpeaker())))
+		return FALSE;
+
+	return TRUE;
+}

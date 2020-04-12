@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName pug_q6_hasarti
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 26/05/2009 5:49:58 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+	// Make sure the PC speaker has these items in their inventory
+	if(!HasItem(GetPCSpeaker(), "pug_artifact"))
+		return FALSE;
+
+	return TRUE;
+}

@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName pug_msn_medsecur
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 21/10/2008 9:02:53 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+	// Perform skill checks
+	if(!(AutoDC(DC_MEDIUM, SKILL_OPEN_LOCK, GetPCSpeaker())))
+		return FALSE;
+
+	return TRUE;
+}

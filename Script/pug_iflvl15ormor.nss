@@ -1,0 +1,19 @@
+//::///////////////////////////////////////////////
+//:: FileName pug_iflvl15ormor
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 26/05/2009 5:19:05 PM
+//:://////////////////////////////////////////////
+int StartingConditional()
+{
+
+	// Restrict based on the player's class
+	int iPassed = 0;
+	if(GetHitDice(GetPCSpeaker()) >= 15)
+		iPassed = 1;
+	if(iPassed == 0)
+		return FALSE;
+
+	return TRUE;
+}

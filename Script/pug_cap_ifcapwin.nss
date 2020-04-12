@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName pug_cap_ifcapwin
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 28/10/2008 8:23:00 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+	// Perform skill checks
+	if(!(AutoDC(DC_HARD, SKILL_OPEN_LOCK, GetPCSpeaker())))
+		return FALSE;
+
+	return TRUE;
+}

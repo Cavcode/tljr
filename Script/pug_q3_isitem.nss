@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName pug_q3_isitem
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 27/05/2009 11:49:43 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+	// Make sure the PC speaker has these items in their inventory
+	if(!HasItem(GetPCSpeaker(), "pug_q3_item"))
+		return FALSE;
+
+	return TRUE;
+}

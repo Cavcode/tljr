@@ -1,0 +1,19 @@
+//::///////////////////////////////////////////////
+//:: Tailoring - Decrease Helm
+//:: tlr_decreasehelm.nss
+//:://////////////////////////////////////////////
+/*
+
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Stacy L. Ropella
+//:: from Mandragon's mil_tailor
+//:://////////////////////////////////////////////
+
+#include "tlr_items_inc"
+
+void main()
+{
+    object oCloak = GetItemInSlot(INVENTORY_SLOT_CLOAK, OBJECT_SELF);
+    RemakeCloak(OBJECT_SELF, oCloak, PART_PREV);
+}
