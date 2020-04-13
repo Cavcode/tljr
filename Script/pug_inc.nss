@@ -1,6 +1,8 @@
 #include "pug_points"
 //#include "nwnx_funcs"
 
+//void main(){}
+
 void ConquerArea(object oPC, object oArea, object oBase, string sFaction, int nCount);
 void BaseControl(string sBase);
 void AttackTime(object oPC, object oPackage);
@@ -794,7 +796,7 @@ void BaseControl(string sBase)
 }
 
 //resets defending units in a base depending on string planetname_area# after an enemy retreat
-/*void ResetBase(string sBase)
+void ResetBase(string sBase)
 {
 string sFaction = GetCampaignString("starwars", sBase+"_CONTROL");
 int x;
@@ -883,7 +885,7 @@ else if (sFaction == "Rebels")
             }
         }
     }
-}   */
+}
 
 void ConquerArea(object oPC, object oArea, object oBase, string sFaction, int nCount)
 {
@@ -963,7 +965,7 @@ string sName, sLocation, sClass, sJob;
 int x = Random(30)+1;
 int y = Random(10)+1; //should be 10
 //int nBounty = d10(50) * (((nLevel-4)/6)+1)+150;
-int nBounty=FloatToInt(IntToFloat(d4(100))*(IntToFloat(nLevel*nLevel)/100.0)+1.0)+200;
+int nBounty=FloatToInt(IntToFloat(d4(100))*(IntToFloat(nLevel*nLevel/10))+1.0)+200;
 
 if (x == 1){sJob = "Beggar"; sClass = "2";} //Rogue
 else if (x == 2){sJob = "Thief"; sClass = "2";}

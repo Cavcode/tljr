@@ -8,10 +8,10 @@ void main()
 {
     SetLocalInt(GetModule(), "MISSION_AREA_"+IntToString(GetLocalInt(GetPCSpeaker(), "MISSION_PLANET")), FALSE);
     // Give the speaker some gold
-    RewardPartyGP(1000, GetPCSpeaker());
+    RewardPartyGP(5000, GetPCSpeaker());
 
     // Give the speaker some XP
-    RewardPartyXP(500, GetPCSpeaker());
+    RewardPartyXP(2000, GetPCSpeaker());
 
     // Set the variables
     SetLocalIntOnAll(GetPCSpeaker(), "MISSION_COMPLETE", 0);

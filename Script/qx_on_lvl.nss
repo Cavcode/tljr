@@ -94,7 +94,9 @@ if ((iGender != GENDER_FEMALE) && (iWitchLevel > 5))
     SetXP( oPC, iNewXP ); // Take the level away
     DelayCommand(2.0, SetXP( oPC, iOldXP)); // Give the level back
 }
-//**************** End of Jedi/Sith restriction handling ******************//
+
+
+//**************** End of Jedi/Sith restriction handling ******************/
 
 //**************** Fix Miscellaneous Class Feats ******************//
 int iPaladin = GetLevelByClass(CLASS_TYPE_PALADIN, oPC);

@@ -184,12 +184,10 @@ void main()
             ePolymorph = GetNextEffect(oPC);
         }
         //This will reset the PC to neutral to all other PCs
-        effect heal = EffectHeal(GetMaxHitPoints(oPC));
-        effect dmg = EffectDamage(NWNX_Object_GetInt(oPC, SHIP_PLAYER_HP), DAMAGE_TYPE_DIVINE,DAMAGE_POWER_ENERGY);
+        int currentHP = NWNX_Object_GetInt(oPC,SHIP_PLAYER_HP);
+        NWNX_Object_SetCurrentHitPoints(oPC, currentHP);
         SetPCNeutral(oPC);
         SetStandardFactionReputation(STANDARD_FACTION_DEFENDER, 50, oPC);
-        ApplyEffectToObject(DURATION_TYPE_INSTANT, heal, oPC, 0.0);
-        ApplyEffectToObject(DURATION_TYPE_INSTANT, dmg, oPC, 0.0);
         AssignCommand(oPC, JumpToObject(GetWaypointByTag(sWaypoint), TRUE));
         NWNX_Creature_SetMovementRate(oPC, GetLocalInt(oPC, "MOVEMENT_RATE"));
         SetLocalInt(oPC, "PILOTING_SHIP", FALSE);
