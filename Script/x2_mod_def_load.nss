@@ -41,6 +41,7 @@
 #include "qx_inc_db"
 #include "nwnx_weapon"
 #include "fky_chat_inc"
+#include "nwnx_chat"
 
 void main()
 {
@@ -122,6 +123,11 @@ void main()
     //SetWeaponSuperiorCriticalFeat (int nBaseItem, int nFeat);
 
    ApplyPoints();
+
+   //Register proper chat script
+   NWNX_Chat_RegisterChatScript("mod_chat");
+   SetEventScript(GetModule(),EVENT_SCRIPT_MODULE_ON_PLAYER_CHAT, "");
+
 
    if (GetGameDifficulty() ==  GAME_DIFFICULTY_CORE_RULES || GetGameDifficulty() ==  GAME_DIFFICULTY_DIFFICULT)
 
