@@ -704,10 +704,10 @@ void PouvoirJediPoussee(object oPC, int nPouvoirJediPoussee,object oTarget=OBJEC
     int iDistance = 0;
     effect ePulse = EffectVisualEffect(VFX_IMP_PULSE_WIND);
     switch(nPouvoirJediPoussee) {
-        case 1: nSkillAlteration = DIFFICULTE_POUSSEE_1_ALTERATION; nDCBase = 10; nAmountDice = 1; nFatiguePoussee = FATIGUE_POUSSEE_1; iDistance = 2; break;
-        case 2: nSkillAlteration = DIFFICULTE_POUSSEE_2_ALTERATION; nDCBase = 15; nAmountDice = 2; nFatiguePoussee = FATIGUE_POUSSEE_2; iDistance = 4; break;
-        case 3: nSkillAlteration = DIFFICULTE_POUSSEE_3_ALTERATION; nDCBase = 10; nAmountDice = 3; bMultiTarget = TRUE; fRadius = IntToFloat(10); nFatiguePoussee = FATIGUE_POUSSEE_3; iDistance = 2; break;
-        case 4: nSkillAlteration = DIFFICULTE_POUSSEE_4_ALTERATION; nDCBase = 15; nAmountDice = 5; bMultiTarget = TRUE; fRadius = IntToFloat(15); nFatiguePoussee = FATIGUE_POUSSEE_4; iDistance = 4; break;
+        case 1: nSkillAlteration = DIFFICULTE_POUSSEE_1_ALTERATION; nDCBase = 0; nAmountDice = 1; nFatiguePoussee = FATIGUE_POUSSEE_1; iDistance = 2; break;
+        case 2: nSkillAlteration = DIFFICULTE_POUSSEE_2_ALTERATION; nDCBase = 5; nAmountDice = 2; nFatiguePoussee = FATIGUE_POUSSEE_2; iDistance = 4; break;
+        case 3: nSkillAlteration = DIFFICULTE_POUSSEE_3_ALTERATION; nDCBase = 0; nAmountDice = 3; bMultiTarget = TRUE; fRadius = IntToFloat(10); nFatiguePoussee = FATIGUE_POUSSEE_3; iDistance = 2; break;
+        case 4: nSkillAlteration = DIFFICULTE_POUSSEE_4_ALTERATION; nDCBase = 5; nAmountDice = 5; bMultiTarget = TRUE; fRadius = IntToFloat(15); nFatiguePoussee = FATIGUE_POUSSEE_4; iDistance = 4; break;
         default:;
     }
     if(GetIsSkillSuccessful(oPC,SKILL_ALTER,nSkillAlteration+nFatigue+GetMalusForceArmure(oPC))) {
