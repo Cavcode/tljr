@@ -1,0 +1,192 @@
+NDB V1.0
+0000002 0000001 0000092 0000007 0000010
+n00 nw_i0_plot
+N01 gy_has_rebelid
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 000 i DC_EASY
+f ffffffff ffffffff 000 i DC_MEDIUM
+f ffffffff ffffffff 000 i DC_HARD
+f ffffffff ffffffff 000 i DC_SUPERIOR
+f ffffffff ffffffff 000 i DC_MASTER
+f ffffffff ffffffff 000 i DC_LEGENDARY
+f ffffffff ffffffff 000 i DC_EPIC
+f ffffffff ffffffff 000 i G_CLASSCHANCE
+f ffffffff ffffffff 000 i XP_VERY_LOW
+f ffffffff ffffffff 000 i XP_LOW
+f ffffffff ffffffff 000 i XP_MEDIUM_LOW
+f ffffffff ffffffff 000 i XP_MEDIUM
+f ffffffff ffffffff 000 i XP_MEDIUM_HIGH
+f ffffffff ffffffff 000 i XP_HIGH
+f ffffffff ffffffff 000 i XP_VERY_HIGH
+f ffffffff ffffffff 000 i XP_EPIC
+f ffffffff ffffffff 002 i plotCanRemoveXP
+fp o
+fp i
+f ffffffff ffffffff 001 i GetCanCastHealingSpells
+fp o
+f ffffffff ffffffff 000 i DoOnce
+f ffffffff ffffffff 001 v DebugSpeak
+fp s
+f ffffffff ffffffff 000 o GetMyMaster
+f ffffffff ffffffff 000 i IsRecall
+f ffffffff ffffffff 001 v DimensionHop
+fp o
+f ffffffff ffffffff 000 i CanSeePlayer
+f ffffffff ffffffff 002 v EscapeArea
+fp i
+fp s
+f 000000b1 000000ed 002 i HasItem
+fp o
+fp s
+f ffffffff ffffffff 003 v TakeGold
+fp i
+fp o
+fp i
+f ffffffff ffffffff 000 o GetNearestPC
+f ffffffff ffffffff 001 v SetIsEnemy
+fp o
+f ffffffff ffffffff 003 i AutoDC
+fp i
+fp i
+fp o
+f ffffffff ffffffff 002 v AutoAlignG
+fp i
+fp o
+f ffffffff ffffffff 002 v AutoAlignE
+fp i
+fp o
+f ffffffff ffffffff 004 v DoGiveXP
+fp s
+fp i
+fp o
+fp i
+f ffffffff ffffffff 005 v RewardXP
+fp s
+fp i
+fp o
+fp i
+fp i
+f ffffffff ffffffff 003 v RewardGP
+fp i
+fp o
+fp i
+f ffffffff ffffffff 000 i CheckCharismaMiddle
+f ffffffff ffffffff 000 i CheckCharismaNormal
+f ffffffff ffffffff 000 i CheckCharismaLow
+f ffffffff ffffffff 000 i CheckCharismaHigh
+f ffffffff ffffffff 000 i CheckIntelligenceLow
+f ffffffff ffffffff 000 i CheckIntelligenceNormal
+f ffffffff ffffffff 000 i CheckIntelligenceHigh
+f ffffffff ffffffff 000 i CheckWisdomHigh
+f ffffffff ffffffff 001 i GetWisdom
+fp o
+f ffffffff ffffffff 001 i GetIntelligence
+fp o
+f ffffffff ffffffff 001 i GetCharisma
+fp o
+f ffffffff ffffffff 002 i GetNumItems
+fp o
+fp s
+f ffffffff ffffffff 003 v GiveNumItems
+fp o
+fp s
+fp i
+f ffffffff ffffffff 003 v TakeNumItems
+fp o
+fp s
+fp i
+f ffffffff ffffffff 001 v PlayCharacterTheme
+fp i
+f ffffffff ffffffff 000 v PlayOldTheme
+f ffffffff ffffffff 002 i GetPLocalInt
+fp o
+fp s
+f ffffffff ffffffff 003 v SetPLocalInt
+fp o
+fp s
+fp i
+f ffffffff ffffffff 001 v RemoveEffects
+fp o
+f ffffffff ffffffff 004 v gplotAppraiseOpenStore
+fp o
+fp o
+fp i
+fp i
+f ffffffff ffffffff 004 v gplotAppraiseFavOpenStore
+fp o
+fp o
+fp i
+fp i
+f ffffffff ffffffff 003 i CheckDCStr
+fp i
+fp i
+fp o
+f ffffffff ffffffff 001 i GetIsPlayerCharacter
+fp o
+f ffffffff ffffffff 004 v Reward_2daXP
+fp o
+fp i
+fp i
+fp i
+f ffffffff ffffffff 001 v PlaySpeakSoundByStrRef
+fp i
+f ffffffff ffffffff 001 i GetNPCEasyMark
+fp o
+f ffffffff ffffffff 001 f GetReactionAdjustment
+fp o
+f ffffffff ffffffff 003 v AdjustFactionReputation
+fp o
+fp o
+fp i
+f ffffffff ffffffff 001 v EscapeViaTeleport
+fp o
+f ffffffff ffffffff 002 i HasGold
+fp i
+fp o
+f ffffffff ffffffff 000 s sRebelSoldierIDTag
+f ffffffff ffffffff 000 s sRebelSoldierIDResRef
+f ffffffff ffffffff 000 s sRebelJediIDTag
+f ffffffff ffffffff 000 s sRebelJediIDResRef
+f ffffffff ffffffff 000 s sEmpireStormtrooperIDTag
+f ffffffff ffffffff 000 s sEmpireStormtrooperIDResRef
+f ffffffff ffffffff 000 s sEmpireSithIDTag
+f ffffffff ffffffff 000 s sEmpireSithIDResRef
+f ffffffff ffffffff 000 s sEmpireCivilianIDTag
+f ffffffff ffffffff 000 s sEmpireCivilianIDResRef
+f ffffffff ffffffff 000 s sFringeIDTag
+f ffffffff ffffffff 000 s sFringeIDResRef
+f ffffffff ffffffff 000 s sFringeBountyHunterIDTag
+f ffffffff ffffffff 000 s sFringeBountyHunterIDResRef
+f ffffffff ffffffff 000 s sFringeTraderIDTag
+f ffffffff ffffffff 000 s sFringeTraderIDResRef
+f ffffffff ffffffff 000 s sStormtrooperStartTag
+f ffffffff ffffffff 000 s sRebelStartTag
+f ffffffff ffffffff 000 s sSithStartTag
+f ffffffff ffffffff 000 s sCivilianStartTag
+f ffffffff ffffffff 000 s sBountyHunterStartTag
+f ffffffff ffffffff 000 s sSpacerStartTag
+f ffffffff ffffffff 000 s sTraderStartTag
+f ffffffff ffffffff 000 s sOCCTag
+f ffffffff ffffffff 000 s sNoJumpIDfound
+f 00000017 000000b1 000 i StartingConditional
+f 0000000d 00000017 000 i #loader
+v 0000000f ffffffff 00000000 i #retval
+v 00000017 000000af 00000000 i #retval
+v 00000019 000000a9 00000004 o oPC
+v 0000002e 000000a9 00000008 i iResult
+v 000000b1 000000eb 00000000 i #retval
+v 000000b1 000000e5 00000004 s s
+v 000000b1 000000e5 00000008 o oCreature
+l01 0000005 00000017 0000002c
+l01 0000006 0000002c 0000002e
+l01 0000007 0000002e 00000051
+l01 0000009 00000057 0000006b
+l01 0000011 00000071 00000073
+l01 0000012 00000073 00000087
+l01 0000013 00000087 000000a9
+l01 0000014 000000af 000000b1
+l00 0000617 000000b1 000000e5
+l00 0000618 000000e5 000000ed

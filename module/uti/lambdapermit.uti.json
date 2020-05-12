@@ -1,0 +1,208 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 19996
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 74
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 20000
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 1
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "The Lambda-class shuttle is based on a tri-wing design with a central stationary wing flanked by a pair of folding wings. When in flight position, the wing configuration resembles an inverted Y. When landing, the lower wings fold upwards.\n\nThe Lambda is designed as both a cargo and troop transport and could carry 80 tons or 20 soldiers. It also has a crew of six: a pilot, co-pilot, navigator, communications officer, gunner, and engineer. A shuttle can also be piloted by a skeleton crew consisting of a single officer during emergencies. It is also equipped with a Class 1 hyperdrive since its mission profile involves traveling across the galaxy."
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "The Lambda-class shuttle is based on a tri-wing design with a central stationary wing flanked by a pair of folding wings. When in flight position, the wing configuration resembles an inverted Y. When landing, the lower wings fold upwards.\n\nThe Lambda is designed as both a cargo and troop transport and could carry 80 tons or 20 soldiers. It also has a crew of six: a pilot, co-pilot, navigator, communications officer, gunner, and engineer. A shuttle can also be piloted by a skeleton crew consisting of a single officer during emergencies. It is also equipped with a Class 1 hyperdrive since its mission profile involves traveling across the galaxy."
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Lambda Transport Permit"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 72
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 1
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 1
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "ChanceAppear": {
+          "type": "byte",
+          "value": 100
+        },
+        "CostTable": {
+          "type": "byte",
+          "value": 3
+        },
+        "CostValue": {
+          "type": "word",
+          "value": 13
+        },
+        "Param1": {
+          "type": "byte",
+          "value": 255
+        },
+        "Param1Value": {
+          "type": "byte",
+          "value": 0
+        },
+        "PropertyName": {
+          "type": "word",
+          "value": 15
+        },
+        "Subtype": {
+          "type": "word",
+          "value": 537
+        }
+      }
+    ]
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 1
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "SER_PL_SHIPDEED"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "lambdapermit"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_TYPE"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 330
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_ENGINE_NAME"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "Unknown Model"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_ENGINE_POWER"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_ENGINE_SPEED"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_POWER"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 6
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_POWER_NAME"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "Unknown Model"
+        }
+      }
+    ]
+  }
+}

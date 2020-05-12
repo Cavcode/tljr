@@ -1,0 +1,54 @@
+{
+  "__data_type": "UTW ",
+  "Appearance": {
+    "type": "byte",
+    "value": 2
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": "\"WP_\" + NPC's tag name + \"_0#\"\r\nExample: WP_CITYGUARD_01.\r\n\r\nThe # determines what order the NPC walks the waypoints in.\r\n\r\nYou may also have up to one \"POST_\" + NPC's tag name waypoint tagged; if so the NPC will return to this waypoint after a combat.\r\n\r\nWaypoint names are case-sensitive."
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "",
+      "2": ""
+    }
+  },
+  "HasMapNote": {
+    "type": "byte",
+    "value": 0
+  },
+  "LinkedTo": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "LocalizedName": {
+    "id": 14817,
+    "type": "cexolocstring",
+    "value": {
+      "0": "WP_NPC_0#",
+      "2": "Spawn Creature"
+    }
+  },
+  "MapNote": {
+    "type": "cexolocstring",
+    "value": {}
+  },
+  "MapNoteEnabled": {
+    "type": "byte",
+    "value": 1
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 5
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "WP_NPC_0"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "wp_npc_0"
+  }
+}

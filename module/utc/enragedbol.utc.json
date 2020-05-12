@@ -1,0 +1,586 @@
+{
+  "__data_type": "UTC ",
+  "Appearance_Type": {
+    "type": "word",
+    "value": 481
+  },
+  "BodyBag": {
+    "type": "byte",
+    "value": 0
+  },
+  "Cha": {
+    "type": "byte",
+    "value": 8
+  },
+  "ChallengeRating": {
+    "type": "float",
+    "value": 22.0
+  },
+  "ClassList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 2,
+        "Class": {
+          "type": "int",
+          "value": 21
+        },
+        "ClassLevel": {
+          "type": "short",
+          "value": 25
+        }
+      }
+    ]
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Con": {
+    "type": "byte",
+    "value": 25
+  },
+  "Conversation": {
+    "type": "resref",
+    "value": ""
+  },
+  "CRAdjust": {
+    "type": "int",
+    "value": 6
+  },
+  "CurrentHitPoints": {
+    "type": "short",
+    "value": 88
+  },
+  "DecayTime": {
+    "type": "dword",
+    "value": 60000
+  },
+  "Deity": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "The Bol is a species of mammal that is native to the world of Dantooine. It is used primarily to produce milk, but is also a popular mount even outside of Dantooine. They are often hunted for their hide; however, due to over-hunting the population of bols is in steady decline. The hunting originated from the Dantooine Mining Outpost, where thousands of hunters and creature handlers gather to hunt Bols or to tame them. The Bols usually frequent an area about a mile away from the outpost, so the hunters do not have to go far to kill them and destroy their homes. "
+    }
+  },
+  "Dex": {
+    "type": "byte",
+    "value": 14
+  },
+  "Disarmable": {
+    "type": "byte",
+    "value": 0
+  },
+  "Equip_ItemList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 16384,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "nw_it_crewps010"
+        }
+      }
+    ]
+  },
+  "FactionID": {
+    "type": "word",
+    "value": 1
+  },
+  "FeatList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 289
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 45
+        }
+      }
+    ]
+  },
+  "FirstName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Enraged Bol"
+    }
+  },
+  "fortbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "Gender": {
+    "type": "byte",
+    "value": 0
+  },
+  "GoodEvil": {
+    "type": "byte",
+    "value": 50
+  },
+  "HitPoints": {
+    "type": "short",
+    "value": 88
+  },
+  "Int": {
+    "type": "byte",
+    "value": 3
+  },
+  "Interruptable": {
+    "type": "byte",
+    "value": 1
+  },
+  "IsImmortal": {
+    "type": "byte",
+    "value": 0
+  },
+  "IsPC": {
+    "type": "byte",
+    "value": 0
+  },
+  "LastName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": ""
+    }
+  },
+  "LawfulChaotic": {
+    "type": "byte",
+    "value": 50
+  },
+  "Lootable": {
+    "type": "byte",
+    "value": 1
+  },
+  "MaxHitPoints": {
+    "type": "short",
+    "value": 263
+  },
+  "NaturalAC": {
+    "type": "byte",
+    "value": 13
+  },
+  "NoPermDeath": {
+    "type": "byte",
+    "value": 0
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 1
+  },
+  "PerceptionRange": {
+    "type": "byte",
+    "value": 11
+  },
+  "Phenotype": {
+    "type": "int",
+    "value": 0
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 0
+  },
+  "PortraitId": {
+    "type": "word",
+    "value": 819
+  },
+  "Race": {
+    "type": "byte",
+    "value": 9
+  },
+  "refbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "ScriptAttacked": {
+    "type": "resref",
+    "value": "x2_def_attacked"
+  },
+  "ScriptDamaged": {
+    "type": "resref",
+    "value": "x2_def_ondamage"
+  },
+  "ScriptDeath": {
+    "type": "resref",
+    "value": "pug_arena_killed"
+  },
+  "ScriptDialogue": {
+    "type": "resref",
+    "value": "x2_def_onconv"
+  },
+  "ScriptDisturbed": {
+    "type": "resref",
+    "value": "x2_def_ondisturb"
+  },
+  "ScriptEndRound": {
+    "type": "resref",
+    "value": "x2_def_endcombat"
+  },
+  "ScriptHeartbeat": {
+    "type": "resref",
+    "value": "x2_def_heartbeat"
+  },
+  "ScriptOnBlocked": {
+    "type": "resref",
+    "value": "x2_def_onblocked"
+  },
+  "ScriptOnNotice": {
+    "type": "resref",
+    "value": "x2_def_percept"
+  },
+  "ScriptRested": {
+    "type": "resref",
+    "value": "x2_def_rested"
+  },
+  "ScriptSpawn": {
+    "type": "resref",
+    "value": "x2_def_spawn"
+  },
+  "ScriptSpellAt": {
+    "type": "resref",
+    "value": "x2_def_spellcast"
+  },
+  "ScriptUserDefine": {
+    "type": "resref",
+    "value": "x2_def_userdef"
+  },
+  "SkillList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      }
+    ]
+  },
+  "SoundSetFile": {
+    "type": "word",
+    "value": 446
+  },
+  "SpecAbilityList": {
+    "type": "list",
+    "value": []
+  },
+  "StartingPackage": {
+    "type": "byte",
+    "value": 83
+  },
+  "Str": {
+    "type": "byte",
+    "value": 34
+  },
+  "Subrace": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "EnragedBol"
+  },
+  "Tail_New": {
+    "type": "dword",
+    "value": 0
+  },
+  "TemplateList": {
+    "type": "list",
+    "value": []
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "enragedbol"
+  },
+  "WalkRate": {
+    "type": "int",
+    "value": 7
+  },
+  "willbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "Wings_New": {
+    "type": "dword",
+    "value": 0
+  },
+  "Wis": {
+    "type": "byte",
+    "value": 8
+  }
+}

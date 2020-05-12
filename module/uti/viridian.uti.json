@@ -1,0 +1,116 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 5000
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 77
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 5000
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "The viridian crystal is a rare type of lightsaber crystal, that when used in a lightsaber, produces a silvery-green beam. Many ancient Jedi and Sith alike use this crystal as a sign of honor and rank among fellow Jedi or Sith. In more recent years, the viridian crystal can be found in many museums and private collections around the Galaxy, making it hard for a lightsaber wielder to find a rare crystal such as this. The Jedi prize this crystal as an artifact with Force-sensitive capabilities. Some Jedi enhance these crystals with Force energy, whereas the Sith chemically enhance their crystals, allowing the lightsaber beam to inflict greater damage."
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "The viridian crystal is a rare type of lightsaber crystal, that when used in a lightsaber, produces a silvery-green beam. Many ancient Jedi and Sith alike use this crystal as a sign of honor and rank among fellow Jedi or Sith. In more recent years, the viridian crystal can be found in many museums and private collections around the Galaxy, making it hard for a lightsaber wielder to find a rare crystal such as this. The Jedi prize this crystal as an artifact with Force-sensitive capabilities. Some Jedi enhance these crystals with Force energy, whereas the Sith chemically enhance their crystals, allowing the lightsaber beam to inflict greater damage."
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Viridian"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 35
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 57
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 1
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": []
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "Viridian"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "viridian"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "AMOUNT"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 4
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "GEM_TYPE"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "SONIC_DAMAGE_BONUS"
+        }
+      }
+    ]
+  }
+}

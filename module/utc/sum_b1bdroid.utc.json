@@ -1,0 +1,586 @@
+{
+  "__data_type": "UTC ",
+  "Appearance_Type": {
+    "type": "word",
+    "value": 278
+  },
+  "BodyBag": {
+    "type": "byte",
+    "value": 0
+  },
+  "Cha": {
+    "type": "byte",
+    "value": 8
+  },
+  "ChallengeRating": {
+    "type": "float",
+    "value": 11.0
+  },
+  "ClassList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 2,
+        "Class": {
+          "type": "int",
+          "value": 13
+        },
+        "ClassLevel": {
+          "type": "short",
+          "value": 12
+        }
+      }
+    ]
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Con": {
+    "type": "byte",
+    "value": 20
+  },
+  "Conversation": {
+    "type": "resref",
+    "value": ""
+  },
+  "CRAdjust": {
+    "type": "int",
+    "value": 0
+  },
+  "CurrentHitPoints": {
+    "type": "short",
+    "value": 55
+  },
+  "DecayTime": {
+    "type": "dword",
+    "value": 60000
+  },
+  "Deity": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "B1 battle droids are battle droids that made up the backbone of the Trade Federation Droid Army and the Separatist Droid Army. It is the successor of the hunter-killer droid.\n\nB1s are perhaps the most numerous - and expendable - soldiers in galactic history, and, unlike most organic soldiers, they are capable of action in hostile environments like underwater or in space. They are designed to swamp their enemies with sheer numbers. "
+    }
+  },
+  "Dex": {
+    "type": "byte",
+    "value": 18
+  },
+  "Disarmable": {
+    "type": "byte",
+    "value": 0
+  },
+  "Equip_ItemList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 16,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "bawe5droidbl001"
+        }
+      }
+    ]
+  },
+  "FactionID": {
+    "type": "word",
+    "value": 4
+  },
+  "FeatList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 289
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 45
+        }
+      }
+    ]
+  },
+  "FirstName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "B1 Battle Droid"
+    }
+  },
+  "fortbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "Gender": {
+    "type": "byte",
+    "value": 0
+  },
+  "GoodEvil": {
+    "type": "byte",
+    "value": 50
+  },
+  "HitPoints": {
+    "type": "short",
+    "value": 55
+  },
+  "Int": {
+    "type": "byte",
+    "value": 3
+  },
+  "Interruptable": {
+    "type": "byte",
+    "value": 1
+  },
+  "IsImmortal": {
+    "type": "byte",
+    "value": 0
+  },
+  "IsPC": {
+    "type": "byte",
+    "value": 0
+  },
+  "LastName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": ""
+    }
+  },
+  "LawfulChaotic": {
+    "type": "byte",
+    "value": 50
+  },
+  "Lootable": {
+    "type": "byte",
+    "value": 1
+  },
+  "MaxHitPoints": {
+    "type": "short",
+    "value": 115
+  },
+  "NaturalAC": {
+    "type": "byte",
+    "value": 15
+  },
+  "NoPermDeath": {
+    "type": "byte",
+    "value": 0
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 45
+  },
+  "PerceptionRange": {
+    "type": "byte",
+    "value": 11
+  },
+  "Phenotype": {
+    "type": "int",
+    "value": 0
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 0
+  },
+  "PortraitId": {
+    "type": "word",
+    "value": 129
+  },
+  "Race": {
+    "type": "byte",
+    "value": 10
+  },
+  "refbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "ScriptAttacked": {
+    "type": "resref",
+    "value": "nw_ch_ac5"
+  },
+  "ScriptDamaged": {
+    "type": "resref",
+    "value": "nw_ch_ac5"
+  },
+  "ScriptDeath": {
+    "type": "resref",
+    "value": "nw_ch_ac7"
+  },
+  "ScriptDialogue": {
+    "type": "resref",
+    "value": "nw_ch_ac4"
+  },
+  "ScriptDisturbed": {
+    "type": "resref",
+    "value": "nw_ch_ac8"
+  },
+  "ScriptEndRound": {
+    "type": "resref",
+    "value": "nw_ch_ac3"
+  },
+  "ScriptHeartbeat": {
+    "type": "resref",
+    "value": "nw_ch_ac1"
+  },
+  "ScriptOnBlocked": {
+    "type": "resref",
+    "value": "nw_ch_ace"
+  },
+  "ScriptOnNotice": {
+    "type": "resref",
+    "value": "nw_ch_ac2"
+  },
+  "ScriptRested": {
+    "type": "resref",
+    "value": "nw_ch_aca"
+  },
+  "ScriptSpawn": {
+    "type": "resref",
+    "value": "nw_ch_ac9"
+  },
+  "ScriptSpellAt": {
+    "type": "resref",
+    "value": "nw_ch_acb"
+  },
+  "ScriptUserDefine": {
+    "type": "resref",
+    "value": "nw_ch_acd"
+  },
+  "SkillList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      }
+    ]
+  },
+  "SoundSetFile": {
+    "type": "word",
+    "value": 134
+  },
+  "SpecAbilityList": {
+    "type": "list",
+    "value": []
+  },
+  "StartingPackage": {
+    "type": "byte",
+    "value": 75
+  },
+  "Str": {
+    "type": "byte",
+    "value": 10
+  },
+  "Subrace": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "sum_b1bdroid"
+  },
+  "Tail_New": {
+    "type": "dword",
+    "value": 0
+  },
+  "TemplateList": {
+    "type": "list",
+    "value": []
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "sum_b1bdroid"
+  },
+  "WalkRate": {
+    "type": "int",
+    "value": 7
+  },
+  "willbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "Wings_New": {
+    "type": "dword",
+    "value": 0
+  },
+  "Wis": {
+    "type": "byte",
+    "value": 8
+  }
+}

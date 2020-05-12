@@ -1,0 +1,214 @@
+NDB V1.0
+0000004 0000001 0000052 0000012 0000020
+n00 nw_i0_tool
+n01 x0_i0_campaign
+n02 x0_i0_partywide
+N03 pug_msn_msnfaild
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 002 i HasItem
+fp o
+fp s
+f ffffffff ffffffff 003 v TakeGold
+fp i
+fp o
+fp i
+f ffffffff ffffffff 002 i HasGold
+fp i
+fp o
+f ffffffff ffffffff 003 i AutoDC
+fp i
+fp i
+fp o
+f ffffffff ffffffff 004 v DoGiveXP
+fp s
+fp i
+fp o
+fp i
+f ffffffff ffffffff 003 v RewardPartyGP
+fp i
+fp o
+fp i
+f ffffffff ffffffff 003 v RewardPartyXP
+fp i
+fp o
+fp i
+f ffffffff ffffffff 002 i CheckPartyForItem
+fp o
+fp s
+f ffffffff ffffffff 000 s GetCampaignDBName
+f ffffffff ffffffff 003 v SetCampaignDBString
+fp o
+fp s
+fp s
+f ffffffff ffffffff 002 s GetCampaignDBString
+fp o
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBInt
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetCampaignDBInt
+fp o
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBFloat
+fp o
+fp s
+fp f
+f ffffffff ffffffff 002 f GetCampaignDBFloat
+fp o
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBVector
+fp o
+fp s
+fp t0000
+f ffffffff ffffffff 002 t0000 GetCampaignDBVector
+fp o
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBLocation
+fp o
+fp s
+fp e2
+f ffffffff ffffffff 002 e2 GetCampaignDBLocation
+fp o
+fp s
+f ffffffff ffffffff 003 i StoreCampaignDBObject
+fp o
+fp s
+fp o
+f ffffffff ffffffff 004 o RetrieveCampaignDBObject
+fp o
+fp s
+fp e2
+fp o
+f ffffffff ffffffff 002 v DeleteCampaignDBVariable
+fp o
+fp s
+f ffffffff ffffffff 001 i GetNumberPartyMembers
+fp o
+f ffffffff ffffffff 003 v SetLocalStringOnAll
+fp o
+fp s
+fp s
+f 000001a9 00000231 003 v SetLocalIntOnAll
+fp o
+fp s
+fp i
+f ffffffff ffffffff 003 v SetLocalFloatOnAll
+fp o
+fp s
+fp f
+f ffffffff ffffffff 003 v SetLocalLocationOnAll
+fp o
+fp s
+fp e2
+f ffffffff ffffffff 003 v SetLocalObjectOnAll
+fp o
+fp s
+fp o
+f ffffffff ffffffff 003 v SetCampaignDBStringOnAll
+fp o
+fp s
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBIntOnAll
+fp o
+fp s
+fp i
+f ffffffff ffffffff 003 v SetCampaignDBFloatOnAll
+fp o
+fp s
+fp f
+f ffffffff ffffffff 003 v SetCampaignDBVectorOnAll
+fp o
+fp s
+fp t0000
+f ffffffff ffffffff 003 v SetCampaignDBLocationOnAll
+fp o
+fp s
+fp e2
+f ffffffff ffffffff 003 v StoreCampaignDBObjectOnAll
+fp o
+fp s
+fp o
+f ffffffff ffffffff 002 v DeleteCampaignDBVariableOnAll
+fp o
+fp s
+f ffffffff ffffffff 002 v GiveGoldToAllEqually
+fp o
+fp i
+f ffffffff ffffffff 002 v GiveGoldToAll
+fp o
+fp i
+f ffffffff ffffffff 002 v GiveXPToAllEqually
+fp o
+fp i
+f ffffffff ffffffff 002 v GiveXPToAll
+fp o
+fp i
+f ffffffff ffffffff 003 v AdjustReputationWithFaction
+fp o
+fp o
+fp i
+f ffffffff ffffffff 002 v ClearPersonalReputationWithFaction
+fp o
+fp o
+f ffffffff ffffffff 002 v ClearAssociateActions
+fp o
+fp i
+f ffffffff ffffffff 002 v ClearNearbyFriendActions
+fp o
+fp i
+f ffffffff ffffffff 001 v SurrenderAllToEnemies
+fp o
+f ffffffff ffffffff 002 i GetIsItemPossessedByParty
+fp o
+fp s
+f ffffffff ffffffff 002 o GetItemPossessedByParty
+fp o
+fp s
+f ffffffff ffffffff 002 v RemoveItemFromParty
+fp o
+fp s
+f ffffffff ffffffff 003 v AdjustAlignmentOnAll
+fp o
+fp i
+fp i
+f 00000231 0000025c 001 v ResetMission
+fp o
+f 000000cf 000001a9 000 v main
+f 0000000d 00000015 000 v #loader
+f 00000015 000000cf 000 v #globals
+v 00000017 ffffffff 00000000 i DC_EASY
+v 0000002d ffffffff 00000004 i DC_MEDIUM
+v 00000043 ffffffff 00000008 i DC_HARD
+v 00000059 ffffffff 0000000c i G_CLASSCHANCE
+v 0000006f ffffffff 00000010 s X0_DATABASE_DEFAULT
+v 00000099 ffffffff 00000014 s X0_DATABASE_XP1
+v 00000119 000001a1 00000000 o oTarget
+v 000001a9 00000229 00000000 i value
+v 000001a9 00000229 00000004 s sVarname
+v 000001a9 00000229 00000008 o oPC
+v 000001ab 00000223 0000000c o oPartyMem
+v 00000231 00000254 00000000 o oNPC
+l00 0000018 00000015 0000002b
+l00 0000019 0000002b 00000041
+l00 0000020 00000041 00000057
+l00 0000024 00000057 0000006d
+l01 0000051 0000006d 00000097
+l01 0000053 00000097 000000bd
+l03 0000009 000000cf 000000f4
+l03 0000010 000000f4 00000117
+l03 0000012 00000117 00000144
+l03 0000013 00000144 00000157
+l03 0000014 00000157 00000178
+l03 0000015 00000178 000001a1
+l03 0000016 000001a7 000001a9
+l02 0000208 000001a9 000001cc
+l02 0000209 000001cc 000001df
+l02 0000210 000001df 000001fc
+l02 0000211 000001fc 0000021d
+l02 0000214 00000229 00000231
+l03 0000005 00000231 00000254
+l03 0000006 00000254 0000025c

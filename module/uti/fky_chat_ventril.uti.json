@@ -1,0 +1,136 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 0
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 79
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 4
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "id": 57999,
+    "type": "cexolocstring",
+    "value": {
+      "0": "This device is used to select the target for the /v command. Once used, the dm may 'throw' their voice to the target creature simply by typing /v with a space after it, before the text to be spoken by the target. May only be used by DMs. May not be targeted at other DMs."
+    }
+  },
+  "Description": {
+    "id": 57984,
+    "type": "cexolocstring",
+    "value": {
+      "0": ""
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "id": 57983,
+    "type": "cexolocstring",
+    "value": {
+      "0": "DM Voice Thrower"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 8
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 113
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 0
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "ChanceAppear": {
+          "type": "byte",
+          "value": 100
+        },
+        "CostTable": {
+          "type": "byte",
+          "value": 3
+        },
+        "CostValue": {
+          "type": "word",
+          "value": 13
+        },
+        "Param1": {
+          "type": "byte",
+          "value": 255
+        },
+        "Param1Value": {
+          "type": "byte",
+          "value": 0
+        },
+        "PropertyName": {
+          "type": "word",
+          "value": 15
+        },
+        "Subtype": {
+          "type": "word",
+          "value": 513
+        }
+      }
+    ]
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "fky_chat_ventril"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "fky_chat_ventril"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "FKY_CHAT_INSTANT"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 1
+        }
+      }
+    ]
+  }
+}

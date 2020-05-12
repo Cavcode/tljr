@@ -1,0 +1,627 @@
+{
+  "__data_type": "UTC ",
+  "Appearance_Type": {
+    "type": "word",
+    "value": 2143
+  },
+  "BodyBag": {
+    "type": "byte",
+    "value": 0
+  },
+  "Cha": {
+    "type": "byte",
+    "value": 8
+  },
+  "ChallengeRating": {
+    "type": "float",
+    "value": 40.0
+  },
+  "ClassList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 2,
+        "Class": {
+          "type": "int",
+          "value": 8
+        },
+        "ClassLevel": {
+          "type": "short",
+          "value": 40
+        }
+      }
+    ]
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Con": {
+    "type": "byte",
+    "value": 25
+  },
+  "Conversation": {
+    "type": "resref",
+    "value": ""
+  },
+  "CRAdjust": {
+    "type": "int",
+    "value": 8
+  },
+  "CurrentHitPoints": {
+    "type": "short",
+    "value": 88
+  },
+  "DecayTime": {
+    "type": "dword",
+    "value": 60000
+  },
+  "Deity": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "This lightly-armored droid measures 1.6 meters in height with six manipulator arms extending from a central pod and several retractable sensor arms for gathering samples. High resolution receivers and sensors covered the domed head - including motion, acoustic, sonic, and seismic sensors, a radiation meter, magnetic imager, and holocam. It moves on a repulsorlift generator which is equipped to operate over any terrain."
+    }
+  },
+  "Dex": {
+    "type": "byte",
+    "value": 60
+  },
+  "Disarmable": {
+    "type": "byte",
+    "value": 0
+  },
+  "Equip_ItemList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 16,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "scouttrooperbl"
+        }
+      },
+      {
+        "__struct_id": 2048,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "largepowercell"
+        }
+      },
+      {
+        "__struct_id": 16384,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "nw_it_crewps017"
+        }
+      },
+      {
+        "__struct_id": 65536,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "x0_formmyr_sting"
+        }
+      }
+    ]
+  },
+  "FactionID": {
+    "type": "word",
+    "value": 1
+  },
+  "FeatList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 289
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 45
+        }
+      }
+    ]
+  },
+  "FirstName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Imperial Probe Droid"
+    }
+  },
+  "fortbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "Gender": {
+    "type": "byte",
+    "value": 0
+  },
+  "GoodEvil": {
+    "type": "byte",
+    "value": 50
+  },
+  "HitPoints": {
+    "type": "short",
+    "value": 88
+  },
+  "Int": {
+    "type": "byte",
+    "value": 3
+  },
+  "Interruptable": {
+    "type": "byte",
+    "value": 1
+  },
+  "IsImmortal": {
+    "type": "byte",
+    "value": 0
+  },
+  "IsPC": {
+    "type": "byte",
+    "value": 0
+  },
+  "ItemList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "InventoryRes": {
+          "type": "resref",
+          "value": "largepowercell"
+        },
+        "Repos_PosX": {
+          "type": "word",
+          "value": 0
+        },
+        "Repos_Posy": {
+          "type": "word",
+          "value": 0
+        }
+      }
+    ]
+  },
+  "LastName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": ""
+    }
+  },
+  "LawfulChaotic": {
+    "type": "byte",
+    "value": 50
+  },
+  "Lootable": {
+    "type": "byte",
+    "value": 1
+  },
+  "MaxHitPoints": {
+    "type": "short",
+    "value": 368
+  },
+  "NaturalAC": {
+    "type": "byte",
+    "value": 4
+  },
+  "NoPermDeath": {
+    "type": "byte",
+    "value": 0
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 1
+  },
+  "PerceptionRange": {
+    "type": "byte",
+    "value": 11
+  },
+  "Phenotype": {
+    "type": "int",
+    "value": 0
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 0
+  },
+  "PortraitId": {
+    "type": "word",
+    "value": 170
+  },
+  "Race": {
+    "type": "byte",
+    "value": 10
+  },
+  "refbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "ScriptAttacked": {
+    "type": "resref",
+    "value": "x2_def_attacked"
+  },
+  "ScriptDamaged": {
+    "type": "resref",
+    "value": "x2_def_ondamage"
+  },
+  "ScriptDeath": {
+    "type": "resref",
+    "value": "x2_def_ondeath"
+  },
+  "ScriptDialogue": {
+    "type": "resref",
+    "value": "x2_def_onconv"
+  },
+  "ScriptDisturbed": {
+    "type": "resref",
+    "value": "x2_def_ondisturb"
+  },
+  "ScriptEndRound": {
+    "type": "resref",
+    "value": "x2_def_endcombat"
+  },
+  "ScriptHeartbeat": {
+    "type": "resref",
+    "value": "x2_def_heartbeat"
+  },
+  "ScriptOnBlocked": {
+    "type": "resref",
+    "value": "x2_def_onblocked"
+  },
+  "ScriptOnNotice": {
+    "type": "resref",
+    "value": "x2_def_percept"
+  },
+  "ScriptRested": {
+    "type": "resref",
+    "value": "x2_def_rested"
+  },
+  "ScriptSpawn": {
+    "type": "resref",
+    "value": "x2_def_spawn"
+  },
+  "ScriptSpellAt": {
+    "type": "resref",
+    "value": "x2_def_spellcast"
+  },
+  "ScriptUserDefine": {
+    "type": "resref",
+    "value": "x2_def_userdef"
+  },
+  "SkillList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 40
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      }
+    ]
+  },
+  "SoundSetFile": {
+    "type": "word",
+    "value": 850
+  },
+  "SpecAbilityList": {
+    "type": "list",
+    "value": []
+  },
+  "StartingPackage": {
+    "type": "byte",
+    "value": 8
+  },
+  "Str": {
+    "type": "byte",
+    "value": 35
+  },
+  "Subrace": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "ImperialProbeDroid"
+  },
+  "Tail_New": {
+    "type": "dword",
+    "value": 0
+  },
+  "TemplateList": {
+    "type": "list",
+    "value": []
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "imperialprobed"
+  },
+  "WalkRate": {
+    "type": "int",
+    "value": 5
+  },
+  "willbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "Wings_New": {
+    "type": "dword",
+    "value": 0
+  },
+  "Wis": {
+    "type": "byte",
+    "value": 8
+  }
+}

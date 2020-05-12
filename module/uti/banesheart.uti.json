@@ -1,0 +1,116 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 5000
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 77
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 5000
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Bane's Heart is a unique carmine lightsaber crystal given to Darth Zannah by her Master, Darth Bane, following the Seventh Battle of Ruusan. She used it in her double-bladed lightsaber. When tuned to be used in a lightsaber, it causes that lightsaber to deal electrical damage and means that the lightsaber can't be used by another user.\n\nThe lightsaber and crystal later came into the possession of a Dark Jedi murdered by Qymaen jai Sheelal, otherwise known as General Grievous, either on Dica or Necropolis. Sheelal stored the weapon aboard his personal starfighter, which was later recovered by Imperial forces and used as part of the N-K Project. The Bane's Heart lightsaber was used by N-K Necrosis during the Galactic Civil War until he was killed by a group of spacers who took the crystal from his dead body."
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Bane's Heart is a unique carmine lightsaber crystal given to Darth Zannah by her Master, Darth Bane, following the Seventh Battle of Ruusan. She used it in her double-bladed lightsaber. When tuned to be used in a lightsaber, it causes that lightsaber to deal electrical damage and means that the lightsaber can't be used by another user.\n\nThe lightsaber and crystal later came into the possession of a Dark Jedi murdered by Qymaen jai Sheelal, otherwise known as General Grievous, either on Dica or Necropolis. Sheelal stored the weapon aboard his personal starfighter, which was later recovered by Imperial forces and used as part of the N-K Project. The Bane's Heart lightsaber was used by N-K Necrosis during the Galactic Civil War until he was killed by a group of spacers who took the crystal from his dead body."
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Bane's Heart"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 78
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 57
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 1
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": []
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "BanesHeart"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "banesheart"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "AMOUNT"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 1
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "GEM_TYPE"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "BLUDGEONING_DAMAGE_BONUS"
+        }
+      }
+    ]
+  }
+}

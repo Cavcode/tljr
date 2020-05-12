@@ -1,0 +1,67 @@
+NDB V1.0
+0000002 0000001 0000025 0000005 0000011
+n00 qx_leto_func
+N01 qx_clientexit
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 000 s NWNPATH
+f ffffffff ffffffff 000 s NWNSVAULT
+f ffffffff ffffffff 000 s NWNLVAULT
+f ffffffff ffffffff 000 i PHOENIX
+f ffffffff ffffffff 000 i DEBUG
+f ffffffff ffffffff 000 i ENABLE_AUTO_RELOAD
+f ffffffff ffffffff 000 f RELOAD_TIME_DELAY
+f ffffffff ffffffff 000 s PORTAL_ADDRESS
+f ffffffff ffffffff 000 s PORTAL_PASSWORD
+f ffffffff ffffffff 000 s PORTAL_WAYPOINT
+f 000000fc 00000162 001 s LetoScript
+fp s
+f ffffffff ffffffff 001 s GetBicFileName
+fp o
+f ffffffff ffffffff 002 v ApplyLetoScriptToPC
+fp s
+fp o
+f ffffffff ffffffff 002 s AddStatPoint
+fp s
+fp i
+f ffffffff ffffffff 001 s AddSkillPoint
+fp i
+f ffffffff ffffffff 000 s ModifySaves
+f ffffffff ffffffff 002 s AddHitPoints
+fp i
+fp i
+f ffffffff ffffffff 001 s AddFeat
+fp i
+f ffffffff ffffffff 001 s SetDocumentedLevel
+fp i
+f ffffffff ffffffff 001 v SetPermaSubRace
+fp o
+f ffffffff ffffffff 001 i GetSubRaceInt
+fp s
+f ffffffff ffffffff 004 v RepeatFloatingTextStringOnCreature
+fp o
+fp s
+fp f
+fp i
+f ffffffff ffffffff 001 v ReloadPC
+fp o
+f 00000015 000000fc 000 v main
+f 0000000d 00000015 000 v #loader
+v 00000017 000000f4 00000000 o PC
+v 0000002c 000000f4 00000004 o M
+v 00000041 000000f4 00000008 s Script
+v 000000fc 00000160 00000000 s #retval
+v 000000fc 0000015a 00000004 s script
+l01 0000004 00000015 0000002a
+l01 0000005 0000002a 0000003f
+l01 0000007 0000003f 0000006a
+l01 0000009 0000006a 00000078
+l01 0000011 0000007e 0000009d
+l01 0000012 0000009d 000000b3
+l01 0000014 000000b9 000000f4
+l01 0000015 000000fa 000000fc
+l00 0000150 000000fc 00000122
+l00 0000151 00000122 0000015a
+l00 0000152 0000015a 00000162

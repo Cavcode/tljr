@@ -1,0 +1,208 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 19996
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 74
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 20000
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 1
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "The Naboo Royal N-1 starfighter, simply known as the Naboo starfighter, is a starfighter used by the government of Naboo during the late years of the Galactic Republic and early days of the Galactic Empire for defense, patrol, and escort duties. The sleek vessel is manufactured by Theed Palace Space Vessel Engineering Corps, the group responsible for manufacturing Naboo royal starships.\n\nThe Royal N-1 starfighter features the best elements of Naboo design, being aesthetically sound and adhering to the Naboo's love for curves and aerodynamic shapes."
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "The Naboo Royal N-1 starfighter, simply known as the Naboo starfighter, is a starfighter used by the government of Naboo during the late years of the Galactic Republic and early days of the Galactic Empire for defense, patrol, and escort duties. The sleek vessel is manufactured by Theed Palace Space Vessel Engineering Corps, the group responsible for manufacturing Naboo royal starships.\n\nThe Royal N-1 starfighter features the best elements of Naboo design, being aesthetically sound and adhering to the Naboo's love for curves and aerodynamic shapes."
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Naboo Fighter Permit"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 73
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 1
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 1
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "ChanceAppear": {
+          "type": "byte",
+          "value": 100
+        },
+        "CostTable": {
+          "type": "byte",
+          "value": 3
+        },
+        "CostValue": {
+          "type": "word",
+          "value": 13
+        },
+        "Param1": {
+          "type": "byte",
+          "value": 255
+        },
+        "Param1Value": {
+          "type": "byte",
+          "value": 0
+        },
+        "PropertyName": {
+          "type": "word",
+          "value": 15
+        },
+        "Subtype": {
+          "type": "word",
+          "value": 335
+        }
+      }
+    ]
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 1
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "SER_PL_SHIPDEED"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "naboopermit"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_TYPE"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 327
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_ENGINE_NAME"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "Unknown Model"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_ENGINE_POWER"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_ENGINE_SPEED"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_POWER"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 6
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_POWER_NAME"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "Unknown Model"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 4000
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 77
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 4000
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Pontite is the rarest and most powerful type of Adegan crystal, and is nearly impossible to find, radiating a powerful aura that cools both skin and tempers. Also known as \"Ilum crystals,\" these rare Force-reactive stones are primarily found in the Adega system, and on the planet Ilum, but are also known to be found on the planet Halm."
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Pontite is the rarest and most powerful type of Adegan crystal, and is nearly impossible to find, radiating a powerful aura that cools both skin and tempers. Also known as \"Ilum crystals,\" these rare Force-reactive stones are primarily found in the Adega system, and on the planet Ilum, but are also known to be found on the planet Halm."
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Pontite"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 21
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 57
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 1
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": []
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "Pontite"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "pontite"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "AMOUNT"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "GEM_TYPE"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "SLASHING_DAMAGE_BONUS"
+        }
+      }
+    ]
+  }
+}

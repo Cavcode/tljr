@@ -1,0 +1,116 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 2500
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 77
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 2500
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "The Durindfire gem is a precious crystal found on the planet Tatooine. The gem is key in adding a distinctive silver sheen to any lightsaber blade. This stone is traditionally used by the Jedi of the Halcyon/Horn family.\n\nFew Durindfires ever leave the planet, though some are bought and sold by the Galactic Empire to help finance the Death Star project. The Alliance to Restore the Republic is able to pinpoint the Empire's various development sites by tracking the movement of these gems, and additionally used this information to uncover the origins of the TIE Phantom Project."
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "The Durindfire gem is a precious crystal found on the planet Tatooine. The gem is key in adding a distinctive silver sheen to any lightsaber blade. This stone is traditionally used by the Jedi of the Halcyon/Horn family.\n\nFew Durindfires ever leave the planet, though some are bought and sold by the Galactic Empire to help finance the Death Star project. The Alliance to Restore the Republic is able to pinpoint the Empire's various development sites by tracking the movement of these gems, and additionally used this information to uncover the origins of the TIE Phantom Project."
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Durindfire"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 23
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 57
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 1
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": []
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "Durindfire"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "durindfire"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "AMOUNT"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 1
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "GEM_TYPE"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "ENHANCEMENT_BONUS"
+        }
+      }
+    ]
+  }
+}

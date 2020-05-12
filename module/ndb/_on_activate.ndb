@@ -1,0 +1,626 @@
+NDB V1.0
+0000003 0000001 0000313 0000031 0000123
+n00 zep_inc_1st_rp
+n01 zep_inc_phenos
+N02 _on_activate
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 000 s sCEP_PH_NORMAL
+f ffffffff ffffffff 000 s sCEP_PH_LARGE
+f ffffffff ffffffff 000 i nCEP_PH_FLY
+f ffffffff ffffffff 000 s sCEP_PH_FLY
+f ffffffff ffffffff 000 i nCEP_PH_HORSE_BROWN
+f ffffffff ffffffff 000 s sCEP_PH_HORSE_BROWN
+f ffffffff ffffffff 000 i nCEP_PH_PONY_SPOT
+f ffffffff ffffffff 000 s sCEP_PH_PONY_SPOT
+f ffffffff ffffffff 000 i nCEP_PH_HORSE_WHITE
+f ffffffff ffffffff 000 s sCEP_PH_HORSE_WHITE
+f ffffffff ffffffff 000 i nCEP_PH_HORSE_BLACK
+f ffffffff ffffffff 000 s sCEP_PH_HORSE_BLACK
+f ffffffff ffffffff 000 i nCEP_PH_HORSE_NIGHTMARE
+f ffffffff ffffffff 000 s sCEP_PH_HORSE_NIGHTMARE
+f ffffffff ffffffff 000 i nCEP_PH_HORSE_AURENTHIL
+f ffffffff ffffffff 000 s sCEP_PH_HORSE_AURENTHIL
+f ffffffff ffffffff 000 i nCEP_PH_PONY_BROWN
+f ffffffff ffffffff 000 s sCEP_PH_PONY_BROWN
+f ffffffff ffffffff 000 i nCEP_PH_PONY_LTBROWN
+f ffffffff ffffffff 000 s sCEP_PH_PONY_LTBROWN
+f ffffffff ffffffff 000 i nCEP_PH_FLY_L
+f ffffffff ffffffff 000 s sCEP_PH_FLY_L
+f ffffffff ffffffff 000 i nCEP_PH_HORSE_BROWN_L
+f ffffffff ffffffff 000 s sCEP_PH_HORSE_BROWN_L
+f ffffffff ffffffff 000 i nCEP_PH_PONY_SPOT_L
+f ffffffff ffffffff 000 s sCEP_PH_PONY_SPOT_L
+f ffffffff ffffffff 000 i nCEP_PH_HORSE_WHITE_L
+f ffffffff ffffffff 000 s sCEP_PH_HORSE_WHITE_L
+f ffffffff ffffffff 000 i nCEP_PH_HORSE_BLACK_L
+f ffffffff ffffffff 000 s sCEP_PH_HORSE_BLACK_L
+f ffffffff ffffffff 000 i nCEP_PH_HORSE_NIGHTMARE_L
+f ffffffff ffffffff 000 s sCEP_PH_HORSE_NIGHTMARE_L
+f ffffffff ffffffff 000 i nCEP_PH_HORSE_AURENTHIL_L
+f ffffffff ffffffff 000 s sCEP_PH_HORSE_AURENTHIL_L
+f ffffffff ffffffff 000 i nCEP_PH_PONY_BROWN_L
+f ffffffff ffffffff 000 s sCEP_PH_PONY_BROWN_L
+f ffffffff ffffffff 000 i nCEP_PH_PONY_LTBROWN_L
+f ffffffff ffffffff 000 s sCEP_PH_PONY_LTBROWN_L
+f ffffffff ffffffff 000 s sCEP_WG_MDL_COLUMN
+f ffffffff ffffffff 000 i nCEP_WG_NONE
+f ffffffff ffffffff 000 i nCEP_WG_DEMON
+f ffffffff ffffffff 000 i nCEP_WG_ANGEL
+f ffffffff ffffffff 000 i nCEP_WG_BAT
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_RED
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY
+f ffffffff ffffffff 000 i nCEP_WG_BIRD
+f ffffffff ffffffff 000 i nCEP_WG_ANGEL_FALLEN
+f ffffffff ffffffff 000 i nCEP_WG_BIRD_RAVEN
+f ffffffff ffffffff 000 i nCEP_WG_DEMON_BALOR
+f ffffffff ffffffff 000 i nCEP_WG_GARGOYLE
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_YELLOW
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_ORANGE
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_BLACK
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_BLUE
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_RED
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_SHADOW
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_DRACOLICH
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_PRISMATIC
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_BIG
+f ffffffff ffffffff 000 i nCEP_WG_DEMON_MEPHISTO
+f ffffffff ffffffff 000 i nCEP_WG_DEMON_SKIN
+f ffffffff ffffffff 000 i nCEP_WG_ANGEL_SKIN
+f ffffffff ffffffff 000 i nCEP_WG_BAT_SKIN
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_SKIN
+f ffffffff ffffffff 000 i nCEP_WG_BIRD_SKIN
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_SKIN
+f ffffffff ffffffff 000 i nCEP_WG_BIRD_KENKU
+f ffffffff ffffffff 000 i nCEP_WG_ANGEL_ARMORED
+f ffffffff ffffffff 000 i nCEP_WG_DEMON_ERINYES
+f ffffffff ffffffff 000 i nCEP_WG_BIRD_RED
+f ffffffff ffffffff 000 i nCEP_WG_BIRD_DARK
+f ffffffff ffffffff 000 i nCEP_WG_BIRD_BLUE
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_BLACK
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_BLUE
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_BRASS
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_BRONZE
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_COPPER
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_GOLD
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_GREEN
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_SILVER
+f ffffffff ffffffff 000 i nCEP_WG_DRAGON_WHITE
+f ffffffff ffffffff 000 i nCEP_WG_HALFDRAGON_GOLD
+f ffffffff ffffffff 000 i nCEP_WG_HALFDRAGON_SILVER
+f ffffffff ffffffff 000 i nCEP_WG_FLYING_DEMON_1
+f ffffffff ffffffff 000 i nCEP_WG_FLYING_DEMON_2
+f ffffffff ffffffff 000 i nCEP_WG_FLYING_ANGEL
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_GREENGOLD
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_FOREST
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_SIENNA
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_BRGBLUE
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_DKFOREST
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_VIOLET
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_VIOLETGOLD
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_ICEGREEN
+f ffffffff ffffffff 000 i nCEP_WG_BUTTERFLY_MAUVE
+f ffffffff ffffffff 000 i nCEP_WG_DEMON_RED_TRANS
+f ffffffff ffffffff 000 i nCEP_WG_DEMON_BLUE_TRANS
+f ffffffff ffffffff 000 s sCEP_WG_DEMON
+f ffffffff ffffffff 000 s sCEP_WG_ANGEL
+f ffffffff ffffffff 000 s sCEP_WG_BAT
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_RED
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY
+f ffffffff ffffffff 000 s sCEP_WG_BIRD
+f ffffffff ffffffff 000 s sCEP_WG_ANGEL_FALLEN
+f ffffffff ffffffff 000 s sCEP_WG_BIRD_RAVEN
+f ffffffff ffffffff 000 s sCEP_WG_DEMON_BALOR
+f ffffffff ffffffff 000 s sCEP_WG_GARGOYLE
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_YELLOW
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_ORANGE
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_BLACK
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_BLUE
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_RED
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_SHADOW
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_DRACOLICH
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_PRISMATIC
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_BIG
+f ffffffff ffffffff 000 s sCEP_WG_DEMON_MEPHISTO
+f ffffffff ffffffff 000 s sCEP_WG_DEMON_SKIN
+f ffffffff ffffffff 000 s sCEP_WG_ANGEL_SKIN
+f ffffffff ffffffff 000 s sCEP_WG_BAT_SKIN
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_SKIN
+f ffffffff ffffffff 000 s sCEP_WG_BIRD_SKIN
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_SKIN
+f ffffffff ffffffff 000 s sCEP_WG_BIRD_KENKU
+f ffffffff ffffffff 000 s sCEP_WG_ANGEL_ARMORED
+f ffffffff ffffffff 000 s sCEP_WG_DEMON_ERINYES
+f ffffffff ffffffff 000 s sCEP_WG_BIRD_RED
+f ffffffff ffffffff 000 s sCEP_WG_BIRD_DARK
+f ffffffff ffffffff 000 s sCEP_WG_BIRD_BLUE
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_BLACK
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_BLUE
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_BRASS
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_BRONZE
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_COPPER
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_GOLD
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_GREEN
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_SILVER
+f ffffffff ffffffff 000 s sCEP_WG_DRAGON_WHITE
+f ffffffff ffffffff 000 s sCEP_WG_HALFDRAGON_GOLD
+f ffffffff ffffffff 000 s sCEP_WG_HALFDRAGON_SILVER
+f ffffffff ffffffff 000 s sCEP_WG_FLYING_DEMON_1
+f ffffffff ffffffff 000 s sCEP_WG_FLYING_DEMON_2
+f ffffffff ffffffff 000 s sCEP_WG_FLYING_ANGEL
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_GREENGOLD
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_FOREST
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_SIENNA
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_BRGBLUE
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_DKFOREST
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_VIOLET
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_VIOLETGOLD
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_ICEGREEN
+f ffffffff ffffffff 000 s sCEP_WG_BUTTERFLY_MAUVE
+f ffffffff ffffffff 000 s sCEP_WG_DEMON_RED_TRANS
+f ffffffff ffffffff 000 s sCEP_WG_DEMON_BLUE_TRANS
+f ffffffff ffffffff 000 s sCEP_APP_MDL_COLUMN
+f ffffffff ffffffff 000 i nCEP_APP_VAMPIRE_F_FLY
+f ffffffff ffffffff 000 s sCEP_APP_VAMPIRE_F_FLY
+f ffffffff ffffffff 000 i nCEP_APP_VAMPIRE_M_FLY
+f ffffffff ffffffff 000 s sCEP_APP_VAMPIRE_M_FLY
+f ffffffff ffffffff 000 i nCEP_APP_KOBOLD_A_FLY
+f ffffffff ffffffff 000 s sCEP_APP_KOBOLD_A_FLY
+f ffffffff ffffffff 000 i nCEP_APP_SUCCUBUS_FLY
+f ffffffff ffffffff 000 s sCEP_APP_SUCCUBUS_FLY
+f ffffffff ffffffff 000 i nCEP_APP_ERINYES_FLY
+f ffffffff ffffffff 000 s sCEP_APP_ERINYES_FLY
+f ffffffff ffffffff 000 i nCEP_APP_KOBOLD_B_FLY
+f ffffffff ffffffff 000 s sCEP_APP_KOBOLD_B_FLY
+f ffffffff ffffffff 000 i nCEP_APP_KOBOLD_CH_A_FLY
+f ffffffff ffffffff 000 s sCEP_APP_KOBOLD_CH_A_FLY
+f ffffffff ffffffff 000 i nCEP_APP_KOBOLD_CH_B_FLY
+f ffffffff ffffffff 000 s sCEP_APP_KOBOLD_CH_B_FLY
+f ffffffff ffffffff 000 i nCEP_APP_KOBOLD_SH_A_FLY
+f ffffffff ffffffff 000 s sCEP_APP_KOBOLD_SH_A_FLY
+f ffffffff ffffffff 000 i nCEP_APP_KOBOLD_SH_B_FLY
+f ffffffff ffffffff 000 s sCEP_APP_KOBOLD_SH_B_FLY
+f ffffffff ffffffff 000 i nCEP_APP_VAMPIRE_F
+f ffffffff ffffffff 000 s sCEP_APP_VAMPIRE_F
+f ffffffff ffffffff 000 i nCEP_APP_VAMPIRE_M
+f ffffffff ffffffff 000 s sCEP_APP_VAMPIRE_M
+f ffffffff ffffffff 000 i nCEP_APP_KOBOLD_A
+f ffffffff ffffffff 000 s sCEP_APP_KOBOLD_A
+f ffffffff ffffffff 000 i nCEP_APP_SUCCUBUS
+f ffffffff ffffffff 000 s sCEP_APP_SUCCUBUS
+f ffffffff ffffffff 000 i nCEP_APP_ERINYES
+f ffffffff ffffffff 000 s sCEP_APP_ERINYES
+f ffffffff ffffffff 000 i nCEP_APP_KOBOLD_B
+f ffffffff ffffffff 000 s sCEP_APP_KOBOLD_B
+f ffffffff ffffffff 000 i nCEP_APP_KOBOLD_CH_A
+f ffffffff ffffffff 000 s sCEP_APP_KOBOLD_CH_A
+f ffffffff ffffffff 000 i nCEP_APP_KOBOLD_CH_B
+f ffffffff ffffffff 000 s sCEP_APP_KOBOLD_CH_B
+f ffffffff ffffffff 000 i nCEP_APP_KOBOLD_SH_A
+f ffffffff ffffffff 000 s sCEP_APP_KOBOLD_SH_A
+f ffffffff ffffffff 000 i nCEP_APP_KOBOLD_SH_B
+f ffffffff ffffffff 000 s sCEP_APP_KOBOLD_SH_B
+f ffffffff ffffffff 000 i nCEP_APP_SKELETON_DYN
+f ffffffff ffffffff 000 s sCEP_APP_SKELETON_DYN
+f ffffffff ffffffff 000 i nCEP_APP_BROWNIE_DYN
+f ffffffff ffffffff 000 s sCEP_APP_BROWNIE_DYN
+f ffffffff ffffffff 000 i nCEP_APP_PCRACE_HUMAN
+f ffffffff ffffffff 000 s sCEP_APP_PCRACE_HUMAN
+f ffffffff ffffffff 000 i nCEP_APP_PCRACE_DWARF
+f ffffffff ffffffff 000 s sCEP_APP_PCRACE_DWARF
+f ffffffff ffffffff 000 i nCEP_APP_PCRACE_ELF
+f ffffffff ffffffff 000 s sCEP_APP_PCRACE_ELF
+f ffffffff ffffffff 000 i nCEP_APP_PCRACE_GNOME
+f ffffffff ffffffff 000 s sCEP_APP_PCRACE_GNOME
+f ffffffff ffffffff 000 i nCEP_APP_PCRACE_HALFLING
+f ffffffff ffffffff 000 s sCEP_APP_PCRACE_HALFLING
+f ffffffff ffffffff 000 i nCEP_APP_PCRACE_HALFELF
+f ffffffff ffffffff 000 s sCEP_APP_PCRACE_HALFELF
+f ffffffff ffffffff 000 i nCEP_APP_PCRACE_HALFORC
+f ffffffff ffffffff 000 s sCEP_APP_PCRACE_HALFORC
+f ffffffff ffffffff 000 i nCEP_APP_PONY_SPOTTED
+f ffffffff ffffffff 000 s sCEP_APP_PONY_SPOTTED
+f ffffffff ffffffff 000 i nCEP_APP_PONY_BROWN
+f ffffffff ffffffff 000 s sCEP_APP_PONY_BROWN
+f ffffffff ffffffff 000 i nCEP_APP_PONY_LTBROWN
+f ffffffff ffffffff 000 s sCEP_APP_PONY_LTBROWN
+f ffffffff ffffffff 000 i nCEP_APP_HORSE_BROWN
+f ffffffff ffffffff 000 s sCEP_APP_HORSE_BROWN
+f ffffffff ffffffff 000 i nCEP_APP_HORSE_WHITE
+f ffffffff ffffffff 000 s sCEP_APP_HORSE_WHITE
+f ffffffff ffffffff 000 i nCEP_APP_HORSE_BLACK
+f ffffffff ffffffff 000 s sCEP_APP_HORSE_BLACK
+f ffffffff ffffffff 000 i nCEP_APP_HORSE_NIGHTMARE
+f ffffffff ffffffff 000 s sCEP_APP_HORSE_NIGHTMARE
+f ffffffff ffffffff 000 i nCEP_APP_HORSE_AURENTHIL
+f ffffffff ffffffff 000 s sCEP_APP_HORSE_AURENTHIL
+f ffffffff ffffffff 001 f f1st_DegreesToRadians
+fp f
+f ffffffff ffffffff 001 f f1st_RadiansToDegrees
+fp f
+f ffffffff ffffffff 002 f f1st_GetXYDirectionBetween
+fp o
+fp o
+f ffffffff ffffffff 002 f f1st_GetXYDistanceBetween
+fp o
+fp o
+f ffffffff ffffffff 002 f f1st_GetZDistanceBetween
+fp o
+fp o
+f ffffffff ffffffff 001 s s1st_PCGetVarName
+fp o
+f ffffffff ffffffff 001 s s1st_PCGetVarNameShort
+fp o
+f ffffffff ffffffff 003 i n1st_GetHasClass
+fp o
+fp i
+fp i
+f ffffffff ffffffff 002 i n1st_GetAnimalReactionToPC
+fp o
+fp o
+f ffffffff ffffffff 001 i n1st_GetIsStackableItem
+fp o
+f ffffffff ffffffff 002 v X1st_CopyInventory
+fp o
+fp o
+f ffffffff ffffffff 002 v X1st_CopyInventoryEq
+fp o
+fp o
+f ffffffff ffffffff 005 v X1st_Copy_DelayDestroyObject
+fp o
+fp e2
+fp f
+fp o
+fp s
+f ffffffff ffffffff 001 i n1st_VFXNo_Color
+fp s
+f ffffffff ffffffff 001 i n1st_AnimNo
+fp s
+f ffffffff ffffffff 001 i n1st_SkillNo
+fp s
+f ffffffff ffffffff 002 i n1st_GetIsSameFactionAs
+fp o
+fp o
+f ffffffff ffffffff 001 v X1st_RemoveAllPartyMembers
+fp o
+f ffffffff ffffffff 001 v X1st_AddAllPCsInAreaToParty
+fp o
+f ffffffff ffffffff 002 i n1st_GetHasEffectOfType
+fp o
+fp i
+f ffffffff ffffffff 002 i n1st_GetNumberOfEffectOfType
+fp o
+fp i
+f ffffffff ffffffff 007 v X1st_GameTimeDelayScript
+fp s
+fp o
+fp i
+fp i
+fp i
+fp i
+fp i
+f ffffffff ffffffff 002 o o1st_GetNearestPC
+fp i
+fp o
+f ffffffff ffffffff 002 o o1st_GetNearestNPC
+fp i
+fp o
+f ffffffff ffffffff 005 v X1st_CopyItem_Delay
+fp f
+fp o
+fp o
+fp i
+fp i
+f ffffffff ffffffff 004 v X1st_CreateItem_Delay
+fp f
+fp s
+fp o
+fp i
+f ffffffff ffffffff 004 v X1st_CopyObject_Delay
+fp f
+fp s
+fp e2
+fp i
+f ffffffff ffffffff 002 i n1st_GetNumberPartyMembers
+fp o
+fp i
+f ffffffff ffffffff 002 v X1st_GiveGoldToAllEqually
+fp o
+fp i
+f ffffffff ffffffff 002 v X1st_MakeCutsceneInvisible
+fp o
+fp f
+f ffffffff ffffffff 001 v X1st_DestroyAllItems
+fp o
+f ffffffff ffffffff 001 v X1st_DestroyAllItems_NotDMFI
+fp o
+f ffffffff ffffffff 001 v X1st_DestroyDMFIItems
+fp o
+f ffffffff ffffffff 001 v X1st_GiveDMFIItems
+fp o
+f ffffffff ffffffff 001 v X1st_Give1ORPItems
+fp o
+f ffffffff ffffffff 002 v A1st_EquipItem
+fp o
+fp o
+f ffffffff ffffffff 003 v X1st_RespawnNPC
+fp o
+fp s
+fp i
+f ffffffff ffffffff 003 o o1st_RespawnNPC
+fp o
+fp s
+fp i
+f ffffffff ffffffff 004 o o1st_CopyNPC
+fp o
+fp e2
+fp s
+fp i
+f ffffffff ffffffff 004 v X1st_CopyNPC
+fp o
+fp e2
+fp s
+fp i
+f ffffffff ffffffff 002 v X1st_JumpPCPartyToObject
+fp o
+fp o
+f ffffffff ffffffff 002 v X1st_JumpAllPCsInAreaToObject
+fp o
+fp o
+f ffffffff ffffffff 003 v A1st_SitInNearestChair
+fp o
+fp f
+fp s
+f ffffffff ffffffff 001 v X1st_Item_DestroyNonEquiped
+fp o
+f ffffffff ffffffff 001 v X1st_Item_DestroyOnlyEquiped
+fp o
+f ffffffff ffffffff 001 v X1st_Inventory_IDAllItems
+fp o
+f ffffffff ffffffff 001 i n1st_GetIsPCLeader
+fp o
+f ffffffff ffffffff 001 i n1st_CheckIsItemMagical
+fp o
+f ffffffff ffffffff 002 v f1st_SendMessageToParty
+fp o
+fp s
+f ffffffff ffffffff 002 v X1st_Faction_ClearFactionReputation
+fp o
+fp o
+f ffffffff ffffffff 003 o o1st_GetNearestPCinRadius
+fp i
+fp o
+fp f
+f ffffffff ffffffff 003 o o1st_GetNearestNPCinRadius
+fp i
+fp o
+fp f
+f ffffffff ffffffff 003 i n1st_2DA_Check
+fp s
+fp i
+fp s
+f ffffffff ffffffff 003 i n1st_Get_2DARow
+fp s
+fp i
+fp s
+f ffffffff ffffffff 002 s s1st_Get_2DAModelName
+fp s
+fp i
+f ffffffff ffffffff 004 i n1st_HasItemInInventory
+fp o
+fp s
+fp s
+fp s
+f 00000a49 00000fec 004 o o1st_GetItemInInventory
+fp o
+fp s
+fp s
+fp s
+f ffffffff ffffffff 003 f f1st_GetSpeed_PercentChange
+fp o
+fp f
+fp f
+f 000009aa 00000a49 002 v x1st_Effect_RemoveType
+fp o
+fp i
+f ffffffff ffffffff 000 f fDEFAULT_SPEED
+f ffffffff ffffffff 000 i nNO_WING_CHANGE
+f ffffffff ffffffff 000 i nMAX_PHENOTYPE_ALLOWED
+f ffffffff ffffffff 000 i nMIN_PHENOTYPE_STANDARD
+f ffffffff ffffffff 000 i nMAX_PHENOTYPE_STANDARD
+f ffffffff ffffffff 000 i nMIN_PHENOTYPE_LARGE
+f ffffffff ffffffff 000 i nMAX_PHENOTYPE_LARGE
+f ffffffff ffffffff 000 f fSPEED_AURENTHIL
+f ffffffff ffffffff 000 f fSPEED_HORSE_BLACK
+f ffffffff ffffffff 000 f fSPEED_HORSE_BROWN
+f ffffffff ffffffff 000 f fSPEED_HORSE_NIGHTMARE
+f ffffffff ffffffff 000 f fSPEED_HORSE_WHITE
+f ffffffff ffffffff 000 f fSPEED_PONY_BROWN
+f ffffffff ffffffff 000 f fSPEED_PONY_LTBROWN
+f ffffffff ffffffff 000 f fSPEED_PONY_SPOT
+f ffffffff ffffffff 004 v zep_Fly
+fp o
+fp i
+fp f
+fp s
+f ffffffff ffffffff 003 v zep_Fly_Land
+fp o
+fp i
+fp s
+f ffffffff ffffffff 002 v zep_Wings_Add
+fp o
+fp i
+f ffffffff ffffffff 001 v zep_Wings_Remove
+fp o
+f ffffffff ffffffff 002 v zep_Walk_Speed
+fp o
+fp f
+f 00000857 000009aa 001 v zep_UnWalk_Speed
+fp o
+f ffffffff ffffffff 005 v zep_Mount
+fp o
+fp o
+fp i
+fp f
+fp s
+f 000005c1 00000857 002 v zep_Dismount
+fp o
+fp s
+f 00000015 000005c1 000 v main
+f 0000000d 00000015 000 v #loader
+v 00000017 000005b9 00000000 o oItem
+v 0000002c 000005b9 00000004 o oActivator
+v 00000041 000005b9 00000008 e2 lActivator
+v 0000005e 000005b9 0000000c s sItemTag
+v 0000007b 000005b9 00000010 e2 lTarget
+v 00000477 000004da 00000014 o oPC
+v 000005c1 0000084f 00000000 s sRemoveItem_ResRef
+v 000005c1 0000084f 00000004 o oRider
+v 000005ea 00000849 00000008 i nPhenotype_C
+v 000006c3 00000849 0000000c o oMount
+v 000006f0 00000849 00000010 e0 eFX
+v 000006f2 00000849 00000014 f fDelay
+v 000007ee 00000849 00000018 o oItem
+v 00000857 000009a2 00000000 o oPC
+v 00000859 0000099c 00000004 e0 eEff
+v 00000876 0000099c 00000008 i nSpeed_ADJ
+v 000008aa 0000099c 0000000c i nSpeed_Eff_Type
+v 000009aa 00000a41 00000000 i nEffect_Type
+v 000009aa 00000a41 00000004 o oObject
+v 000009ac 00000a3b 00000008 e0 eFX
+v 00000a49 00000fea 00000000 o #retval
+v 00000a49 00000fe4 00000004 s sName
+v 00000a49 00000fe4 00000008 s sResRef
+v 00000a49 00000fe4 0000000c s sTag
+v 00000a49 00000fe4 00000010 o oInventory
+v 00000acd 00000fde 00000014 o oItem
+v 00000aea 00000fde 00000018 o oItem2
+v 00000aec 00000fde 0000001c i nBoolTag
+v 00000b02 00000fde 00000020 i nBoolResRef
+v 00000b18 00000fde 00000024 i nBoolName
+v 00000b2e 00000fde 00000028 i nTests
+l02 0000007 00000015 0000002a
+l02 0000008 0000002a 0000003f
+l02 0000009 0000003f 0000005c
+l02 0000010 0000005c 00000079
+l02 0000011 00000079 0000008e
+l02 0000012 0000008e 000000ad
+l02 0000014 000000ad 000000c3
+l02 0000015 000000c3 000000e1
+l02 0000016 000000e1 000000f7
+l02 0000017 000000f7 00000115
+l02 0000019 00000115 00000135
+l02 0000021 0000013b 0000015a
+l02 0000022 0000015a 00000166
+l02 0000025 0000016c 00000180
+l02 0000027 00000186 0000019e
+l02 0000028 0000019e 000001aa
+l02 0000031 000001b0 000001c4
+l02 0000033 000001ca 000001e6
+l02 0000034 000001e6 000001f2
+l02 0000037 000001f8 00000211
+l02 0000039 00000217 00000230
+l02 0000040 00000230 0000023c
+l02 0000043 00000242 0000025c
+l02 0000045 00000262 0000027c
+l02 0000046 0000027c 00000288
+l02 0000049 0000028e 000002a8
+l02 0000051 000002ae 000002c8
+l02 0000052 000002c8 000002d4
+l02 0000055 000002da 000002f4
+l02 0000057 000002fa 00000314
+l02 0000058 00000314 00000320
+l02 0000061 00000326 00000340
+l02 0000063 00000346 00000360
+l02 0000064 00000360 0000036c
+l02 0000067 00000372 0000038c
+l02 0000069 00000392 000003ac
+l02 0000070 000003ac 000003b8
+l02 0000073 000003be 000003d8
+l02 0000075 000003de 000003f8
+l02 0000076 000003f8 00000404
+l02 0000079 0000040a 00000424
+l02 0000081 0000042a 00000444
+l02 0000082 00000444 00000450
+l02 0000085 00000456 0000046f
+l02 0000087 00000475 0000048a
+l02 0000088 0000048a 000004a5
+l02 0000089 000004ce 000004da
+l02 0000092 000004e6 00000509
+l02 0000094 0000050f 00000556
+l02 0000095 00000556 00000562
+l02 0000098 00000568 00000584
+l02 0000100 0000058a 00000594
+l02 0000101 00000594 000005a0
+l02 0000104 000005a6 000005b9
+l02 0000105 000005bf 000005c1
+l01 0000710 000005c1 000005d6
+l01 0000711 000005e8 00000605
+l01 0000712 00000605 0000061d
+l01 0000715 00000635 00000645
+l01 0000716 00000681 00000683
+l01 0000719 000006b3 000006c1
+l01 0000722 000006c1 000006ee
+l01 0000723 000006ee 000006f0
+l01 0000724 000006f0 00000706
+l01 0000725 00000706 0000071b
+l01 0000727 00000721 00000735
+l01 0000728 00000735 00000749
+l01 0000730 00000749 0000077b
+l01 0000731 0000077b 000007ac
+l01 0000732 000007ac 000007e6
+l01 0000735 000007ec 000007ee
+l01 0000737 000007ee 000007fc
+l01 0000739 00000802 00000830
+l01 0000740 00000830 00000843
+l01 0000742 0000084f 00000857
+l01 0000870 00000857 00000874
+l01 0000871 00000874 000008a8
+l01 0000872 000008a8 000008aa
+l01 0000873 000008aa 000008bc
+l01 0000874 000008dc 000008ec
+l01 0000875 0000090c 0000091c
+l01 0000877 00000922 0000093d
+l01 0000879 0000093d 00000954
+l01 0000880 00000975 00000990
+l01 0000883 000009a2 000009aa
+l00 0002382 000009aa 000009c7
+l00 0002383 000009c7 000009e2
+l00 0002385 000009e2 000009f9
+l00 0002386 00000a1a 00000a35
+l00 0002390 00000a41 00000a49
+l00 0002283 00000a49 00000a5e
+l00 0002284 00000a8a 00000a9f
+l00 0002286 00000acb 00000ae8
+l00 0002287 00000ae8 00000aea
+l00 0002289 00000aea 00000b00
+l00 0002290 00000b00 00000b16
+l00 0002291 00000b16 00000b2c
+l00 0002292 00000b2c 00000b42
+l00 0002293 00000b42 00000b50
+l00 0002294 00000b70 00000b7e
+l00 0002295 00000ba8 00000bb6
+l00 0002297 00000be0 00000bfb
+l00 0002299 00000bfb 00000c0f
+l00 0002300 00000c0f 00000c23
+l00 0002301 00000c23 00000c37
+l00 0002303 00000c37 00000c6c
+l00 0002304 00000c8c 00000cc1
+l00 0002305 00000ce1 00000d1c
+l00 0002306 00000d3c 00000d62
+l00 0002309 00000d90 00000da5
+l00 0002311 00000dab 00000dc6
+l00 0002312 00000dc6 00000de1
+l00 0002314 00000de1 00000df5
+l00 0002315 00000df5 00000e09
+l00 0002316 00000e09 00000e1d
+l00 0002318 00000e1d 00000e52
+l00 0002319 00000e72 00000ea7
+l00 0002320 00000ec7 00000f02
+l00 0002321 00000f22 00000f48
+l00 0002322 00000f76 00000f91
+l00 0002326 00000f9d 00000fb8
+l00 0002328 00000fbe 00000fde
+l00 0002329 00000fe4 00000fec

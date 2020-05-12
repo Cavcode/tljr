@@ -1,0 +1,53 @@
+{
+  "__data_type": "UTW ",
+  "Appearance": {
+    "type": "byte",
+    "value": 3
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": "Spawn waypoint for a creature with the LOCK system.\r\n\r\nAdd a local string variable called \"NEWTAG\" with the TAG you want to assign to the spawned creature. If you don't create this variable, the creature will keep its default TAG.\r\n\r\nSit on ground = AA, Int, 7.\r\nSpasm = AA. Int, 20.\r\nSit in chair = SD, Int, 1. \r\nChair's tag = Chair."
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "2": ""
+    }
+  },
+  "HasMapNote": {
+    "type": "byte",
+    "value": 0
+  },
+  "LinkedTo": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "LocalizedName": {
+    "id": 14817,
+    "type": "cexolocstring",
+    "value": {
+      "0": "Spawn Creature",
+      "2": "Spawn Creature"
+    }
+  },
+  "MapNote": {
+    "type": "cexolocstring",
+    "value": {}
+  },
+  "MapNoteEnabled": {
+    "type": "byte",
+    "value": 1
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 5
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "LOCK_resrefcreature"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "lock_pnj"
+  }
+}

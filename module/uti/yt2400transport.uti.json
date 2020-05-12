@@ -1,0 +1,208 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 19996
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 74
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 20000
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 1
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "The YT-2400 light freighter is a YT series light freighter produced by Corellian Engineering Corporation similar to the YT-1300. Favored by smugglers, the ship features the YT series trademark saucer-shaped hull and starboard-mounted command pod.Like most Corellian designs, the YT-2400 is fast, tough, and endlessly modifiable. Stock YT-2400s are 21 meters in length, require two pilots, and are armed with a single laser cannon turret, although the ship is easily customized for modifications to the stock frame. Thus, the design is favored by mercenaries and smugglers, or any other being in need of a well-armed \"transport\".\n\nWith thick armor plating and bulky engines, the YT-2400 can easily handle the strain of deep-space combat. The vessel has power to spare and an oversized hull begging for hot-rodded engines and powerful weapons.\n\nThe YT-2400 is configured with a pair of starboard bracing arms that connected to the cockpit compartment, essentially a long tube. The aft section of the cockpit tube contains the primary escape pod, which seats six. The bracing arm's interior space generally is used for crew quarters and living space.\n\nThe rounded hull area is devoted to cargo holds and ship's systems. In practice, much of the interior hull space is taken up by modified engines, power generators, weapons systems, and all the other illegal goodies any self-respecting smuggling ship needs. A second escape pod, as well as the airlock, is located on the far side of the cargo compartment, directly opposite the bracing arms. "
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "The YT-2400 light freighter is a YT series light freighter produced by Corellian Engineering Corporation similar to the YT-1300. Favored by smugglers, the ship features the YT series trademark saucer-shaped hull and starboard-mounted command pod.Like most Corellian designs, the YT-2400 is fast, tough, and endlessly modifiable. Stock YT-2400s are 21 meters in length, require two pilots, and are armed with a single laser cannon turret, although the ship is easily customized for modifications to the stock frame. Thus, the design is favored by mercenaries and smugglers, or any other being in need of a well-armed \"transport\".\n\nWith thick armor plating and bulky engines, the YT-2400 can easily handle the strain of deep-space combat. The vessel has power to spare and an oversized hull begging for hot-rodded engines and powerful weapons.\n\nThe YT-2400 is configured with a pair of starboard bracing arms that connected to the cockpit compartment, essentially a long tube. The aft section of the cockpit tube contains the primary escape pod, which seats six. The bracing arm's interior space generally is used for crew quarters and living space.\n\nThe rounded hull area is devoted to cargo holds and ship's systems. In practice, much of the interior hull space is taken up by modified engines, power generators, weapons systems, and all the other illegal goodies any self-respecting smuggling ship needs. A second escape pod, as well as the airlock, is located on the far side of the cargo compartment, directly opposite the bracing arms. \nThe Lambda is designed as both a cargo and troop transport and could carry 80 tons or 20 soldiers. It also has a crew of six: a pilot, co-pilot, navigator, communications officer, gunner, and engineer. A shuttle can also be piloted by a skeleton crew consisting of a single officer during emergencies. It is also equipped with a Class 1 hyperdrive since its mission profile involves traveling across the galaxy."
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "YT-2400 Transport Permit"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 72
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 1
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 1
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "ChanceAppear": {
+          "type": "byte",
+          "value": 100
+        },
+        "CostTable": {
+          "type": "byte",
+          "value": 3
+        },
+        "CostValue": {
+          "type": "word",
+          "value": 13
+        },
+        "Param1": {
+          "type": "byte",
+          "value": 255
+        },
+        "Param1Value": {
+          "type": "byte",
+          "value": 0
+        },
+        "PropertyName": {
+          "type": "word",
+          "value": 15
+        },
+        "Subtype": {
+          "type": "word",
+          "value": 537
+        }
+      }
+    ]
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 1
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "SER_PL_SHIPDEED"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "yt2400transport"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_TYPE"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 331
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_ENGINE_NAME"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "Unknown Model"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_ENGINE_POWER"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_ENGINE_SPEED"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_POWER"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 6
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_POWER_NAME"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "Unknown Model"
+        }
+      }
+    ]
+  }
+}

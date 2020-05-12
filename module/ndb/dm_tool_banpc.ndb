@@ -1,0 +1,354 @@
+NDB V1.0
+0000004 0000001 0000104 0000036 0000109
+n00 x2_inc_switches
+n01 aps_include
+n02 qx_inc_db
+N03 dm_tool_banpc
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_UMD_SCROLLS
+f ffffffff ffffffff 000 s MODULE_SWITCH_DISABLE_ITEM_CREATION_FEATS
+f ffffffff ffffffff 000 s MODULE_SWITCH_AOE_HURT_NEUTRAL_NPCS
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_CRAFT_WAND_50_CHARGES
+f ffffffff ffffffff 000 s MODULE_SWITCH_EPIC_SPELLS_HURT_CASTER
+f ffffffff ffffffff 000 s MODULE_SWITCH_SPELL_CORERULES_DMASTERTOUCH
+f ffffffff ffffffff 000 s MODULE_SWITCH_RESTRICT_USE_POISON_TO_FEAT
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_MULTI_HENCH_AOE_DAMAGE
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_NPC_AOE_HURT_ALLIES
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_BEBILITH_RUIN_ARMOR
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_INVISIBLE_GLYPH_OF_WARDING
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_CROSSAREA_WALKWAYPOINTS
+f ffffffff ffffffff 000 s MODULE_SWITCH_DISABLE_SECRET_DOOR_FLASH
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_TAGBASED_SCRIPTS
+f ffffffff ffffffff 000 s MODULE_SWITCH_USE_XP2_RESTSYSTEM
+f ffffffff ffffffff 000 s MODULE_SWITCH_DISABLE_AI_DISPEL_AOE
+f ffffffff ffffffff 000 s MODULE_SWITCH_NO_RANDOM_MONSTER_LOOT
+f ffffffff ffffffff 000 s MODULE_VAR_OVERRIDE_SPELLSCRIPT
+f ffffffff ffffffff 000 s MODULE_VAR_TAGBASED_SCRIPT_PREFIX
+f ffffffff ffffffff 000 s MODULE_VAR_WANDERING_MONSTER_2DA
+f ffffffff ffffffff 000 s MODULE_VAR_AI_NO_DISPEL_AOE_CHANCE
+f ffffffff ffffffff 000 s MODULE_VAR_AI_STOP_EXPERTISE_ABUSE
+f ffffffff ffffffff 000 s CREATURE_VAR_CUSTOM_AISCRIPT
+f ffffffff ffffffff 000 s CREATURE_VAR_RANDOMIZE_NAME
+f ffffffff ffffffff 000 s CREATURE_VAR_RANDOMIZE_SPELLUSE
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_STEALTH
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_SEARCH
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_AMBIENT
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_AMBIENT_IMMOBILE
+f ffffffff ffffffff 000 s CREATURE_VAR_IMMUNE_TO_DISPEL
+f ffffffff ffffffff 000 s CREATURE_VAR_IS_INCORPOREAL
+f ffffffff ffffffff 000 s CREATURE_VAR_NUMBER_OF_ATTACKS
+f ffffffff ffffffff 000 s CREATURE_AI_MODIFIED_MAGIC_RATE
+f ffffffff ffffffff 000 s CREATURE_AI_MODIFIED_OFFENSE_RATE
+f ffffffff ffffffff 000 s CREATURE_AI_MODIFIED_COMPASSION_RATE
+f ffffffff ffffffff 000 s CREATURE_VAR_PALE_MASTER_SPECIAL_ITEM
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_ACTIVATE
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_EQUIP
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_UNEQUIP
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_ONHITCAST
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_ACQUIRE
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_UNACQUIRE
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_SPELLCAST_AT
+f ffffffff ffffffff 000 i X2_EXECUTE_SCRIPT_CONTINUE
+f ffffffff ffffffff 000 i X2_EXECUTE_SCRIPT_END
+f ffffffff ffffffff 001 v SetUserDefinedItemEventNumber
+fp i
+f 000005cc 0000060b 000 i GetUserDefinedItemEventNumber
+f ffffffff ffffffff 002 v SetModuleSwitch
+fp s
+fp i
+f ffffffff ffffffff 001 i GetModuleSwitchValue
+fp s
+f ffffffff ffffffff 000 s DOOR_FLAG_RESIST_KNOCK
+f ffffffff ffffffff 003 v SetDoorFlag
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetDoorFlag
+fp o
+fp s
+f ffffffff ffffffff 000 s WAYPOINT_VAR_FORCE_SETFACING
+f ffffffff ffffffff 000 s ITEM_FLAG_NO_CRAFT_MODIFICATION
+f ffffffff ffffffff 003 v SetItemFlag
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetItemFlag
+fp o
+fp s
+f ffffffff ffffffff 002 i ExecuteScriptAndReturnInt
+fp s
+fp o
+f 0000060b 0000063a 001 v SetExecutedScriptReturnValue
+fp i
+f ffffffff ffffffff 001 v SetUserDefinedItemEventPrefix
+fp s
+f ffffffff ffffffff 001 v SetModuleOverrideSpellscript
+fp s
+f ffffffff ffffffff 003 v SetCreatureFlag
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetCreatureFlag
+fp o
+fp s
+f ffffffff ffffffff 002 v SetCreatureOverrideAIScript
+fp o
+fp s
+f ffffffff ffffffff 001 v SetCreatureOverrideAIScriptFinished
+fp o
+f ffffffff ffffffff 001 v ClearCreatureOverrideAIScriptTarget
+fp o
+f ffffffff ffffffff 001 o GetCreatureOverrideAIScriptTarget
+fp o
+f ffffffff ffffffff 001 v SetWanderingMonster2DAFile
+fp s
+f ffffffff ffffffff 000 s GetModuleOverrideSpellscript
+f ffffffff ffffffff 000 v SetModuleOverrideSpellScriptFinished
+f ffffffff ffffffff 000 i GetModuleOverrideSpellScriptFinished
+f ffffffff ffffffff 001 s GetUserDefinedItemEventScriptName
+fp o
+f ffffffff ffffffff 000 i SQL_ERROR
+f ffffffff ffffffff 000 i SQL_SUCCESS
+f ffffffff ffffffff 000 v SQLInit
+f 00000b57 00000b83 001 v SQLExecDirect
+fp s
+f 00000b83 00000cca 000 i SQLFetch
+f ffffffff ffffffff 000 i SQLFirstRow
+f ffffffff ffffffff 000 i SQLNextRow
+f ffffffff ffffffff 001 s SQLGetData
+fp i
+f ffffffff ffffffff 001 s APSLocationToString
+fp e2
+f ffffffff ffffffff 001 e2 APSStringToLocation
+fp s
+f ffffffff ffffffff 001 s APSVectorToString
+fp t0000
+f ffffffff ffffffff 001 t0000 APSStringToVector
+fp s
+f ffffffff ffffffff 005 v SetPersistentString
+fp o
+fp s
+fp s
+fp i
+fp s
+f ffffffff ffffffff 005 v SetPersistentInt
+fp o
+fp s
+fp i
+fp i
+fp s
+f ffffffff ffffffff 005 v SetPersistentFloat
+fp o
+fp s
+fp f
+fp i
+fp s
+f ffffffff ffffffff 005 v SetPersistentLocation
+fp o
+fp s
+fp e2
+fp i
+fp s
+f ffffffff ffffffff 005 v SetPersistentVector
+fp o
+fp s
+fp t0000
+fp i
+fp s
+f ffffffff ffffffff 005 v SetPersistentObject
+fp o
+fp s
+fp o
+fp i
+fp s
+f ffffffff ffffffff 003 s GetPersistentString
+fp o
+fp s
+fp s
+f ffffffff ffffffff 003 i GetPersistentInt
+fp o
+fp s
+fp s
+f ffffffff ffffffff 003 f GetPersistentFloat
+fp o
+fp s
+fp s
+f ffffffff ffffffff 003 e2 GetPersistentLocation
+fp o
+fp s
+fp s
+f ffffffff ffffffff 003 t0000 GetPersistentVector
+fp o
+fp s
+fp s
+f ffffffff ffffffff 004 o GetPersistentObject
+fp o
+fp s
+fp o
+fp s
+f ffffffff ffffffff 003 v DeletePersistentVariable
+fp o
+fp s
+fp s
+f 000009f1 00000b57 001 s SQLEncodeSpecialChars
+fp s
+f ffffffff ffffffff 001 s SQLDecodeSpecialChars
+fp s
+f ffffffff ffffffff 001 v DB_LogNewPC
+fp o
+f ffffffff ffffffff 001 i DB_GetIsDM
+fp o
+f ffffffff ffffffff 001 i DB_GetIsBanned
+fp o
+f 0000063a 000009f1 001 v DB_BanPC
+fp o
+f 00000015 000005cc 000 v main
+f 0000000d 00000015 000 v #loader
+v 0000001d 000005b8 00000000 i #switcheval
+v 000000a9 00000131 00000004 o oEquipper
+v 000000be 00000131 00000008 o oItem
+v 00000151 000001d9 00000004 o oUnequipper
+v 00000166 000001d9 00000008 o oItem
+v 000001f9 000002d9 00000004 o oNewOwner
+v 0000020e 000002d9 00000008 o oItem
+v 00000223 000002d9 0000000c o oOldOwner
+v 00000238 000002d9 00000010 i iStackSize
+v 000002f9 0000039e 00000004 o oOldOwner
+v 0000030e 0000039e 00000008 o oItem
+v 00000323 0000039e 0000000c o oNewOwner
+v 000003be 00000496 00000004 o oItemUser
+v 000003d3 00000496 00000008 o oItem
+v 000003e8 00000496 0000000c o oTarget
+v 000003fd 00000496 00000010 e2 lTarget
+v 000004b6 0000059a 00000004 o oWielder
+v 000004cc 0000059a 00000008 o oTarget
+v 000004e1 0000059a 0000000c o oItem
+v 000005cc 00000609 00000000 i #retval
+v 0000060b 00000632 00000000 i nValue
+v 0000063a 000009e9 00000000 o oPC
+v 0000063c 000009e3 00000004 s sTable
+v 00000657 000009e3 00000008 s sPlayer
+v 00000674 000009e3 0000000c s sCDKey
+v 00000697 000009e3 00000010 i iExpiration
+v 0000071b 000009d7 00000014 s sSQL
+v 000009f1 00000b55 00000000 s #retval
+v 000009f1 00000b4f 00000004 s sString
+v 00000a43 00000b49 00000008 i i
+v 00000a45 00000b49 0000000c s sReturn
+v 00000a59 00000b49 00000010 s sChar
+v 00000b57 00000b7b 00000000 s sSQL
+v 00000b83 00000cc8 00000000 i #retval
+v 00000b85 00000cc2 00000004 s sRow
+v 00000b87 00000cc2 00000008 o oModule
+l03 0000007 00000015 000000a7
+l03 0000008 000000a7 000000a7
+l03 0000010 000000a7 000000bc
+l03 0000011 000000bc 000000d1
+l03 0000012 000000d1 0000010d
+l03 0000013 00000113 0000011f
+l03 0000014 0000011f 0000012b
+l03 0000019 00000137 00000143
+l03 0000020 00000143 0000014f
+l03 0000022 0000014f 0000014f
+l03 0000024 0000014f 00000164
+l03 0000025 00000164 00000179
+l03 0000026 00000179 000001b5
+l03 0000027 000001bb 000001c7
+l03 0000028 000001c7 000001d3
+l03 0000033 000001df 000001eb
+l03 0000034 000001eb 000001f7
+l03 0000036 000001f7 000001f7
+l03 0000038 000001f7 0000020c
+l03 0000039 0000020c 00000221
+l03 0000040 00000221 00000236
+l03 0000041 00000236 0000024b
+l03 0000042 0000024b 000002b5
+l03 0000043 000002bb 000002c7
+l03 0000044 000002c7 000002d3
+l03 0000049 000002df 000002eb
+l03 0000050 000002eb 000002f7
+l03 0000052 000002f7 000002f7
+l03 0000054 000002f7 0000030c
+l03 0000055 0000030c 00000321
+l03 0000056 00000321 0000033e
+l03 0000057 0000033e 0000037a
+l03 0000058 00000380 0000038c
+l03 0000059 0000038c 00000398
+l03 0000064 000003a4 000003b0
+l03 0000065 000003b0 000003bc
+l03 0000067 000003bc 000003bc
+l03 0000069 000003bc 000003d1
+l03 0000070 000003d1 000003e6
+l03 0000071 000003e6 000003fb
+l03 0000072 000003fb 00000436
+l03 0000073 00000436 00000472
+l03 0000074 00000478 00000484
+l03 0000075 00000484 00000490
+l03 0000080 0000049c 000004a8
+l03 0000081 000004a8 000004b4
+l03 0000083 000004b4 000004b4
+l03 0000085 000004b4 000004ca
+l03 0000086 000004ca 000004df
+l03 0000087 000004df 000004f4
+l03 0000088 000004f4 00000530
+l03 0000089 00000536 00000542
+l03 0000090 00000542 0000054e
+l03 0000093 00000554 00000580
+l03 0000095 00000586 00000594
+l03 0000101 000005a0 000005ac
+l03 0000102 000005ac 000005b8
+l03 0000104 000005be 000005ca
+l03 0000105 000005ca 000005cc
+l00 0000541 000005cc 00000609
+l00 0000542 00000609 0000060b
+l00 0000598 0000060b 00000632
+l00 0000599 00000632 0000063a
+l02 0000093 0000063a 00000655
+l02 0000094 00000655 00000672
+l02 0000095 00000672 00000695
+l02 0000096 00000695 000006ab
+l02 0000098 000006ab 000006c9
+l02 0000099 000006c9 000006e7
+l02 0000102 000006e7 00000713
+l02 0000104 00000719 00000795
+l02 0000106 00000795 000007a3
+l02 0000108 000007a3 000007b3
+l02 0000111 000007b9 00000861
+l02 0000114 00000861 0000086f
+l02 0000116 00000875 00000877
+l02 0000119 00000877 00000926
+l02 0000121 00000926 00000934
+l02 0000123 00000934 0000096a
+l02 0000124 0000096a 000009ad
+l02 0000125 000009ad 000009d7
+l02 0000127 000009e9 000009f1
+l01 0000605 000009f1 00000a13
+l01 0000606 00000a19 00000a3b
+l01 0000608 00000a41 00000a43
+l01 0000609 00000a43 00000a57
+l01 0000610 00000a57 00000a59
+l01 0000613 00000a59 00000a6d
+l01 0000615 00000a8a 00000ab3
+l01 0000616 00000ab3 00000ac2
+l01 0000617 00000ac8 00000ae5
+l01 0000618 00000aeb 00000aed
+l01 0000619 00000aed 00000b0d
+l01 0000613 00000b0d 00000b21
+l01 0000621 00000b27 00000b49
+l01 0000622 00000b4f 00000b57
+l01 0000173 00000b57 00000b7b
+l01 0000174 00000b7b 00000b83
+l01 0000178 00000b83 00000b85
+l01 0000179 00000b85 00000b9a
+l01 0000181 00000b9a 00000bdb
+l01 0000182 00000bdb 00000c09
+l01 0000183 00000c09 00000c1e
+l01 0000185 00000c24 00000c51
+l01 0000186 00000c51 00000c71
+l01 0000188 00000c77 00000c79
+l01 0000190 00000c79 00000ca2
+l01 0000191 00000ca2 00000cc2
+l01 0000193 00000cc8 00000cca

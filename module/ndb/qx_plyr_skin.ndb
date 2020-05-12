@@ -1,0 +1,87 @@
+NDB V1.0
+0000002 0000001 0000025 0000006 0000030
+n00 qx_leto_func
+N01 qx_plyr_skin
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 000 s NWNPATH
+f ffffffff ffffffff 000 s NWNSVAULT
+f ffffffff ffffffff 000 s NWNLVAULT
+f ffffffff ffffffff 000 i PHOENIX
+f ffffffff ffffffff 000 i DEBUG
+f ffffffff ffffffff 000 i ENABLE_AUTO_RELOAD
+f ffffffff ffffffff 000 f RELOAD_TIME_DELAY
+f ffffffff ffffffff 000 s PORTAL_ADDRESS
+f ffffffff ffffffff 000 s PORTAL_PASSWORD
+f ffffffff ffffffff 000 s PORTAL_WAYPOINT
+f ffffffff ffffffff 001 s LetoScript
+fp s
+f ffffffff ffffffff 001 s GetBicFileName
+fp o
+f ffffffff ffffffff 002 v ApplyLetoScriptToPC
+fp s
+fp o
+f ffffffff ffffffff 002 s AddStatPoint
+fp s
+fp i
+f ffffffff ffffffff 001 s AddSkillPoint
+fp i
+f ffffffff ffffffff 000 s ModifySaves
+f ffffffff ffffffff 002 s AddHitPoints
+fp i
+fp i
+f ffffffff ffffffff 001 s AddFeat
+fp i
+f ffffffff ffffffff 001 s SetDocumentedLevel
+fp i
+f ffffffff ffffffff 001 v SetPermaSubRace
+fp o
+f 0000011a 0000067b 001 i GetSubRaceInt
+fp s
+f ffffffff ffffffff 004 v RepeatFloatingTextStringOnCreature
+fp o
+fp s
+fp f
+fp i
+f ffffffff ffffffff 001 v ReloadPC
+fp o
+f 00000015 0000011a 000 v main
+f 0000000d 00000015 000 v #loader
+v 00000017 00000112 00000000 o oPC
+v 0000002d 00000112 00000004 s sSubrace
+v 0000004a 00000112 00000008 i iSubrace
+v 00000080 00000106 0000000c o oRace
+v 0000011a 00000679 00000000 i #retval
+v 0000011a 00000673 00000004 s s
+l01 0000004 00000015 0000002b
+l01 0000005 0000002b 00000048
+l01 0000006 00000048 00000068
+l01 0000008 00000068 00000078
+l01 0000010 0000007e 000000b0
+l01 0000011 000000b0 000000d4
+l01 0000012 000000d4 00000106
+l01 0000014 00000118 0000011a
+l00 0000063 0000011a 00000130
+l00 0000064 0000015c 0000015e
+l00 0000065 0000019c 0000019e
+l00 0000066 000001dd 000001df
+l00 0000067 00000222 00000224
+l00 0000068 00000262 00000264
+l00 0000069 000002a2 000002a4
+l00 0000070 000002e4 000002e6
+l00 0000071 00000326 00000328
+l00 0000072 0000036b 0000036d
+l00 0000073 000003b1 000003b3
+l00 0000074 000003f4 000003f6
+l00 0000075 00000437 00000439
+l00 0000076 0000047f 00000481
+l00 0000077 000004c1 000004c3
+l00 0000078 00000503 00000505
+l00 0000079 00000544 00000546
+l00 0000080 00000587 00000589
+l00 0000081 000005ca 000005cc
+l00 0000082 0000060d 0000060f
+l00 0000084 00000651 00000653
+l00 0000086 00000673 0000067b

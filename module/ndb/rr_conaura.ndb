@@ -1,0 +1,424 @@
+NDB V1.0
+0000003 0000001 0000265 0000013 0000029
+n00 x2_inc_switches
+n01 rr_itemsets
+N02 rr_conaura
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 000 i AURA_DEATH
+f ffffffff ffffffff 000 i AURA_HEAL
+f ffffffff ffffffff 000 i AURA_STR
+f ffffffff ffffffff 000 i AURA_CON
+f ffffffff ffffffff 000 i AURA_ATT
+f ffffffff ffffffff 000 i AURA_DIVINE
+f ffffffff ffffffff 000 i AURA_ICE
+f ffffffff ffffffff 000 i AURA_LIT
+f ffffffff ffffffff 000 i AURA_ACID
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_UMD_SCROLLS
+f ffffffff ffffffff 000 s MODULE_SWITCH_DISABLE_ITEM_CREATION_FEATS
+f ffffffff ffffffff 000 s MODULE_SWITCH_AOE_HURT_NEUTRAL_NPCS
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_CRAFT_WAND_50_CHARGES
+f ffffffff ffffffff 000 s MODULE_SWITCH_EPIC_SPELLS_HURT_CASTER
+f ffffffff ffffffff 000 s MODULE_SWITCH_SPELL_CORERULES_DMASTERTOUCH
+f ffffffff ffffffff 000 s MODULE_SWITCH_RESTRICT_USE_POISON_TO_FEAT
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_MULTI_HENCH_AOE_DAMAGE
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_NPC_AOE_HURT_ALLIES
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_BEBILITH_RUIN_ARMOR
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_INVISIBLE_GLYPH_OF_WARDING
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_CROSSAREA_WALKWAYPOINTS
+f ffffffff ffffffff 000 s MODULE_SWITCH_DISABLE_SECRET_DOOR_FLASH
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_TAGBASED_SCRIPTS
+f ffffffff ffffffff 000 s MODULE_SWITCH_USE_XP2_RESTSYSTEM
+f ffffffff ffffffff 000 s MODULE_SWITCH_DISABLE_AI_DISPEL_AOE
+f ffffffff ffffffff 000 s MODULE_SWITCH_NO_RANDOM_MONSTER_LOOT
+f ffffffff ffffffff 000 s MODULE_VAR_OVERRIDE_SPELLSCRIPT
+f ffffffff ffffffff 000 s MODULE_VAR_TAGBASED_SCRIPT_PREFIX
+f ffffffff ffffffff 000 s MODULE_VAR_WANDERING_MONSTER_2DA
+f ffffffff ffffffff 000 s MODULE_VAR_AI_NO_DISPEL_AOE_CHANCE
+f ffffffff ffffffff 000 s MODULE_VAR_AI_STOP_EXPERTISE_ABUSE
+f ffffffff ffffffff 000 s CREATURE_VAR_CUSTOM_AISCRIPT
+f ffffffff ffffffff 000 s CREATURE_VAR_RANDOMIZE_NAME
+f ffffffff ffffffff 000 s CREATURE_VAR_RANDOMIZE_SPELLUSE
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_STEALTH
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_SEARCH
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_AMBIENT
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_AMBIENT_IMMOBILE
+f ffffffff ffffffff 000 s CREATURE_VAR_IMMUNE_TO_DISPEL
+f ffffffff ffffffff 000 s CREATURE_VAR_IS_INCORPOREAL
+f ffffffff ffffffff 000 s CREATURE_VAR_NUMBER_OF_ATTACKS
+f ffffffff ffffffff 000 s CREATURE_AI_MODIFIED_MAGIC_RATE
+f ffffffff ffffffff 000 s CREATURE_AI_MODIFIED_OFFENSE_RATE
+f ffffffff ffffffff 000 s CREATURE_AI_MODIFIED_COMPASSION_RATE
+f ffffffff ffffffff 000 s CREATURE_VAR_PALE_MASTER_SPECIAL_ITEM
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_ACTIVATE
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_EQUIP
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_UNEQUIP
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_ONHITCAST
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_ACQUIRE
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_UNACQUIRE
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_SPELLCAST_AT
+f ffffffff ffffffff 000 i X2_EXECUTE_SCRIPT_CONTINUE
+f ffffffff ffffffff 000 i X2_EXECUTE_SCRIPT_END
+f ffffffff ffffffff 001 v SetUserDefinedItemEventNumber
+fp i
+f ffffffff ffffffff 000 i GetUserDefinedItemEventNumber
+f ffffffff ffffffff 002 v SetModuleSwitch
+fp s
+fp i
+f ffffffff ffffffff 001 i GetModuleSwitchValue
+fp s
+f ffffffff ffffffff 000 s DOOR_FLAG_RESIST_KNOCK
+f ffffffff ffffffff 003 v SetDoorFlag
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetDoorFlag
+fp o
+fp s
+f ffffffff ffffffff 000 s WAYPOINT_VAR_FORCE_SETFACING
+f ffffffff ffffffff 000 s ITEM_FLAG_NO_CRAFT_MODIFICATION
+f ffffffff ffffffff 003 v SetItemFlag
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetItemFlag
+fp o
+fp s
+f ffffffff ffffffff 002 i ExecuteScriptAndReturnInt
+fp s
+fp o
+f ffffffff ffffffff 001 v SetExecutedScriptReturnValue
+fp i
+f ffffffff ffffffff 001 v SetUserDefinedItemEventPrefix
+fp s
+f ffffffff ffffffff 001 v SetModuleOverrideSpellscript
+fp s
+f ffffffff ffffffff 003 v SetCreatureFlag
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetCreatureFlag
+fp o
+fp s
+f ffffffff ffffffff 002 v SetCreatureOverrideAIScript
+fp o
+fp s
+f ffffffff ffffffff 001 v SetCreatureOverrideAIScriptFinished
+fp o
+f ffffffff ffffffff 001 v ClearCreatureOverrideAIScriptTarget
+fp o
+f ffffffff ffffffff 001 o GetCreatureOverrideAIScriptTarget
+fp o
+f ffffffff ffffffff 001 v SetWanderingMonster2DAFile
+fp s
+f ffffffff ffffffff 000 s GetModuleOverrideSpellscript
+f ffffffff ffffffff 000 v SetModuleOverrideSpellScriptFinished
+f ffffffff ffffffff 000 i GetModuleOverrideSpellScriptFinished
+f ffffffff ffffffff 001 s GetUserDefinedItemEventScriptName
+fp o
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DEMON_FEMALE_FLYING
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DEMON_MALE_FLYING
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_ANGEL_FLYING
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DEMON_ERINEYES
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_BIRD_RED
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_BIRD_DARK
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_BIRD_BLUE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DRAGON_BLACK
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DRAGON_BLUE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DRAGON_BRASS
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DRAGON_BRONZE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DRAGON_COPPER
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DRAGON_GOLD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DRAGON_GREEN
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DRAGON_SILVER
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DRAGON_BLACK_2
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_BIRD_KENKU
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_ANGEL_ARMORED
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_ANGEL_FALLEN
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_BIRD_RAVEN
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DEMON_BALOR_FLAME
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DEMON_MEPHISTO
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DRAGON_SHADOW
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DRAGON_DRACOLICH
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DRAGON_PRISMATIC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DUST
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DUST_2
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SMOKE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SMOKE_OVERHEAD_LAGGY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SMOKE_GHOST
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SMOKE_GHOST_2
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_CONE_BUTTERFLY_LAGGY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_CONE_GEM_LAGGY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_MAGE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_MULTI_DECK
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_HAND_BIG_RED
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FLAG_BLUE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FLAG_PURPLE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FLAG_RED
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FLAG_YELLOW
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FLAMES_COMBUST_LAGGY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_ACID
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_COLD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_ELECTRIC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_EVIL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_FIRE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_HEAL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_HOLY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_MIND
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_NATURE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_ODD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_SONIC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FLAMES_WHIP
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_ICE_SHARDS
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SPIRAL_ACID
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SPIRAL_COLD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SPIRAL_ELECTRIC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SPIRAL_EVIL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SPIRAL_FIRE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SPIRAL_HEAL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SPIRAL_HOLY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SPIRAL_MIND
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SPIRAL_NATURE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SPIRAL_ODD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SPIRAL_SONIC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SKULL_FEAR
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SKULL_FEAR_2
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_ATOM_RED
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_PET_BAD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FLAMES_LAVASPURT
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_FIRE_2
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_RIBBON
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FLAMES_AZER
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_BLUE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_GREEN
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_PURPLE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_RED
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_YELLOW
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_BUTTERFLIES
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_CONE_RING_LAGGY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_STROBE_BLUE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SKULL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_RAVELIGHTS_FIREBALL_ACID
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_RAVELIGHTS_FIREBALL_COLD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_RAVELIGHTS_FIREBALL_ELEC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_RAVELIGHTS_FIREBALL_EVIL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_RAVELIGHTS_FIREBALL_FIRE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_RAVELIGHTS_FIREBALL_HEAL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_RAVELIGHTS_FIREBALL_HOLY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_RAVELIGHTS_FIREBALL_MIND
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_RAVELIGHTS_FIREBALL_MATR
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_RAVELIGHTS_FIREBALL_ODD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_RAVELIGHTS_FIREBALL_SONC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_SPIRAL_ACID
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_SPIRAL_COLD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_SPIRAL_ELEC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_SPIRAL_EVIL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_SPIRAL_FIRE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_SPIRAL_HEAL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_SPIRAL_HOLY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_SPIRAL_MIND
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_SPIRAL_NATR
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_SPIRAL_ODD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_SPIRAL_SONC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_ACID
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_COLD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_ELEC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_EVIL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_FIRE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_HEAL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_HOLY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_MIND
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_NATR
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_ODD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_SONC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FLIES
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_RAY_ACID
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_RAY_COLD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_RAY_ELEC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_RAY_EVIL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_RAY_FIRE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_RAY_HEAL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_RAY_HOLY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_RAY_MIND
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_RAY_NATR
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_RAY_ODD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SUMMON_RAY_SONC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SMALL_ELECTRIC
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SHIELD_DEATH
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DESTRUCTION_BLOOD_CHUNKS
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FLAMES_BLUE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_DESTRUCTION_TRACE_RAYS_PURPLE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_JET_GAS_ACID
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_JET_GAS_EVIL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_JET_GAS_FIRE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_JET_GAS_GREASE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_JET_GAS_MIND
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_JET_GAS_NATURE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_JET_GAS_SMOKE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_COLORFUL
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_RAYS
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_CIRCLE_SUMMONING
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_GREEN_BRIGHT_BIG
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_SQUARES_WHITE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOG_BLACK
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_RAYS_NEGATIVE_LAGGY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_CLOUD_BIG
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_TRACERS_4
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_SPARKLES_BODY_ENCASING
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_WILTING_LAGGY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FIREBALL_HYPER
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOUNTAIN_COLD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOUNTAIN_FIRE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FOUNTAIN_HOLY
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_RAY_WEIRD
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_FLAMES_LASH_BEAMS
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_CLOUDS_DOOM
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_BALLS_4_GREEN
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_BALLS_4_BLACK
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_BALLS_4_RED_WHITE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_BALLS_4_ORANGE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_BALLS_4_BLUE
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_BALLS_4_BLUE_GREEN
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_BALLS_4_YELLOW_AURA
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_BALLS_4_PURPLE_AURA
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_BALLS_4_WHITE_AURA
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_BALLS_4_GREEN_AURA
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_TRACE_BALLS_4_GREEN_DRAGON_AURA
+f ffffffff ffffffff 000 i CREATURE_WING_TYPE_RAY_COLD
+f ffffffff ffffffff 017 v AddPower
+fp i
+fp o
+fp o
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+f ffffffff ffffffff 016 v AddPowerToPC
+fp i
+fp o
+fp o
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+f ffffffff ffffffff 016 v AddAuraToPC
+fp i
+fp o
+fp o
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+f ffffffff ffffffff 016 v AddWingsToPC
+fp i
+fp o
+fp o
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+fp i
+f ffffffff ffffffff 000 v ItemSet
+f ffffffff ffffffff 001 v RecalculatePowers
+fp o
+f ffffffff ffffffff 000 v RemoveAllItemSetProperties
+f ffffffff ffffffff 002 i GetNumberOfSetItems
+fp s
+fp o
+f ffffffff ffffffff 001 s GetItemSet
+fp o
+f ffffffff ffffffff 001 v RemoveAllTempIPs
+fp o
+f ffffffff ffffffff 002 v RemoveAllEffectsByCreator
+fp o
+fp o
+f 0000022b 0000032c 002 v AddCon
+fp o
+fp o
+f 00000146 0000022b 001 v MultipleAuraCheck
+fp o
+f 0000032c 00000430 002 i HasCon
+fp o
+fp o
+f 00000015 00000146 000 v main
+f 0000000d 00000015 000 v #loader
+v 00000017 0000013e 00000000 o oPC
+v 00000045 0000013e 00000004 e2 lPC
+v 00000062 0000013e 00000008 o oTarget
+v 00000146 00000223 00000000 o oPC
+v 00000148 0000021d 00000004 i iNumAuras
+v 0000015e 0000021d 00000008 e0 e
+v 0000022b 00000324 00000000 o oPC
+v 0000022b 00000324 00000004 o oTarget
+v 0000022d 0000031e 00000008 i iPower
+v 0000032c 0000042e 00000000 i #retval
+v 0000032c 00000428 00000004 o oPC
+v 0000032c 00000428 00000008 o oTarget
+v 0000032e 00000422 0000000c e0 e
+l02 0000009 00000015 00000035
+l02 0000010 00000035 00000043
+l02 0000011 00000043 00000060
+l02 0000012 00000060 000000a7
+l02 0000013 000000a7 000000ba
+l02 0000015 000000ba 000000d1
+l02 0000016 000000f3 00000138
+l02 0000018 00000144 00000146
+l02 0000022 00000146 0000015c
+l02 0000023 0000015c 00000179
+l02 0000024 00000179 0000018c
+l02 0000026 0000018c 000001a1
+l02 0000028 000001a7 000001c5
+l02 0000029 000001c5 000001d5
+l02 0000031 000001fc 00000217
+l02 0000033 00000223 0000022b
+l02 0000054 0000022b 00000255
+l02 0000055 00000255 0000026d
+l02 0000056 00000285 000002ce
+l02 0000057 000002ce 0000031e
+l02 0000058 00000324 0000032c
+l02 0000037 0000032c 00000349
+l02 0000038 00000349 0000035c
+l02 0000040 0000035c 00000371
+l02 0000042 00000377 0000038c
+l02 0000044 00000392 000003a9
+l02 0000047 000003e1 000003fc
+l02 0000049 00000402 00000422
+l02 0000050 00000428 00000430

@@ -1,0 +1,713 @@
+{
+  "__data_type": "UTC ",
+  "Appearance_Head": {
+    "type": "byte",
+    "value": 1
+  },
+  "Appearance_Type": {
+    "type": "word",
+    "value": 6
+  },
+  "ArmorPart_RFoot": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyBag": {
+    "type": "byte",
+    "value": 0
+  },
+  "BodyPart_Belt": {
+    "type": "byte",
+    "value": 0
+  },
+  "BodyPart_LBicep": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_LFArm": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_LFoot": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_LHand": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_LShin": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_LShoul": {
+    "type": "byte",
+    "value": 0
+  },
+  "BodyPart_LThigh": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_Neck": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_Pelvis": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_RBicep": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_RFArm": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_RHand": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_RShin": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_RShoul": {
+    "type": "byte",
+    "value": 0
+  },
+  "BodyPart_RThigh": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_Torso": {
+    "type": "byte",
+    "value": 1
+  },
+  "Cha": {
+    "type": "byte",
+    "value": 8
+  },
+  "ChallengeRating": {
+    "type": "float",
+    "value": 6.0
+  },
+  "ClassList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 2,
+        "Class": {
+          "type": "int",
+          "value": 4
+        },
+        "ClassLevel": {
+          "type": "short",
+          "value": 5
+        }
+      }
+    ]
+  },
+  "Color_Hair": {
+    "type": "byte",
+    "value": 1
+  },
+  "Color_Skin": {
+    "type": "byte",
+    "value": 1
+  },
+  "Color_Tattoo1": {
+    "type": "byte",
+    "value": 1
+  },
+  "Color_Tattoo2": {
+    "type": "byte",
+    "value": 1
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Con": {
+    "type": "byte",
+    "value": 12
+  },
+  "Conversation": {
+    "type": "resref",
+    "value": ""
+  },
+  "CRAdjust": {
+    "type": "int",
+    "value": 1
+  },
+  "CurrentHitPoints": {
+    "type": "short",
+    "value": 30
+  },
+  "DecayTime": {
+    "type": "dword",
+    "value": 60000
+  },
+  "Deity": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Tusken Raiders, less formally referred to as Sand People or simply as Tuskens, are a culture of nomadic, primitive sentients indigenous to Tatooine, where they are quite hostile to local settlers. The term Sand People was given to them due to their existence in the desert, and has been in use from at least 4,000 BBY; but the more formal name of Tusken Raiders was acquired much later, due to a period of concerted attacks on the settlement at Fort Tusken in 98-95 BBY. This later became the definitive name for the species.\n\nSpecialists studying the past of the Tusken Raiders also use the term Ghorfa to denote an earlier sedentary phase of their culture, and lastly Kumumgah, for the earliest stratum of sentient civilization on the planet, believed by some to represent a common ancestry shared by the Ghorfa and the Jawas. "
+    }
+  },
+  "Dex": {
+    "type": "byte",
+    "value": 6
+  },
+  "Disarmable": {
+    "type": "byte",
+    "value": 0
+  },
+  "Equip_ItemList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 1,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "tuskenraiderm2"
+        }
+      },
+      {
+        "__struct_id": 2,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "tuskenraider2"
+        }
+      },
+      {
+        "__struct_id": 16,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "gaffistick"
+        }
+      },
+      {
+        "__struct_id": 16384,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "nw_it_crewps017"
+        }
+      },
+      {
+        "__struct_id": 65536,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "x0_formmyr_sting"
+        }
+      }
+    ]
+  },
+  "FactionID": {
+    "type": "word",
+    "value": 1
+  },
+  "FeatList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 289
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 45
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 46
+        }
+      }
+    ]
+  },
+  "FirstName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Tusken Raider"
+    }
+  },
+  "fortbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "Gender": {
+    "type": "byte",
+    "value": 0
+  },
+  "GoodEvil": {
+    "type": "byte",
+    "value": 50
+  },
+  "HitPoints": {
+    "type": "short",
+    "value": 30
+  },
+  "Int": {
+    "type": "byte",
+    "value": 3
+  },
+  "Interruptable": {
+    "type": "byte",
+    "value": 1
+  },
+  "IsImmortal": {
+    "type": "byte",
+    "value": 0
+  },
+  "IsPC": {
+    "type": "byte",
+    "value": 0
+  },
+  "LastName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": ""
+    }
+  },
+  "LawfulChaotic": {
+    "type": "byte",
+    "value": 0
+  },
+  "Lootable": {
+    "type": "byte",
+    "value": 1
+  },
+  "MaxHitPoints": {
+    "type": "short",
+    "value": 35
+  },
+  "NaturalAC": {
+    "type": "byte",
+    "value": 7
+  },
+  "NoPermDeath": {
+    "type": "byte",
+    "value": 0
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 1
+  },
+  "PerceptionRange": {
+    "type": "byte",
+    "value": 11
+  },
+  "Phenotype": {
+    "type": "int",
+    "value": 0
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 0
+  },
+  "PortraitId": {
+    "type": "word",
+    "value": 2119
+  },
+  "Race": {
+    "type": "byte",
+    "value": 10
+  },
+  "refbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "ScriptAttacked": {
+    "type": "resref",
+    "value": "x2_def_attacked"
+  },
+  "ScriptDamaged": {
+    "type": "resref",
+    "value": "x2_def_ondamage"
+  },
+  "ScriptDeath": {
+    "type": "resref",
+    "value": "x2_def_ondeath"
+  },
+  "ScriptDialogue": {
+    "type": "resref",
+    "value": "x2_def_onconv"
+  },
+  "ScriptDisturbed": {
+    "type": "resref",
+    "value": "x2_def_ondisturb"
+  },
+  "ScriptEndRound": {
+    "type": "resref",
+    "value": "x2_def_endcombat"
+  },
+  "ScriptHeartbeat": {
+    "type": "resref",
+    "value": "x2_def_heartbeat"
+  },
+  "ScriptOnBlocked": {
+    "type": "resref",
+    "value": "x2_def_onblocked"
+  },
+  "ScriptOnNotice": {
+    "type": "resref",
+    "value": "x2_def_percept"
+  },
+  "ScriptRested": {
+    "type": "resref",
+    "value": "x2_def_rested"
+  },
+  "ScriptSpawn": {
+    "type": "resref",
+    "value": "x2_def_spawn"
+  },
+  "ScriptSpellAt": {
+    "type": "resref",
+    "value": "x2_def_spellcast"
+  },
+  "ScriptUserDefine": {
+    "type": "resref",
+    "value": "x2_def_userdef"
+  },
+  "SkillList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      }
+    ]
+  },
+  "SoundSetFile": {
+    "type": "word",
+    "value": 39
+  },
+  "SpecAbilityList": {
+    "type": "list",
+    "value": []
+  },
+  "StartingPackage": {
+    "type": "byte",
+    "value": 4
+  },
+  "Str": {
+    "type": "byte",
+    "value": 12
+  },
+  "Subrace": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "TuskenRaider"
+  },
+  "Tail_New": {
+    "type": "dword",
+    "value": 0
+  },
+  "TemplateList": {
+    "type": "list",
+    "value": []
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "tuskenraider001"
+  },
+  "WalkRate": {
+    "type": "int",
+    "value": 7
+  },
+  "willbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "Wings_New": {
+    "type": "dword",
+    "value": 0
+  },
+  "Wis": {
+    "type": "byte",
+    "value": 8
+  }
+}

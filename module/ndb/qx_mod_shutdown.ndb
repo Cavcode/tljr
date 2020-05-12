@@ -1,0 +1,59 @@
+NDB V1.0
+0000002 0000002 0000015 0000005 0000016
+n00 nwnx_system
+N01 qx_mod_shutdown
+s 03 vector
+sf f x
+sf f y
+sf f z
+s 02 CPUUsage
+sf f user
+sf f sys
+f ffffffff ffffffff 001 s DirList
+fp s
+f ffffffff ffffffff 002 i FileCopy
+fp s
+fp s
+f ffffffff ffffffff 001 i FileDelete
+fp s
+f ffffffff ffffffff 002 i FileLink
+fp s
+fp s
+f ffffffff ffffffff 002 i FileRename
+fp s
+fp s
+f ffffffff ffffffff 002 i FileSymlink
+fp s
+fp s
+f ffffffff ffffffff 000 t0001 GetProcessCPUUsage
+f ffffffff ffffffff 000 i GetProcessMemoryUsage
+f ffffffff ffffffff 000 i GetSystemTime
+f ffffffff ffffffff 000 i GetTMILimit
+f ffffffff ffffffff 001 v SetTMILimit
+fp i
+f 000002d5 00000312 001 v ShutdownServer
+fp i
+f 00000021 000002d5 000 v main
+f 0000000d 00000015 000 v #loader
+f 00000015 00000021 000 v #globals
+v 00000023 000002cd 00000000 f fDelay
+v 00000039 000002cd 00000004 s sUser
+v 00000136 000002cd 00000008 o oPC
+v 0000014b 000002cd 0000000c i counter
+v 000002d5 0000030a 00000000 i nForce
+l00 0000004 00000015 00000015
+l01 0000011 00000021 00000037
+l01 0000013 00000037 00000057
+l01 0000015 00000057 00000134
+l01 0000019 00000134 00000149
+l01 0000021 00000149 0000015f
+l01 0000022 0000015f 00000172
+l01 0000024 00000172 00000182
+l01 0000026 00000188 0000018e
+l01 0000028 00000194 000001b2
+l01 0000029 000001b2 00000291
+l01 0000031 00000291 0000029c
+l01 0000034 000002a2 000002cd
+l01 0000035 000002d3 000002d5
+l00 0000121 000002d5 0000030a
+l00 0000122 0000030a 00000312

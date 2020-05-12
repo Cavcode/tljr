@@ -1,0 +1,116 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 5000
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 77
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 5000
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Barab Ore is a resource to Barab I. It actually lays on the planet's surface, meaning it is exposed to high doses of radiation and torrential downpours daily. This ore can be found in concentrated ingots that actually stores and magnifies the radiation. When placed in a lightsaber, the ingots produces a blade that burns almost to the point of losing its cohesion."
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Barab Ore is a resource to Barab I. It actually lays on the planet's surface, meaning it is exposed to high doses of radiation and torrential downpours daily. This ore can be found in concentrated ingots that actually stores and magnifies the radiation. When placed in a lightsaber, the ingots produces a blade that burns almost to the point of losing its cohesion."
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Barab Ore"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 85
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 57
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 1
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": []
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "BarabOre"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "barabore"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "AMOUNT"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "GEM_TYPE"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "FIRE_DAMAGE_BONUS"
+        }
+      }
+    ]
+  }
+}

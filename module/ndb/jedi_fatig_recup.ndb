@@ -1,0 +1,1405 @@
+NDB V1.0
+0000007 0000005 0000823 0000010 0000037
+n00 nwnx_funcs
+n01 x2_inc_itemprop
+n02 wild_itempro_inc
+n03 x2_inc_shifter
+n04 common_functions
+n05 jedi_functions
+N06 jedi_fatig_recup
+s 03 vector
+sf f x
+sf f y
+sf f z
+s 03 MemorizedSpellSlot
+sf i id
+sf i ready
+sf i meta
+s 03 SpecialAbilitySlot
+sf i id
+sf i ready
+sf i level
+s 05 QuickBarSlot
+sf i slot
+sf i type
+sf i class
+sf i id
+sf i meta
+s 04 LocalVariable
+sf i type
+sf i pos
+sf s name
+sf o obj
+f ffffffff ffffffff 000 i DEBUG_ON
+f ffffffff ffffffff 000 i FEAT_SENSIBLE_FORCE
+f ffffffff ffffffff 000 i FEAT_PADAWAN_JEDI
+f ffffffff ffffffff 000 i FEAT_CHEVALIER_JEDI
+f ffffffff ffffffff 000 i FEAT_MAITRE_JEDI
+f ffffffff ffffffff 000 i FEAT_APPRENTICE_SITH
+f ffffffff ffffffff 000 i FEAT_SEIGNEUR_SITH
+f ffffffff ffffffff 000 i FEAT_MAITRE_SITH
+f ffffffff ffffffff 000 i FEAT_MANIEMENT_GREAT_SABRELASER
+f ffffffff ffffffff 000 i FEAT_MANIEMENT_SABRELASER
+f ffffffff ffffffff 000 i FEAT_MANIEMENT_DOUBLE_SABRELASER
+f ffffffff ffffffff 000 i FEAT_JEDI_GUERISON_1
+f ffffffff ffffffff 000 i FEAT_JEDI_GUERISON_2
+f ffffffff ffffffff 000 i FEAT_JEDI_GUERISON_3
+f ffffffff ffffffff 000 i FEAT_JEDI_GUERISON_4
+f ffffffff ffffffff 000 i FEAT_JEDI_POUSSEE_1
+f ffffffff ffffffff 000 i FEAT_JEDI_POUSSEE_2
+f ffffffff ffffffff 000 i FEAT_JEDI_POUSSEE_3
+f ffffffff ffffffff 000 i FEAT_JEDI_POUSSEE_4
+f ffffffff ffffffff 000 i FEAT_JEDI_FORME_COMBAT_1
+f ffffffff ffffffff 000 i FEAT_JEDI_FORME_COMBAT_2
+f ffffffff ffffffff 000 i FEAT_JEDI_FORME_COMBAT_3
+f ffffffff ffffffff 000 i FEAT_JEDI_FORME_COMBAT_4
+f ffffffff ffffffff 000 i FEAT_JEDI_FORME_COMBAT_5
+f ffffffff ffffffff 000 i FEAT_JEDI_FORME_COMBAT_6
+f ffffffff ffffffff 000 i FEAT_JEDI_FORME_COMBAT_7
+f ffffffff ffffffff 000 i FEAT_JEDI_REGENERATION_1
+f ffffffff ffffffff 000 i FEAT_JEDI_REGENERATION_2
+f ffffffff ffffffff 000 i FEAT_JEDI_REGENERATION_3
+f ffffffff ffffffff 000 i FEAT_JEDI_REGENERATION_4
+f ffffffff ffffffff 000 i FEAT_CONSCIENCE_FORCE
+f ffffffff ffffffff 000 i FEAT_AFFINITE_FORCE
+f ffffffff ffffffff 000 i FEAT_SYMBIOSE_FORCE
+f ffffffff ffffffff 000 i FEAT_JEDI_SOINS_1
+f ffffffff ffffffff 000 i FEAT_JEDI_SOINS_2
+f ffffffff ffffffff 000 i FEAT_JEDI_SOINS_3
+f ffffffff ffffffff 000 i FEAT_JEDI_SOINS_4
+f ffffffff ffffffff 000 i FEAT_JEDI_DISCRETION_1
+f ffffffff ffffffff 000 i FEAT_JEDI_DISCRETION_2
+f ffffffff ffffffff 000 i FEAT_JEDI_DISCRETION_3
+f ffffffff ffffffff 000 i FEAT_JEDI_DISCRETION_4
+f ffffffff ffffffff 000 i FEAT_JEDI_FOUDRE_1
+f ffffffff ffffffff 000 i FEAT_JEDI_FOUDRE_2
+f ffffffff ffffffff 000 i FEAT_JEDI_FOUDRE_3
+f ffffffff ffffffff 000 i FEAT_JEDI_FOUDRE_4
+f ffffffff ffffffff 000 i FEAT_JEDI_CONCENTRATION
+f ffffffff ffffffff 000 i FEAT_JEDI_ABSORBER_DISSIPER_1
+f ffffffff ffffffff 000 i FEAT_JEDI_ABSORBER_DISSIPER_2
+f ffffffff ffffffff 000 i FEAT_JEDI_ABSORBER_DISSIPER_3
+f ffffffff ffffffff 000 i FEAT_JEDI_ABSORBER_DISSIPER_4
+f ffffffff ffffffff 000 i FEAT_JEDI_RAPIDITE_1
+f ffffffff ffffffff 000 i FEAT_JEDI_RAPIDITE_2
+f ffffffff ffffffff 000 i FEAT_JEDI_RAPIDITE_3
+f ffffffff ffffffff 000 i FEAT_JEDI_RAPIDITE_4
+f ffffffff ffffffff 000 i FEAT_JEDI_PERCEPTION_1
+f ffffffff ffffffff 000 i FEAT_JEDI_PERCEPTION_2
+f ffffffff ffffffff 000 i FEAT_JEDI_PERCEPTION_3
+f ffffffff ffffffff 000 i FEAT_JEDI_VOLONTE_1
+f ffffffff ffffffff 000 i FEAT_JEDI_VOLONTE_2
+f ffffffff ffffffff 000 i FEAT_JEDI_VOLONTE_3
+f ffffffff ffffffff 000 i FEAT_JEDI_TELEKINESIE_1
+f ffffffff ffffffff 000 i FEAT_JEDI_TELEKINESIE_2
+f ffffffff ffffffff 000 i FEAT_JEDI_TELEKINESIE_3
+f ffffffff ffffffff 000 i FEAT_JEDI_TELEKINESIE_4
+f ffffffff ffffffff 000 i FEAT_JEDI_TELEKINESIE_RAMASSER
+f ffffffff ffffffff 000 i FEAT_JEDI_TELEKINESIE_OUVRIR_FERMER
+f ffffffff ffffffff 000 i FEAT_JEDI_TELEKINESIE_DESARMER
+f ffffffff ffffffff 000 i FEAT_JEDI_TELEKINESIE_DEPLACER
+f ffffffff ffffffff 000 i FEAT_JEDI_FURIE_1
+f ffffffff ffffffff 000 i FEAT_JEDI_FURIE_2
+f ffffffff ffffffff 000 i FEAT_JEDI_FURIE_3
+f ffffffff ffffffff 000 i FEAT_JEDI_SAUT
+f ffffffff ffffffff 000 i FEAT_JEDI_INFLUENCER_ESPRIT
+f ffffffff ffffffff 000 i FEAT_JEDI_PSYCHOMANCIE_1
+f ffffffff ffffffff 000 i FEAT_JEDI_PSYCHOMANCIE_2
+f ffffffff ffffffff 000 i FEAT_JEDI_PSYCHOMANCIE_3
+f ffffffff ffffffff 000 i FEAT_JEDI_DIVINATION
+f ffffffff ffffffff 000 i FEAT_JEDI_DIVINATION_CARTE
+f ffffffff ffffffff 000 i FEAT_JEDI_DIVINATION_PIEGE
+f ffffffff ffffffff 000 i FEAT_JEDI_NARCOLEPSY_1
+f ffffffff ffffffff 000 i FEAT_JEDI_NARCOLEPSY_2
+f ffffffff ffffffff 000 i FEAT_JEDI_NARCOLEPSY_3
+f ffffffff ffffffff 000 i FEAT_JEDI_MALEDICTION_SITH_1
+f ffffffff ffffffff 000 i FEAT_JEDI_MALEDICTION_SITH_2
+f ffffffff ffffffff 000 i FEAT_JEDI_MALEDICTION_SITH_3
+f ffffffff ffffffff 000 i FEAT_JEDI_MALEDICTION_MALADIE
+f ffffffff ffffffff 000 i FEAT_JEDI_MALEDICTION_POISON
+f ffffffff ffffffff 000 i FEAT_JEDI_MALEDICTION_PARALYSIE
+f ffffffff ffffffff 000 i FEAT_JEDI_FORCE_AME_1
+f ffffffff ffffffff 000 i FEAT_JEDI_FORCE_AME_2
+f ffffffff ffffffff 000 i FEAT_JEDI_FORCE_AME_3
+f ffffffff ffffffff 000 i FEAT_JEDI_FORCE_AME_4
+f ffffffff ffffffff 000 i FEAT_JEDI_HARMONIE_FLUX_1
+f ffffffff ffffffff 000 i FEAT_JEDI_HARMONIE_FLUX_2
+f ffffffff ffffffff 000 i FEAT_JEDI_HARMONIE_FLUX_3
+f ffffffff ffffffff 000 i FEAT_JEDI_HARMONIE_FLUX_4
+f ffffffff ffffffff 000 i FEAT_JEDI_SENTIR_VIE_1
+f ffffffff ffffffff 000 i FEAT_JEDI_SENTIR_VIE_2
+f ffffffff ffffffff 000 i FEAT_JEDI_SENTIR_VIE_3
+f ffffffff ffffffff 000 i FEAT_JEDI_SENTIR_VIE_PASSIVE_1
+f ffffffff ffffffff 000 i FEAT_JEDI_SENTIR_VIE_ACTIVE_1
+f ffffffff ffffffff 000 i FEAT_JEDI_SENTIR_VIE_PASSIVE_2
+f ffffffff ffffffff 000 i FEAT_JEDI_SENTIR_VIE_ACTIVE_2
+f ffffffff ffffffff 000 i FEAT_JEDI_SENTIR_VIE_PASSIVE_3
+f ffffffff ffffffff 000 i FEAT_JEDI_SENTIR_VIE_ACTIVE_3
+f ffffffff ffffffff 000 i FEAT_JEDI_SENTIR_FLUX
+f ffffffff ffffffff 000 i FEAT_JEDI_ABSORPTION_VIE_1
+f ffffffff ffffffff 000 i FEAT_JEDI_ABSORPTION_VIE_2
+f ffffffff ffffffff 000 i FEAT_JEDI_ABSORPTION_VIE_3
+f ffffffff ffffffff 000 i FEAT_JEDI_TRANSE_COMBAT_1
+f ffffffff ffffffff 000 i FEAT_JEDI_TRANSE_COMBAT_2
+f ffffffff ffffffff 000 i FEAT_JEDI_TRANSE_COMBAT_3
+f ffffffff ffffffff 000 i FEAT_JEDI_TELEPATHIE
+f ffffffff ffffffff 000 i FEAT_JEDI_FORME_COMBAT_8
+f ffffffff ffffffff 000 i FEAT_JEDI_FORME_COMBAT_9
+f ffffffff ffffffff 000 i FEAT_JEDI_FORME_COMBAT_10
+f ffffffff ffffffff 000 i FEAT_JEDI_FORME_COMBAT_11
+f ffffffff ffffffff 000 i FEAT_JEDI_WEAPON_ADEPT
+f ffffffff ffffffff 000 i FEAT_JEDI_WEAPON_MASTER
+f ffffffff ffffffff 000 i FEAT_JEDI_CHOKE
+f ffffffff ffffffff 000 i FEAT_JEDI_LIGHTSABER_THROW
+f ffffffff ffffffff 000 i SPELL_JEDI_GUERISON_1
+f ffffffff ffffffff 000 i SPELL_JEDI_GUERISON_2
+f ffffffff ffffffff 000 i SPELL_JEDI_GUERISON_3
+f ffffffff ffffffff 000 i SPELL_JEDI_GUERISON_4
+f ffffffff ffffffff 000 i SPELL_JEDI_POUSSEE_1
+f ffffffff ffffffff 000 i SPELL_JEDI_POUSSEE_2
+f ffffffff ffffffff 000 i SPELL_JEDI_POUSSEE_3
+f ffffffff ffffffff 000 i SPELL_JEDI_POUSSEE_4
+f ffffffff ffffffff 000 i SPELL_JEDI_FORME_COMBAT_1
+f ffffffff ffffffff 000 i SPELL_JEDI_FORME_COMBAT_2
+f ffffffff ffffffff 000 i SPELL_JEDI_FORME_COMBAT_3
+f ffffffff ffffffff 000 i SPELL_JEDI_FORME_COMBAT_4
+f ffffffff ffffffff 000 i SPELL_JEDI_FORME_COMBAT_5
+f ffffffff ffffffff 000 i SPELL_JEDI_FORME_COMBAT_6
+f ffffffff ffffffff 000 i SPELL_JEDI_FORME_COMBAT_7
+f ffffffff ffffffff 000 i SPELL_JEDI_REGENERATION_1
+f ffffffff ffffffff 000 i SPELL_JEDI_REGENERATION_2
+f ffffffff ffffffff 000 i SPELL_JEDI_REGENERATION_3
+f ffffffff ffffffff 000 i SPELL_JEDI_REGENERATION_4
+f ffffffff ffffffff 000 i SPELL_JEDI_SOINS_1
+f ffffffff ffffffff 000 i SPELL_JEDI_SOINS_2
+f ffffffff ffffffff 000 i SPELL_JEDI_SOINS_3
+f ffffffff ffffffff 000 i SPELL_JEDI_SOINS_4
+f ffffffff ffffffff 000 i SPELL_JEDI_DISCRETION_1
+f ffffffff ffffffff 000 i SPELL_JEDI_DISCRETION_2
+f ffffffff ffffffff 000 i SPELL_JEDI_DISCRETION_3
+f ffffffff ffffffff 000 i SPELL_JEDI_DISCRETION_4
+f ffffffff ffffffff 000 i SPELL_JEDI_FOUDRE_1
+f ffffffff ffffffff 000 i SPELL_JEDI_FOUDRE_2
+f ffffffff ffffffff 000 i SPELL_JEDI_FOUDRE_3
+f ffffffff ffffffff 000 i SPELL_JEDI_FOUDRE_4
+f ffffffff ffffffff 000 i SPELL_JEDI_CONCENTRATION
+f ffffffff ffffffff 000 i SPELL_JEDI_ABSORBER_DISSIPER_1
+f ffffffff ffffffff 000 i SPELL_JEDI_ABSORBER_DISSIPER_2
+f ffffffff ffffffff 000 i SPELL_JEDI_ABSORBER_DISSIPER_3
+f ffffffff ffffffff 000 i SPELL_JEDI_ABSORBER_DISSIPER_4
+f ffffffff ffffffff 000 i SPELL_JEDI_RAPIDITE_1
+f ffffffff ffffffff 000 i SPELL_JEDI_RAPIDITE_2
+f ffffffff ffffffff 000 i SPELL_JEDI_RAPIDITE_3
+f ffffffff ffffffff 000 i SPELL_JEDI_RAPIDITE_4
+f ffffffff ffffffff 000 i SPELL_JEDI_PERCEPTION_1
+f ffffffff ffffffff 000 i SPELL_JEDI_PERCEPTION_2
+f ffffffff ffffffff 000 i SPELL_JEDI_PERCEPTION_3
+f ffffffff ffffffff 000 i SPELL_JEDI_VOLONTE_1
+f ffffffff ffffffff 000 i SPELL_JEDI_VOLONTE_2
+f ffffffff ffffffff 000 i SPELL_JEDI_VOLONTE_3
+f ffffffff ffffffff 000 i SPELL_JEDI_TELEKINESIE_RAMASSER
+f ffffffff ffffffff 000 i SPELL_JEDI_TELEKINESIE_OUVRIR
+f ffffffff ffffffff 000 i SPELL_JEDI_TELEKINESIE_DESARMER
+f ffffffff ffffffff 000 i SPELL_JEDI_TELEKINESIE_DEPLACER
+f ffffffff ffffffff 000 i SPELL_JEDI_FURIE_1
+f ffffffff ffffffff 000 i SPELL_JEDI_FURIE_2
+f ffffffff ffffffff 000 i SPELL_JEDI_FURIE_3
+f ffffffff ffffffff 000 i SPELL_JEDI_SAUT
+f ffffffff ffffffff 000 i SPELL_JEDI_INFLUENCER_ESPRIT
+f ffffffff ffffffff 000 i SPELL_JEDI_PSYCHOMANCIE_1
+f ffffffff ffffffff 000 i SPELL_JEDI_PSYCHOMANCIE_2
+f ffffffff ffffffff 000 i SPELL_JEDI_PSYCHOMANCIE_3
+f ffffffff ffffffff 000 i SPELL_JEDI_DIVINATION_CARTE
+f ffffffff ffffffff 000 i SPELL_JEDI_DIVINATION_PIEGE
+f ffffffff ffffffff 000 i SPELL_JEDI_NARCOLEPSY_1
+f ffffffff ffffffff 000 i SPELL_JEDI_NARCOLEPSY_2
+f ffffffff ffffffff 000 i SPELL_JEDI_NARCOLEPSY_3
+f ffffffff ffffffff 000 i SPELL_JEDI_MALEDICTION_MALADIE
+f ffffffff ffffffff 000 i SPELL_JEDI_MALEDICTION_POISON
+f ffffffff ffffffff 000 i SPELL_JEDI_MALEDICTION_PARALYSIE
+f ffffffff ffffffff 000 i SPELL_JEDI_FORCE_AME_1
+f ffffffff ffffffff 000 i SPELL_JEDI_FORCE_AME_2
+f ffffffff ffffffff 000 i SPELL_JEDI_FORCE_AME_3
+f ffffffff ffffffff 000 i SPELL_JEDI_FORCE_AME_4
+f ffffffff ffffffff 000 i SPELL_JEDI_SENTIR_VIE_PASSIVE_1
+f ffffffff ffffffff 000 i SPELL_JEDI_SENTIR_VIE_ACTIVE_1
+f ffffffff ffffffff 000 i SPELL_JEDI_SENTIR_VIE_PASSIVE_2
+f ffffffff ffffffff 000 i SPELL_JEDI_SENTIR_VIE_ACTIVE_2
+f ffffffff ffffffff 000 i SPELL_JEDI_SENTIR_VIE_PASSIVE_3
+f ffffffff ffffffff 000 i SPELL_JEDI_SENTIR_VIE_ACTIVE_3
+f ffffffff ffffffff 000 i SPELL_JEDI_SENTIR_FLUX
+f ffffffff ffffffff 000 i SPELL_JEDI_ABSORPTION_VIE_1
+f ffffffff ffffffff 000 i SPELL_JEDI_ABSORPTION_VIE_2
+f ffffffff ffffffff 000 i SPELL_JEDI_ABSORPTION_VIE_3
+f ffffffff ffffffff 000 i SPELL_JEDI_TRANSE_COMBAT_1
+f ffffffff ffffffff 000 i SPELL_JEDI_TRANSE_COMBAT_2
+f ffffffff ffffffff 000 i SPELL_JEDI_TRANSE_COMBAT_3
+f ffffffff ffffffff 000 i SPELL_JEDI_TELEPATHIE
+f ffffffff ffffffff 000 i SPELL_JEDI_FORCE_CHOKE
+f ffffffff ffffffff 000 i SPELL_JEDI_LIGHTSABER_THROW
+f ffffffff ffffffff 000 i SPELL_JEDI_FORCE_SHIELD
+f ffffffff ffffffff 000 i SPELL_JEDI_FORME_COMBAT_8
+f ffffffff ffffffff 000 i SPELL_JEDI_FORME_COMBAT_9
+f ffffffff ffffffff 000 i SPELL_JEDI_FORME_COMBAT_10
+f ffffffff ffffffff 000 i SPELL_JEDI_FORME_COMBAT_11
+f ffffffff ffffffff 000 i SKILL_SENSE
+f ffffffff ffffffff 000 i SKILL_CONTROL
+f ffffffff ffffffff 000 i SKILL_ALTER
+f ffffffff ffffffff 000 i SKILL_ENHANCE_ABILITY
+f ffffffff ffffffff 000 i SKILL_ENHANCE_SENSES
+f ffffffff ffffffff 000 i SKILL_FORCE_DEFENSE
+f ffffffff ffffffff 000 i SKILL_FORCE_STRIKE
+f ffffffff ffffffff 000 i BASE_ITEM_LIGHTSABER
+f ffffffff ffffffff 000 i BASE_ITEM_DOUBLELIGHTSABER
+f ffffffff ffffffff 000 i BASE_ITEM_GREATLIGHTSABER
+f ffffffff ffffffff 000 i POISON_SITH_POISON_1
+f ffffffff ffffffff 000 i POISON_SITH_POISON_2
+f ffffffff ffffffff 000 i POISON_SITH_POISON_3
+f ffffffff ffffffff 000 i DISEASE_SITH_DISEASE_1
+f ffffffff ffffffff 000 i DISEASE_SITH_DISEASE_2
+f ffffffff ffffffff 000 i DISEASE_SITH_DISEASE_3
+f ffffffff ffffffff 000 s NO_RESPAWN
+f ffffffff ffffffff 000 s CAN_RESPAWN
+f ffffffff ffffffff 000 s X2_IP_WORK_CONTAINER_TAG
+f ffffffff ffffffff 000 s X2_IP_ADDRPOP_2DA
+f ffffffff ffffffff 000 s X2_IP_POISONWEAPON_2DA
+f ffffffff ffffffff 000 s X2_IP_ARMORPARTS_2DA
+f ffffffff ffffffff 000 s X2_IP_ARMORAPPEARANCE_2DA
+f ffffffff ffffffff 000 i XP_IP_ITEMMODCONVERSATION_CTOKENBASE
+f ffffffff ffffffff 000 i X2_IP_ITEMMODCONVERSATION_MODE_TAILOR
+f ffffffff ffffffff 000 i X2_IP_ITEMMODCONVERSATION_MODE_CRAFT
+f ffffffff ffffffff 000 i X2_IP_MAX_ITEM_PROPERTIES
+f ffffffff ffffffff 000 i X2_IP_ARMORTYPE_NEXT
+f ffffffff ffffffff 000 i X2_IP_ARMORTYPE_PREV
+f ffffffff ffffffff 000 i X2_IP_ARMORTYPE_RANDOM
+f ffffffff ffffffff 000 i X2_IP_WEAPONTYPE_NEXT
+f ffffffff ffffffff 000 i X2_IP_WEAPONTYPE_PREV
+f ffffffff ffffffff 000 i X2_IP_WEAPONTYPE_RANDOM
+f ffffffff ffffffff 000 i X2_IP_ADDPROP_POLICY_REPLACE_EXISTING
+f ffffffff ffffffff 000 i X2_IP_ADDPROP_POLICY_KEEP_EXISTING
+f ffffffff ffffffff 000 i X2_IP_ADDPROP_POLICY_IGNORE_EXISTING
+f ffffffff ffffffff 004 v IPRemoveMatchingItemProperties
+fp o
+fp i
+fp i
+fp i
+f ffffffff ffffffff 002 v IPRemoveAllItemProperties
+fp o
+fp i
+f ffffffff ffffffff 001 i IPGetIsItemEquipable
+fp o
+f ffffffff ffffffff 003 o IPDyeArmor
+fp o
+fp i
+fp i
+f ffffffff ffffffff 001 o IPGetIPWorkContainer
+fp o
+f ffffffff ffffffff 005 e4 IPGetItemPropertyByID
+fp i
+fp i
+fp i
+fp i
+fp i
+f ffffffff ffffffff 001 i IPGetIsRangedWeapon
+fp o
+f ffffffff ffffffff 001 i IPGetIsMeleeWeapon
+fp o
+f ffffffff ffffffff 001 i IPGetIsProjectile
+fp o
+f ffffffff ffffffff 001 i IPGetIsBludgeoningWeapon
+fp o
+f ffffffff ffffffff 001 i IPGetIPConstCastSpellFromSpellID
+fp i
+f ffffffff ffffffff 002 i IPGetItemHasItemOnHitPropertySubType
+fp o
+fp i
+f ffffffff ffffffff 001 i IPGetNumberOfAppearances
+fp i
+f ffffffff ffffffff 002 i IPGetNextArmorAppearanceType
+fp o
+fp i
+f ffffffff ffffffff 002 i IPGetPrevArmorAppearanceType
+fp o
+fp i
+f ffffffff ffffffff 002 i IPGetRandomArmorAppearanceType
+fp o
+fp i
+f ffffffff ffffffff 004 o IPGetModifiedArmor
+fp o
+fp i
+fp i
+fp i
+f ffffffff ffffffff 006 v IPSafeAddItemProperty
+fp o
+fp e4
+fp f
+fp i
+fp i
+fp i
+f ffffffff ffffffff 004 i IPGetItemHasProperty
+fp o
+fp e4
+fp i
+fp i
+f ffffffff ffffffff 001 i IPGetItemSequencerProperty
+fp o
+f ffffffff ffffffff 001 i IPGetIsIntelligentWeapon
+fp o
+f ffffffff ffffffff 001 i IPGetDamagePowerConstantFromNumber
+fp i
+f ffffffff ffffffff 001 i IPGetDamageBonusConstantFromNumber
+fp i
+f ffffffff ffffffff 003 v IPWildShapeCopyItemProperties
+fp o
+fp o
+fp i
+f ffffffff ffffffff 002 i IPGetWeaponEnhancementBonus
+fp o
+fp i
+f ffffffff ffffffff 003 v IPSetWeaponEnhancementBonus
+fp o
+fp i
+fp i
+f ffffffff ffffffff 002 v IPUpgradeWeaponEnhancementBonus
+fp o
+fp i
+f ffffffff ffffffff 002 i IPGetHasItemPropertyOnCharacter
+fp o
+fp i
+f ffffffff ffffffff 001 i IPGetNumberOfItemProperties
+fp o
+f ffffffff ffffffff 001 i IPGetNumberOfArmorAppearances
+fp i
+f ffffffff ffffffff 003 i IPGetArmorAppearanceType
+fp o
+fp i
+fp i
+f ffffffff ffffffff 001 o IPCreateProficiencyFeatItemOnCreature
+fp o
+f ffffffff ffffffff 000 o IPGetTargetedOrEquippedMeleeWeapon
+f ffffffff ffffffff 001 o IPGetTargetedOrEquippedArmor
+fp i
+f ffffffff ffffffff 003 v IPCopyItemProperties
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 i IPGetWeaponAppearanceType
+fp o
+fp i
+fp i
+f ffffffff ffffffff 004 o IPGetModifiedWeapon
+fp o
+fp i
+fp i
+fp i
+f ffffffff ffffffff 002 o IPCreateAndModifyArmorRobe
+fp o
+fp i
+f ffffffff ffffffff 002 i IPGetHasItemPropertyByConst
+fp i
+fp o
+f ffffffff ffffffff 001 i IPGetHasUseLimitation
+fp o
+f ffffffff ffffffff 002 v IPWildShapeCopyItemPropertiesArms
+fp o
+fp o
+f ffffffff ffffffff 000 i SHIFTER_DC_VERY_EASY
+f ffffffff ffffffff 000 i SHIFTER_DC_EASY
+f ffffffff ffffffff 000 i SHIFTER_DC_EASY_MEDIUM
+f ffffffff ffffffff 000 i SHIFTER_DC_NORMAL
+f ffffffff ffffffff 000 i SHIFTER_DC_HARD
+f ffffffff ffffffff 000 i X2_GW2_EPIC_THRESHOLD
+f ffffffff ffffffff 000 i X2_GW3_EPIC_THRESHOLD
+f ffffffff ffffffff 000 i ShifterDecrementGWildShapeSpellUsesLeft
+f ffffffff ffffffff 001 v ShifterSetGWildshapeSpellLimits
+fp i
+f ffffffff ffffffff 003 i ShifterGetSaveDC
+fp o
+fp i
+fp i
+f ffffffff ffffffff 001 i ShifterMergeWeapon
+fp i
+f ffffffff ffffffff 001 i ShifterMergeArmor
+fp i
+f ffffffff ffffffff 001 i ShifterMergeItems
+fp i
+f ffffffff ffffffff 000 s SOUND_DESACTIVATED
+f ffffffff ffffffff 001 v UnPolymorph
+fp o
+f ffffffff ffffffff 001 i IsPolymorph
+fp o
+f ffffffff ffffffff 008 v Polymorph
+fp o
+fp i
+fp i
+fp i
+fp f
+fp i
+fp i
+fp i
+f ffffffff ffffffff 001 i GetPolymorphSpellId
+fp o
+f ffffffff ffffffff 002 v ClearInventory
+fp o
+fp i
+f ffffffff ffffffff 001 i GetRealLevel
+fp o
+f ffffffff ffffffff 001 i GetLevelFromXP
+fp i
+f ffffffff ffffffff 001 i GetLevel
+fp o
+f ffffffff ffffffff 002 i CanLoseXP
+fp o
+fp i
+f ffffffff ffffffff 001 i XPForLevel
+fp i
+f ffffffff ffffffff 001 v XPLvlUp
+fp o
+f ffffffff ffffffff 001 v XPLvlDown
+fp o
+f ffffffff ffffffff 002 v PlaySoundOnLocation
+fp e2
+fp s
+f ffffffff ffffffff 001 v CheckAndPlaySound
+fp s
+f ffffffff ffffffff 001 i GetArmorType
+fp o
+f ffffffff ffffffff 000 i CREATURE_EVENT_HEARTBEAT
+f ffffffff ffffffff 000 i CREATURE_EVENT_PERCEPTION
+f ffffffff ffffffff 000 i CREATURE_EVENT_SPELLCAST
+f ffffffff ffffffff 000 i CREATURE_EVENT_ATTACKED
+f ffffffff ffffffff 000 i CREATURE_EVENT_DAMAGED
+f ffffffff ffffffff 000 i CREATURE_EVENT_DISTURBED
+f ffffffff ffffffff 000 i CREATURE_EVENT_ENDCOMBAT
+f ffffffff ffffffff 000 i CREATURE_EVENT_CONVERSATION
+f ffffffff ffffffff 000 i CREATURE_EVENT_SPAWN
+f ffffffff ffffffff 000 i CREATURE_EVENT_RESTED
+f ffffffff ffffffff 000 i CREATURE_EVENT_DEATH
+f ffffffff ffffffff 000 i CREATURE_EVENT_USERDEF
+f ffffffff ffffffff 000 i CREATURE_EVENT_BLOCKED
+f ffffffff ffffffff 000 i MOVEMENT_RATE_PC
+f ffffffff ffffffff 000 i MOVEMENT_RATE_IMMOBILE
+f ffffffff ffffffff 000 i MOVEMENT_RATE_VERY_SLOW
+f ffffffff ffffffff 000 i MOVEMENT_RATE_SLOW
+f ffffffff ffffffff 000 i MOVEMENT_RATE_NORMAL
+f ffffffff ffffffff 000 i MOVEMENT_RATE_FAST
+f ffffffff ffffffff 000 i MOVEMENT_RATE_VERY_FAST
+f ffffffff ffffffff 000 i MOVEMENT_RATE_DEFAULT
+f ffffffff ffffffff 000 i MOVEMENT_RATE_DM_FAST
+f ffffffff ffffffff 000 i VARIABLE_TYPE_INT
+f ffffffff ffffffff 000 i VARIABLE_TYPE_FLOAT
+f ffffffff ffffffff 000 i VARIABLE_TYPE_STRING
+f ffffffff ffffffff 000 i VARIABLE_TYPE_OBJECT
+f ffffffff ffffffff 000 i VARIABLE_TYPE_LOCATION
+f ffffffff ffffffff 000 i QUICKBAR_TYPE_ITEM
+f ffffffff ffffffff 000 i QUICKBAR_TYPE_SPELL
+f ffffffff ffffffff 000 i QUICKBAR_TYPE_FEAT
+f ffffffff ffffffff 002 i GetKnowsFeat
+fp i
+fp o
+f ffffffff ffffffff 002 i GetDamageImmunity
+fp o
+fp i
+f ffffffff ffffffff 003 i SetAbilityScore
+fp o
+fp i
+fp i
+f ffffffff ffffffff 003 i SetSkillRank
+fp o
+fp i
+fp i
+f ffffffff ffffffff 003 i ModifyAbilityScore
+fp o
+fp i
+fp i
+f ffffffff ffffffff 003 i ModifySkillRank
+fp o
+fp i
+fp i
+f ffffffff ffffffff 001 i GetACNaturalBase
+fp o
+f ffffffff ffffffff 002 i SetACNaturalBase
+fp o
+fp i
+f ffffffff ffffffff 003 i AddKnownFeat
+fp o
+fp i
+fp i
+f ffffffff ffffffff 002 i RemoveKnownFeat
+fp o
+fp i
+f ffffffff ffffffff 001 i GetTotalKnownFeats
+fp o
+f ffffffff ffffffff 002 i GetKnownFeat
+fp o
+fp i
+f ffffffff ffffffff 003 i SetKnownFeat
+fp o
+fp i
+fp i
+f ffffffff ffffffff 002 i GetTotalKnownFeatsByLevel
+fp o
+fp i
+f ffffffff ffffffff 003 i GetKnownFeatByLevel
+fp o
+fp i
+fp i
+f ffffffff ffffffff 004 i SetKnownFeatByLevel
+fp o
+fp i
+fp i
+fp i
+f ffffffff ffffffff 002 i GetRemainingFeatUses
+fp o
+fp i
+f ffffffff ffffffff 002 i GetTotalFeatUses
+fp o
+fp i
+f ffffffff ffffffff 001 s GetAllRemainingFeatUses
+fp o
+f ffffffff ffffffff 002 i RestoreReadyFeats
+fp o
+fp s
+f ffffffff ffffffff 002 i GetClassByLevel
+fp o
+fp i
+f ffffffff ffffffff 002 i GetAbilityIncreaseByLevel
+fp o
+fp i
+f ffffffff ffffffff 003 i GetSkillIncreaseByLevel
+fp o
+fp i
+fp i
+f ffffffff ffffffff 002 i GetSavingThrowBonus
+fp o
+fp i
+f ffffffff ffffffff 003 i SetSavingThrowBonus
+fp o
+fp i
+fp i
+f ffffffff ffffffff 003 i ModifySavingThrowBonus
+fp o
+fp i
+fp i
+f ffffffff ffffffff 002 i GetMaxHitPointsByLevel
+fp o
+fp i
+f ffffffff ffffffff 003 i SetMaxHitPointsByLevel
+fp o
+fp i
+fp i
+f ffffffff ffffffff 002 i SetCreatureSize
+fp o
+fp i
+f ffffffff ffffffff 001 i GetPCSkillPoints
+fp o
+f ffffffff ffffffff 002 i SetPCSkillPoints
+fp o
+fp i
+f ffffffff ffffffff 002 i SetPCLootable
+fp o
+fp i
+f ffffffff ffffffff 001 i GetPCBodyBag
+fp o
+f ffffffff ffffffff 002 i SetPCBodyBag
+fp o
+fp i
+f ffffffff ffffffff 002 i SetAlignmentGoodEvil
+fp o
+fp i
+f ffffffff ffffffff 002 i SetAlignmentLawChaos
+fp o
+fp i
+f ffffffff ffffffff 002 i ModifyCurrentHitPoints
+fp o
+fp i
+f ffffffff ffffffff 002 i SetCurrentHitPoints
+fp o
+fp i
+f ffffffff ffffffff 002 i SetMaxHitPoints
+fp o
+fp i
+f ffffffff ffffffff 003 i GetKnowsSpell
+fp i
+fp o
+fp i
+f ffffffff ffffffff 004 i GetKnownSpell
+fp o
+fp i
+fp i
+fp i
+f ffffffff ffffffff 005 i SetKnownSpell
+fp o
+fp i
+fp i
+fp i
+fp i
+f ffffffff ffffffff 003 i GetTotalKnownSpells
+fp o
+fp i
+fp i
+f ffffffff ffffffff 004 i AddKnownSpell
+fp o
+fp i
+fp i
+fp i
+f ffffffff ffffffff 003 i RemoveKnownSpell
+fp o
+fp i
+fp i
+f ffffffff ffffffff 004 i ReplaceKnownSpell
+fp o
+fp i
+fp i
+fp i
+f ffffffff ffffffff 004 t0001 GetMemorizedSpell
+fp o
+fp i
+fp i
+fp i
+f ffffffff ffffffff 005 i SetMemorizedSpell
+fp o
+fp i
+fp i
+fp i
+fp t0001
+f ffffffff ffffffff 004 i ClearMemorizedSpell
+fp o
+fp i
+fp i
+fp i
+f ffffffff ffffffff 003 i GetMaxSpellSlots
+fp o
+fp i
+fp i
+f ffffffff ffffffff 003 i GetBonusSpellSlots
+fp o
+fp i
+fp i
+f ffffffff ffffffff 003 i GetRemainingSpellSlots
+fp o
+fp i
+fp i
+f ffffffff ffffffff 004 i SetRemainingSpellSlots
+fp o
+fp i
+fp i
+fp i
+f ffffffff ffffffff 001 s GetAllMemorizedSpells
+fp o
+f ffffffff ffffffff 002 i RestoreReadySpells
+fp o
+fp s
+f ffffffff ffffffff 002 i GetClericDomain
+fp o
+fp i
+f ffffffff ffffffff 003 i SetClericDomain
+fp o
+fp i
+fp i
+f ffffffff ffffffff 001 i GetWizardSpecialization
+fp o
+f ffffffff ffffffff 002 i SetWizardSpecialization
+fp o
+fp i
+f ffffffff ffffffff 002 t0002 GetSpecialAbility
+fp o
+fp i
+f ffffffff ffffffff 003 i SetSpecialAbility
+fp o
+fp i
+fp t0002
+f ffffffff ffffffff 001 i GetTotalSpecialAbilities
+fp o
+f ffffffff ffffffff 002 i AddSpecialAbility
+fp o
+fp t0002
+f ffffffff ffffffff 002 i RemoveSpecialAbility
+fp o
+fp i
+f ffffffff ffffffff 002 s GetRawQuickBarSlot
+fp o
+fp i
+f ffffffff ffffffff 002 v SetRawQuickBarSlot
+fp o
+fp s
+f ffffffff ffffffff 001 s GetPortrait
+fp o
+f ffffffff ffffffff 002 i SetPortrait
+fp o
+fp s
+f ffffffff ffffffff 001 i GetSoundset
+fp o
+f ffffffff ffffffff 002 i SetSoundset
+fp o
+fp i
+f ffffffff ffffffff 002 i SetTrapCreator
+fp o
+fp o
+f ffffffff ffffffff 001 s GetConversation
+fp o
+f ffffffff ffffffff 002 s SetConversation
+fp o
+fp s
+f ffffffff ffffffff 001 i GetIsVariableValid
+fp t0004
+f ffffffff ffffffff 001 i GetLocalVariableCount
+fp o
+f ffffffff ffffffff 002 t0004 GetLocalVariableByPosition
+fp o
+fp i
+f ffffffff ffffffff 001 t0004 GetFirstLocalVariable
+fp o
+f ffffffff ffffffff 001 t0004 GetNextLocalVariable
+fp t0004
+f ffffffff ffffffff 000 o GetFirstArea
+f ffffffff ffffffff 000 o GetNextArea
+f ffffffff ffffffff 002 i SetGoldPieceValue
+fp o
+fp i
+f ffffffff ffffffff 002 i SetItemWeight
+fp o
+fp i
+f ffffffff ffffffff 002 i SetPlaceableAppearance
+fp o
+fp i
+f ffffffff ffffffff 002 f GetGroundHeight
+fp o
+fp t0000
+f ffffffff ffffffff 001 f GetGroundHeightFromLocation
+fp e2
+f ffffffff ffffffff 002 i GetIsWalkable
+fp o
+fp t0000
+f ffffffff ffffffff 001 i GetIsWalkableLocation
+fp e2
+f ffffffff ffffffff 003 v ActionUseItemAtLocation
+fp o
+fp e2
+fp i
+f ffffffff ffffffff 003 v ActionUseItemOnObject
+fp o
+fp o
+fp i
+f ffffffff ffffffff 001 i GetPCPort
+fp o
+f ffffffff ffffffff 002 v BootPCWithMessage
+fp o
+fp i
+f ffffffff ffffffff 002 s GetCreatureEventHandler
+fp o
+fp i
+f ffffffff ffffffff 003 s SetCreatureEventHandler
+fp o
+fp i
+fp s
+f ffffffff ffffffff 001 i GetFactionId
+fp o
+f ffffffff ffffffff 002 i SetFactionId
+fp o
+fp i
+f ffffffff ffffffff 002 v SetLastHostileActor
+fp o
+fp o
+f ffffffff ffffffff 002 o GetItemByPosition
+fp o
+fp i
+f ffffffff ffffffff 001 i GetItemCount
+fp o
+f ffffffff ffffffff 002 i SetMovementRate
+fp o
+fp i
+f ffffffff ffffffff 002 i SetRacialType
+fp o
+fp i
+f ffffffff ffffffff 002 s SetTag
+fp o
+fp s
+f ffffffff ffffffff 001 s GetPCFileName
+fp o
+f ffffffff ffffffff 001 v JumpToLimbo
+fp o
+f ffffffff ffffffff 001 o IntToObject
+fp i
+f ffffffff ffffffff 001 v DumpObject
+fp o
+f ffffffff ffffffff 002 i NWNXFuncsZero
+fp o
+fp s
+f ffffffff ffffffff 003 i NWNXFuncsOne
+fp o
+fp s
+fp i
+f ffffffff ffffffff 004 i NWNXFuncsTwo
+fp o
+fp s
+fp i
+fp i
+f ffffffff ffffffff 005 i NWNXFuncsThree
+fp o
+fp s
+fp i
+fp i
+fp i
+f ffffffff ffffffff 002 i GetCriticalHitMultiplier
+fp o
+fp i
+f ffffffff ffffffff 002 i GetCriticalHitRange
+fp o
+fp i
+f ffffffff ffffffff 001 s DumpLocalVariables
+fp o
+f ffffffff ffffffff 004 v ActionUseItem
+fp o
+fp o
+fp e2
+fp i
+f ffffffff ffffffff 000 s FATIGUE
+f ffffffff ffffffff 000 s FATIGUE_RECUPERATION
+f ffffffff ffffffff 000 f TAUX_RECUPERATION_SECONDES
+f ffffffff ffffffff 000 s FORME_COMBAT
+f ffffffff ffffffff 000 s FORME_PERMET_SABRE_LASER
+f ffffffff ffffffff 000 i SABRE_LASER_AUCUN
+f ffffffff ffffffff 000 i SABRE_LASER_SIMPLE
+f ffffffff ffffffff 000 i SABRE_LASER_GRAND
+f ffffffff ffffffff 000 i SABRE_LASER_SIMPLE_ET_GRAND
+f ffffffff ffffffff 000 i SABRE_LASER_DEUX
+f ffffffff ffffffff 000 i SABRE_LASER_DOUBLE
+f ffffffff ffffffff 000 i SABRE_LASER_TOUS
+f ffffffff ffffffff 000 i DC_CONCENTRATION_FATIGUE_EN_COMBAT
+f ffffffff ffffffff 000 i DC_CONCENTRATION_FATIGUE_HORS_COMBAT
+f ffffffff ffffffff 000 s TELEKINESIE_CIBLE
+f ffffffff ffffffff 000 s PARALYSIE_CIBLE
+f ffffffff ffffffff 000 s TELEPATHIE_PJ
+f ffffffff ffffffff 000 s TELEPATHE_PNJ
+f ffffffff ffffffff 000 s TELEPATHIE_CIBLE
+f ffffffff ffffffff 000 s NB_FORME_COMBAT_DESACTIVEE
+f ffffffff ffffffff 000 s NB_TRANSE_COMBAT_DESACTIVEE
+f ffffffff ffffffff 000 s TRANSE_COMBAT_ACTIVEE
+f ffffffff ffffffff 000 s NB_DIVINATION_DESACTIVEE
+f ffffffff ffffffff 000 s DIVINATION_ACTIVEE
+f ffffffff ffffffff 000 s NB_SENTIR_VIE_DESACTIVEE
+f ffffffff ffffffff 000 s SENTIR_VIE_ACTIVEE
+f ffffffff ffffffff 000 i PATTERN_LISTEN_TELEKINESIE
+f ffffffff ffffffff 000 s SL_COULEUR
+f ffffffff ffffffff 000 s SL_TYPE
+f ffffffff ffffffff 000 i SL_COULEUR_ORANGE
+f ffffffff ffffffff 000 i SL_COULEUR_BLEU
+f ffffffff ffffffff 000 i SL_COULEUR_VERT
+f ffffffff ffffffff 000 i SL_COULEUR_ROUGE
+f ffffffff ffffffff 000 i SL_COULEUR_JAUNE
+f ffffffff ffffffff 000 i SL_COULEUR_VIOLET
+f ffffffff ffffffff 000 i SL_COULEUR_CYAN
+f ffffffff ffffffff 000 i SL_TYPE_SIMPLE
+f ffffffff ffffffff 000 i SL_TYPE_GRAND
+f ffffffff ffffffff 000 i SL_TYPE_DOUBLE
+f ffffffff ffffffff 000 i POIDS_PETIT
+f ffffffff ffffffff 000 i POIDS_MOYEN
+f ffffffff ffffffff 000 i POIDS_LOURDS
+f ffffffff ffffffff 000 f MULT_FATIGUE_MAITRISE_FORME_COMBAT_1
+f ffffffff ffffffff 000 f MULT_FATIGUE_MAITRISE_FORME_COMBAT_2
+f ffffffff ffffffff 000 f MULT_FATIGUE_MAITRISE_FORME_COMBAT_3
+f ffffffff ffffffff 000 i BONUS_DUREE_MAITRISE_FORME_COMBAT_1
+f ffffffff ffffffff 000 i BONUS_DUREE_MAITRISE_FORME_COMBAT_2
+f ffffffff ffffffff 000 i BONUS_DUREE_MAITRISE_FORME_COMBAT_3
+f ffffffff ffffffff 000 i MALUS_FORCE_FORME_COMBAT_1
+f ffffffff ffffffff 000 i MALUS_FORCE_FORME_COMBAT_2
+f ffffffff ffffffff 000 i MALUS_FORCE_FORME_COMBAT_3
+f ffffffff ffffffff 000 i MALUS_FORCE_FORME_COMBAT_4
+f ffffffff ffffffff 000 i MALUS_FORCE_FORME_COMBAT_5
+f ffffffff ffffffff 000 i MALUS_FORCE_FORME_COMBAT_6
+f ffffffff ffffffff 000 i MALUS_FORCE_FORME_COMBAT_7
+f ffffffff ffffffff 000 i MALUS_FORCE_FORME_COMBAT_8
+f ffffffff ffffffff 000 i MALUS_FORCE_FORME_COMBAT_9
+f ffffffff ffffffff 000 i MALUS_FORCE_FORME_COMBAT_10
+f ffffffff ffffffff 000 i MALUS_FORCE_FORME_COMBAT_11
+f ffffffff ffffffff 000 i SABRE_LASER_FORME_COMBAT_1
+f ffffffff ffffffff 000 i SABRE_LASER_FORME_COMBAT_2
+f ffffffff ffffffff 000 i SABRE_LASER_FORME_COMBAT_3
+f ffffffff ffffffff 000 i SABRE_LASER_FORME_COMBAT_4
+f ffffffff ffffffff 000 i SABRE_LASER_FORME_COMBAT_5
+f ffffffff ffffffff 000 i SABRE_LASER_FORME_COMBAT_6
+f ffffffff ffffffff 000 i SABRE_LASER_FORME_COMBAT_7
+f ffffffff ffffffff 000 i SABRE_LASER_FORME_COMBAT_8
+f ffffffff ffffffff 000 i SABRE_LASER_FORME_COMBAT_9
+f ffffffff ffffffff 000 i SABRE_LASER_FORME_COMBAT_10
+f ffffffff ffffffff 000 i SABRE_LASER_FORME_COMBAT_11
+f ffffffff ffffffff 000 i DIFFICULTE_GUERISON_1_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_GUERISON_2_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_GUERISON_3_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_GUERISON_4_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_POUSSEE_1_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_POUSSEE_2_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_POUSSEE_3_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_POUSSEE_4_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_1_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_1_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_2_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_2_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_3_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_3_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_4_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_4_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_5_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_5_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_6_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_6_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_7_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_7_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_8_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_8_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_9_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_9_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_10_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_10_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_11_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORME_COMBAT_11_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_REGENERATION_1_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_REGENERATION_2_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_REGENERATION_3_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_REGENERATION_4_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_SOINS_1_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_SOINS_1_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_SOINS_2_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_SOINS_2_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_SOINS_3_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_SOINS_3_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_SOINS_4_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_SOINS_4_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_DISCRETION_1_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_DISCRETION_2_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_DISCRETION_3_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_DISCRETION_4_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_FOUDRE_1_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_FOUDRE_2_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_FOUDRE_3_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_FOUDRE_4_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_CONCENTRATION_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_ABSORBER_DISSIPER_1_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_ABSORBER_DISSIPER_2_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_ABSORBER_DISSIPER_3_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_ABSORBER_DISSIPER_4_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_RAPIDITE_1_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_RAPIDITE_2_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_RAPIDITE_3_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_RAPIDITE_4_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_PERCEPTION_1_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_PERCEPTION_1_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_PERCEPTION_2_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_PERCEPTION_2_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_PERCEPTION_3_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_PERCEPTION_3_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_VOLONTE_1_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_VOLONTE_2_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_VOLONTE_3_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_TELEKINESIE_1_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_TELEKINESIE_2_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_TELEKINESIE_3_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_TELEKINESIE_4_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_FURIE_1_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_FURIE_2_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_FURIE_3_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_SAUT_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_INFLUENCER_ESPRIT_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_INFLUENCER_ESPRIT_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_PSYCHOMANCIE_1_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_PSYCHOMANCIE_1_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_PSYCHOMANCIE_2_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_PSYCHOMANCIE_2_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_PSYCHOMANCIE_3_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_PSYCHOMANCIE_3_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_DIVINATION_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_NARCOLEPSY_1_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_NARCOLEPSY_1_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_NARCOLEPSY_2_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_NARCOLEPSY_2_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_NARCOLEPSY_3_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_NARCOLEPSY_3_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_DISEASE_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_DISEASE_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_POISON_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_POISON_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_PARALYSIE_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_PARALYSIE_ALTERATION
+f ffffffff ffffffff 000 i DIFFICULTE_FORCE_AME_1_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORCE_AME_2_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORCE_AME_3_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_FORCE_AME_4_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_SENTIR_VIE_PASSIVE_1_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_SENTIR_VIE_PASSIVE_2_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_SENTIR_VIE_PASSIVE_3_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_SENTIR_VIE_ACTIVE_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_SENTIR_FLUX_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_ABSORPTION_VIE_1_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_ABSORPTION_VIE_2_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_ABSORPTION_VIE_3_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_TRANSE_COMBAT_1_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_TRANSE_COMBAT_2_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_TRANSE_COMBAT_3_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_TELEPATHIE_SENS
+f ffffffff ffffffff 000 i DIFFICULTE_TELEPATHIE_CONTROLE
+f ffffffff ffffffff 000 i DIFFICULTE_LIGHTSABER_THROW
+f ffffffff ffffffff 000 i DIFFICULTE_CHOKE
+f ffffffff ffffffff 000 i FATIGUE_GUERISON_1
+f ffffffff ffffffff 000 i FATIGUE_GUERISON_2
+f ffffffff ffffffff 000 i FATIGUE_GUERISON_3
+f ffffffff ffffffff 000 i FATIGUE_GUERISON_4
+f ffffffff ffffffff 000 i FATIGUE_POUSSEE_1
+f ffffffff ffffffff 000 i FATIGUE_POUSSEE_2
+f ffffffff ffffffff 000 i FATIGUE_POUSSEE_3
+f ffffffff ffffffff 000 i FATIGUE_POUSSEE_4
+f ffffffff ffffffff 000 i FATIGUE_FORME_COMBAT_1
+f ffffffff ffffffff 000 i FATIGUE_FORME_COMBAT_2
+f ffffffff ffffffff 000 i FATIGUE_FORME_COMBAT_3
+f ffffffff ffffffff 000 i FATIGUE_FORME_COMBAT_4
+f ffffffff ffffffff 000 i FATIGUE_FORME_COMBAT_5
+f ffffffff ffffffff 000 i FATIGUE_FORME_COMBAT_6
+f ffffffff ffffffff 000 i FATIGUE_FORME_COMBAT_7
+f ffffffff ffffffff 000 i FATIGUE_FORME_COMBAT_8
+f ffffffff ffffffff 000 i FATIGUE_FORME_COMBAT_9
+f ffffffff ffffffff 000 i FATIGUE_FORME_COMBAT_10
+f ffffffff ffffffff 000 i FATIGUE_FORME_COMBAT_11
+f ffffffff ffffffff 000 i FATIGUE_REGENERATION_1
+f ffffffff ffffffff 000 i FATIGUE_REGENERATION_2
+f ffffffff ffffffff 000 i FATIGUE_REGENERATION_3
+f ffffffff ffffffff 000 i FATIGUE_REGENERATION_4
+f ffffffff ffffffff 000 i FATIGUE_SOINS_1
+f ffffffff ffffffff 000 i FATIGUE_SOINS_2
+f ffffffff ffffffff 000 i FATIGUE_SOINS_3
+f ffffffff ffffffff 000 i FATIGUE_SOINS_4
+f ffffffff ffffffff 000 i FATIGUE_DISCRETION_1
+f ffffffff ffffffff 000 i FATIGUE_DISCRETION_2
+f ffffffff ffffffff 000 i FATIGUE_DISCRETION_3
+f ffffffff ffffffff 000 i FATIGUE_DISCRETION_4
+f ffffffff ffffffff 000 i FATIGUE_FOUDRE_1
+f ffffffff ffffffff 000 i FATIGUE_FOUDRE_2
+f ffffffff ffffffff 000 i FATIGUE_FOUDRE_3
+f ffffffff ffffffff 000 i FATIGUE_FOUDRE_4
+f ffffffff ffffffff 000 i FATIGUE_CONCENTRATION
+f ffffffff ffffffff 000 i FATIGUE_ABSORBER_DISSIPER_1
+f ffffffff ffffffff 000 i FATIGUE_ABSORBER_DISSIPER_2
+f ffffffff ffffffff 000 i FATIGUE_ABSORBER_DISSIPER_3
+f ffffffff ffffffff 000 i FATIGUE_ABSORBER_DISSIPER_4
+f ffffffff ffffffff 000 i FATIGUE_RAPIDITE_1
+f ffffffff ffffffff 000 i FATIGUE_RAPIDITE_2
+f ffffffff ffffffff 000 i FATIGUE_RAPIDITE_3
+f ffffffff ffffffff 000 i FATIGUE_RAPIDITE_4
+f ffffffff ffffffff 000 i FATIGUE_PERCEPTION_1
+f ffffffff ffffffff 000 i FATIGUE_PERCEPTION_2
+f ffffffff ffffffff 000 i FATIGUE_PERCEPTION_3
+f ffffffff ffffffff 000 i FATIGUE_VOLONTE_1
+f ffffffff ffffffff 000 i FATIGUE_VOLONTE_2
+f ffffffff ffffffff 000 i FATIGUE_VOLONTE_3
+f ffffffff ffffffff 000 i FATIGUE_TELEKINESIE_1
+f ffffffff ffffffff 000 i FATIGUE_TELEKINESIE_2
+f ffffffff ffffffff 000 i FATIGUE_TELEKINESIE_3
+f ffffffff ffffffff 000 i FATIGUE_TELEKINESIE_4
+f ffffffff ffffffff 000 i FATIGUE_FURIE_1
+f ffffffff ffffffff 000 i FATIGUE_FURIE_2
+f ffffffff ffffffff 000 i FATIGUE_FURIE_3
+f ffffffff ffffffff 000 i FATIGUE_SAUT
+f ffffffff ffffffff 000 i FATIGUE_INFLUENCER_ESPRIT
+f ffffffff ffffffff 000 i FATIGUE_PSYCHOMANCIE_1
+f ffffffff ffffffff 000 i FATIGUE_PSYCHOMANCIE_2
+f ffffffff ffffffff 000 i FATIGUE_PSYCHOMANCIE_3
+f ffffffff ffffffff 000 i FATIGUE_DIVINATION
+f ffffffff ffffffff 000 i FATIGUE_NARCOLEPSY_1
+f ffffffff ffffffff 000 i FATIGUE_NARCOLEPSY_2
+f ffffffff ffffffff 000 i FATIGUE_NARCOLEPSY_3
+f ffffffff ffffffff 000 i FATIGUE_DISEASE
+f ffffffff ffffffff 000 i FATIGUE_POISON
+f ffffffff ffffffff 000 i FATIGUE_PARALYSIE
+f ffffffff ffffffff 000 i FATIGUE_FORCE_AME_1
+f ffffffff ffffffff 000 i FATIGUE_FORCE_AME_2
+f ffffffff ffffffff 000 i FATIGUE_FORCE_AME_3
+f ffffffff ffffffff 000 i FATIGUE_FORCE_AME_4
+f ffffffff ffffffff 000 i FATIGUE_SENTIR_VIE_PASSIVE_1
+f ffffffff ffffffff 000 i FATIGUE_SENTIR_VIE_PASSIVE_2
+f ffffffff ffffffff 000 i FATIGUE_SENTIR_VIE_PASSIVE_3
+f ffffffff ffffffff 000 i FATIGUE_SENTIR_VIE_ACTIVE
+f ffffffff ffffffff 000 i FATIGUE_SENTIR_FLUX
+f ffffffff ffffffff 000 i FATIGUE_ABSORPTION_VIE_1
+f ffffffff ffffffff 000 i FATIGUE_ABSORPTION_VIE_2
+f ffffffff ffffffff 000 i FATIGUE_ABSORPTION_VIE_3
+f ffffffff ffffffff 000 i FATIGUE_TRANSE_COMBAT_1
+f ffffffff ffffffff 000 i FATIGUE_TRANSE_COMBAT_2
+f ffffffff ffffffff 000 i FATIGUE_TRANSE_COMBAT_3
+f ffffffff ffffffff 000 i FATIGUE_TELEPATHIE
+f ffffffff ffffffff 000 i FATIGUE_LIGHTSABER_THROW
+f ffffffff ffffffff 000 i FATIGUE_CHOKE
+f ffffffff ffffffff 000 i VISUAL_EFFECT_FORME_COMBAT_1
+f ffffffff ffffffff 000 i VISUAL_EFFECT_FORME_COMBAT_2
+f ffffffff ffffffff 000 i VISUAL_EFFECT_FORME_COMBAT_3
+f ffffffff ffffffff 000 i VISUAL_EFFECT_FORME_COMBAT_4
+f ffffffff ffffffff 000 i VISUAL_EFFECT_FORME_COMBAT_5
+f ffffffff ffffffff 000 i VISUAL_EFFECT_FORME_COMBAT_6
+f ffffffff ffffffff 000 i VISUAL_EFFECT_FORME_COMBAT_7
+f ffffffff ffffffff 000 i VISUAL_EFFECT_FORME_COMBAT_8
+f ffffffff ffffffff 000 i VISUAL_EFFECT_FORME_COMBAT_9
+f ffffffff ffffffff 000 i VISUAL_EFFECT_FORME_COMBAT_10
+f ffffffff ffffffff 000 i VISUAL_EFFECT_FORME_COMBAT_11
+f 00000123 0000015d 001 i GetFatigue
+fp o
+f 0000015d 00000185 002 v SetFatigue
+fp o
+fp i
+f ffffffff ffffffff 001 v NoFatigue
+fp o
+f ffffffff ffffffff 001 i GetNiveauForce
+fp o
+f ffffffff ffffffff 001 i GetIsFluxLumineux
+fp o
+f ffffffff ffffffff 001 i GetIsFluxSombre
+fp o
+f ffffffff ffffffff 001 i GetMalusForceArmure
+fp o
+f ffffffff ffffffff 002 i CalculFatiguePouvoir
+fp o
+fp i
+f ffffffff ffffffff 002 i CalculFatigueForme
+fp o
+fp i
+f ffffffff ffffffff 001 i CalculBonusDureeForme
+fp o
+f 00000185 000002e3 001 f CalculRecuperation
+fp o
+f 0000002f 00000123 001 v Fatigue_Recuperation
+fp o
+f ffffffff ffffffff 001 v Activation_Fatigue_Recuperation
+fp o
+f ffffffff ffffffff 004 i BonusResistancePouvoir
+fp o
+fp i
+fp i
+fp i
+f ffffffff ffffffff 001 i GetSizeValue
+fp o
+f ffffffff ffffffff 002 v PouvoirJediGuerison
+fp o
+fp i
+f ffffffff ffffffff 003 v PouvoirJediPoussee
+fp o
+fp i
+fp o
+f ffffffff ffffffff 001 i GetSpellIdFormeCombat
+fp i
+f ffffffff ffffffff 001 i GetFormeSabreLaserCombat
+fp o
+f ffffffff ffffffff 001 v CheckFormeSabreLaserCombat
+fp o
+f ffffffff ffffffff 001 v DesactiverFormeCombatActive
+fp o
+f ffffffff ffffffff 002 v DesactiverPouvoir
+fp o
+fp i
+f ffffffff ffffffff 002 v PouvoirJediFormeCombat
+fp o
+fp i
+f ffffffff ffffffff 006 v MaintenirFormeCombat
+fp o
+fp i
+fp i
+fp i
+fp i
+fp e0
+f ffffffff ffffffff 001 v SupprimePoisonMaladie
+fp o
+f ffffffff ffffffff 001 v SupprimeEffetsNegatifs
+fp o
+f ffffffff ffffffff 002 v PouvoirJediRegeneration
+fp o
+fp i
+f ffffffff ffffffff 003 v PouvoirJediSoins
+fp o
+fp o
+fp i
+f ffffffff ffffffff 002 v PouvoirJediDiscretion
+fp o
+fp i
+f ffffffff ffffffff 004 v PouvoirJediFoudre
+fp o
+fp o
+fp e2
+fp i
+f ffffffff ffffffff 001 v PouvoirJediConcentration
+fp o
+f ffffffff ffffffff 002 v PouvoirJediAbsorberDissiper
+fp o
+fp i
+f ffffffff ffffffff 002 v PouvoirJediRapidite
+fp o
+fp i
+f ffffffff ffffffff 002 v PouvoirJediPerception
+fp o
+fp i
+f ffffffff ffffffff 002 v PouvoirJediVolonte
+fp o
+fp i
+f ffffffff ffffffff 002 v PouvoirJediTelekinesieRamasserObjet
+fp o
+fp o
+f ffffffff ffffffff 001 i EstArme
+fp o
+f ffffffff ffffffff 003 v MettreItemDansInventaire
+fp o
+fp o
+fp i
+f ffffffff ffffffff 002 v PouvoirJediTelekinesieOuvrirFermerPorte
+fp o
+fp o
+f ffffffff ffffffff 002 v PouvoirJediTelekinesieDesarmer
+fp o
+fp o
+f ffffffff ffffffff 002 v DeplacerObjet
+fp o
+fp e2
+f ffffffff ffffffff 003 v PouvoirJediTelekinesieDeplacer
+fp o
+fp o
+fp e2
+f ffffffff ffffffff 002 t0000 GetVectorTournerVers
+fp o
+fp e2
+f ffffffff ffffffff 002 v DeplacerPlacable
+fp o
+fp e2
+f ffffffff ffffffff 002 v PouvoirJediFurie
+fp o
+fp i
+f ffffffff ffffffff 002 v ContreCoupFurie
+fp o
+fp f
+f ffffffff ffffffff 002 v PouvoirJediSaut
+fp o
+fp e2
+f ffffffff ffffffff 002 v PouvoirJediInfluencerEsprit
+fp o
+fp o
+f ffffffff ffffffff 002 v PouvoirJediPsychomancie
+fp o
+fp i
+f ffffffff ffffffff 002 v PouvoirJediDivination
+fp o
+fp i
+f ffffffff ffffffff 002 v Divination
+fp o
+fp i
+f ffffffff ffffffff 001 v DesactiverDivination
+fp o
+f ffffffff ffffffff 001 v DetectionPiege
+fp o
+f ffffffff ffffffff 004 v PouvoirJediNarcolepsy
+fp o
+fp o
+fp e2
+fp i
+f ffffffff ffffffff 002 v PouvoirJediMaladie
+fp o
+fp o
+f ffffffff ffffffff 002 v PouvoirJediPoison
+fp o
+fp o
+f ffffffff ffffffff 002 v PouvoirJediParalysie
+fp o
+fp o
+f ffffffff ffffffff 003 v Paralysie
+fp o
+fp o
+fp i
+f ffffffff ffffffff 002 v PouvoirJediForceAme
+fp o
+fp i
+f ffffffff ffffffff 002 v PouvoirJediSentirViePassive
+fp o
+fp i
+f ffffffff ffffffff 002 v PouvoirJediSentirVieActive
+fp o
+fp i
+f ffffffff ffffffff 001 v DesactiverSentirVieActive
+fp o
+f ffffffff ffffffff 002 v SentirVie
+fp o
+fp i
+f ffffffff ffffffff 001 s GetRacialName
+fp i
+f ffffffff ffffffff 002 v PouvoirJediSentirFlux
+fp o
+fp o
+f ffffffff ffffffff 001 f GetPresenceJedi
+fp o
+f ffffffff ffffffff 003 v PouvoirJediAbsorptionVie
+fp o
+fp o
+fp i
+f ffffffff ffffffff 002 v PouvoirJediTranseCombat
+fp o
+fp i
+f ffffffff ffffffff 003 v TranseCombat
+fp o
+fp i
+fp e0
+f ffffffff ffffffff 001 v DesactiverTranseCombat
+fp o
+f ffffffff ffffffff 001 v PouvoirJediTelepathie
+fp o
+f ffffffff ffffffff 001 v StopTelepathie
+fp o
+f ffffffff ffffffff 002 i IsPouvoirActif
+fp o
+fp i
+f ffffffff ffffffff 002 v PowerJediLightsaberThrow
+fp o
+fp e2
+f ffffffff ffffffff 002 v PowerJediChoke
+fp o
+fp o
+f 00000021 0000002f 000 v main
+f 0000000d 00000015 000 v #loader
+f 00000015 00000021 000 v #globals
+v 0000002f 0000011b 00000000 o oPC
+v 00000031 00000115 00000004 i nFatigue
+v 00000085 000000e3 00000008 f fRecuperation
+v 00000123 0000015b 00000000 i #retval
+v 00000123 00000155 00000004 o oPC
+v 0000015d 0000017d 00000000 i nValue
+v 0000015d 0000017d 00000004 o oPC
+v 00000185 000002e1 00000000 f #retval
+v 00000185 000002db 00000004 o oPC
+v 00000187 000002d5 00000008 f fRecuperation
+l00 0000043 00000015 00000015
+l00 0000044 00000015 00000015
+l00 0000048 00000015 00000015
+l00 0000049 00000015 00000015
+l00 0000053 00000015 00000015
+l00 0000054 00000015 00000015
+l00 0000055 00000015 00000015
+l00 0000059 00000015 00000015
+l00 0000060 00000015 00000015
+l00 0000061 00000015 00000015
+l06 0000004 00000021 0000002d
+l06 0000005 0000002d 0000002f
+l05 0000522 0000002f 0000004f
+l05 0000523 0000004f 0000005f
+l05 0000524 00000065 00000083
+l05 0000526 00000083 000000a3
+l05 0000527 000000a3 000000e3
+l05 0000528 000000ef 000000f1
+l05 0000529 000000f1 00000115
+l05 0000531 0000011b 00000123
+l05 0000378 00000123 00000155
+l05 0000379 00000155 0000015d
+l05 0000382 0000015d 0000017d
+l05 0000383 0000017d 00000185
+l05 0000505 00000185 0000019b
+l05 0000506 0000019b 000001ac
+l05 0000507 000001b2 000001ce
+l05 0000508 000001d4 000001d6
+l05 0000509 000001ed 00000211
+l05 0000510 00000217 00000219
+l05 0000511 00000230 00000254
+l05 0000512 0000025a 0000025c
+l05 0000513 00000273 00000297
+l05 0000514 0000029d 0000029f
+l05 0000515 0000029f 000002b3
+l05 0000518 000002b3 000002d5
+l05 0000519 000002db 000002e3

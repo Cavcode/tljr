@@ -1,0 +1,208 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 19996
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 74
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 20000
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 1
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "The TIE/In starfighter, or TIE Interceptor, is a TIE series starfighter in use by the Galactic Empire. The TIE Interceptor is identifiable by its arrow-shaped solar collection panels, a distinct difference from the hexagonal solar arrays of its predecessor, the TIE Fighter. The Interceptor is one of the fastest starfighters in the galaxy at its prime, rivaling or surpassing the Alliance's RZ-1 A-wing interceptor.\n\nLike most TIEs, the TIE Interceptor shares nearly identical cockpits, drive pods, and wing brace design with the TIE Fighter. The solar collector panels are lengthened and angled, and the forward center section is removed. This new solar array design gave the Interceptor its unmistakable dagger-like appearance, while providing the pilot with increased visibility and shrinking its profile making targeting more frustrating for enemy gunners. This wing design gives the craft a more menacing visage, continuing the Empire's reputation of ruling through fear."
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "The TIE/In starfighter, or TIE Interceptor, is a TIE series starfighter in use by the Galactic Empire. The TIE Interceptor is identifiable by its arrow-shaped solar collection panels, a distinct difference from the hexagonal solar arrays of its predecessor, the TIE Fighter. The Interceptor is one of the fastest starfighters in the galaxy at its prime, rivaling or surpassing the Alliance's RZ-1 A-wing interceptor.\n\nLike most TIEs, the TIE Interceptor shares nearly identical cockpits, drive pods, and wing brace design with the TIE Fighter. The solar collector panels are lengthened and angled, and the forward center section is removed. This new solar array design gave the Interceptor its unmistakable dagger-like appearance, while providing the pilot with increased visibility and shrinking its profile making targeting more frustrating for enemy gunners. This wing design gives the craft a more menacing visage, continuing the Empire's reputation of ruling through fear."
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "TIE Interceptor Permit"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 76
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 1
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 1
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "ChanceAppear": {
+          "type": "byte",
+          "value": 100
+        },
+        "CostTable": {
+          "type": "byte",
+          "value": 3
+        },
+        "CostValue": {
+          "type": "word",
+          "value": 13
+        },
+        "Param1": {
+          "type": "byte",
+          "value": 255
+        },
+        "Param1Value": {
+          "type": "byte",
+          "value": 0
+        },
+        "PropertyName": {
+          "type": "word",
+          "value": 15
+        },
+        "Subtype": {
+          "type": "word",
+          "value": 537
+        }
+      }
+    ]
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 1
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "SER_PL_SHIPDEED"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "tietpermit"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_TYPE"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 323
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_ENGINE_NAME"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "Unknown Model"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_ENGINE_POWER"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_ENGINE_SPEED"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_POWER"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 6
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "SHIP_POWER_NAME"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "Unknown Model"
+        }
+      }
+    ]
+  }
+}

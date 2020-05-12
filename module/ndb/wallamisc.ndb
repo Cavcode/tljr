@@ -1,0 +1,244 @@
+NDB V1.0
+0000002 0000001 0000067 0000017 0000077
+n00 nw_i0_plot
+N01 wallamisc
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 000 i DC_EASY
+f ffffffff ffffffff 000 i DC_MEDIUM
+f ffffffff ffffffff 000 i DC_HARD
+f ffffffff ffffffff 000 i DC_SUPERIOR
+f ffffffff ffffffff 000 i DC_MASTER
+f ffffffff ffffffff 000 i DC_LEGENDARY
+f ffffffff ffffffff 000 i DC_EPIC
+f ffffffff ffffffff 000 i G_CLASSCHANCE
+f ffffffff ffffffff 000 i XP_VERY_LOW
+f ffffffff ffffffff 000 i XP_LOW
+f ffffffff ffffffff 000 i XP_MEDIUM_LOW
+f ffffffff ffffffff 000 i XP_MEDIUM
+f ffffffff ffffffff 000 i XP_MEDIUM_HIGH
+f ffffffff ffffffff 000 i XP_HIGH
+f ffffffff ffffffff 000 i XP_VERY_HIGH
+f ffffffff ffffffff 000 i XP_EPIC
+f ffffffff ffffffff 002 i plotCanRemoveXP
+fp o
+fp i
+f ffffffff ffffffff 001 i GetCanCastHealingSpells
+fp o
+f ffffffff ffffffff 000 i DoOnce
+f ffffffff ffffffff 001 v DebugSpeak
+fp s
+f ffffffff ffffffff 000 o GetMyMaster
+f ffffffff ffffffff 000 i IsRecall
+f ffffffff ffffffff 001 v DimensionHop
+fp o
+f ffffffff ffffffff 000 i CanSeePlayer
+f ffffffff ffffffff 002 v EscapeArea
+fp i
+fp s
+f ffffffff ffffffff 002 i HasItem
+fp o
+fp s
+f ffffffff ffffffff 003 v TakeGold
+fp i
+fp o
+fp i
+f ffffffff ffffffff 000 o GetNearestPC
+f ffffffff ffffffff 001 v SetIsEnemy
+fp o
+f ffffffff ffffffff 003 i AutoDC
+fp i
+fp i
+fp o
+f ffffffff ffffffff 002 v AutoAlignG
+fp i
+fp o
+f ffffffff ffffffff 002 v AutoAlignE
+fp i
+fp o
+f ffffffff ffffffff 004 v DoGiveXP
+fp s
+fp i
+fp o
+fp i
+f ffffffff ffffffff 005 v RewardXP
+fp s
+fp i
+fp o
+fp i
+fp i
+f ffffffff ffffffff 003 v RewardGP
+fp i
+fp o
+fp i
+f ffffffff ffffffff 000 i CheckCharismaMiddle
+f ffffffff ffffffff 000 i CheckCharismaNormal
+f ffffffff ffffffff 000 i CheckCharismaLow
+f ffffffff ffffffff 000 i CheckCharismaHigh
+f ffffffff ffffffff 000 i CheckIntelligenceLow
+f ffffffff ffffffff 000 i CheckIntelligenceNormal
+f ffffffff ffffffff 000 i CheckIntelligenceHigh
+f ffffffff ffffffff 000 i CheckWisdomHigh
+f ffffffff ffffffff 001 i GetWisdom
+fp o
+f ffffffff ffffffff 001 i GetIntelligence
+fp o
+f ffffffff ffffffff 001 i GetCharisma
+fp o
+f ffffffff ffffffff 002 i GetNumItems
+fp o
+fp s
+f ffffffff ffffffff 003 v GiveNumItems
+fp o
+fp s
+fp i
+f ffffffff ffffffff 003 v TakeNumItems
+fp o
+fp s
+fp i
+f ffffffff ffffffff 001 v PlayCharacterTheme
+fp i
+f ffffffff ffffffff 000 v PlayOldTheme
+f ffffffff ffffffff 002 i GetPLocalInt
+fp o
+fp s
+f ffffffff ffffffff 003 v SetPLocalInt
+fp o
+fp s
+fp i
+f ffffffff ffffffff 001 v RemoveEffects
+fp o
+f 000000a3 00000656 004 v gplotAppraiseOpenStore
+fp o
+fp o
+fp i
+fp i
+f ffffffff ffffffff 004 v gplotAppraiseFavOpenStore
+fp o
+fp o
+fp i
+fp i
+f ffffffff ffffffff 003 i CheckDCStr
+fp i
+fp i
+fp o
+f ffffffff ffffffff 001 i GetIsPlayerCharacter
+fp o
+f ffffffff ffffffff 004 v Reward_2daXP
+fp o
+fp i
+fp i
+fp i
+f ffffffff ffffffff 001 v PlaySpeakSoundByStrRef
+fp i
+f 00000656 0000080d 001 i GetNPCEasyMark
+fp o
+f ffffffff ffffffff 001 f GetReactionAdjustment
+fp o
+f ffffffff ffffffff 003 v AdjustFactionReputation
+fp o
+fp o
+fp i
+f ffffffff ffffffff 001 v EscapeViaTeleport
+fp o
+f ffffffff ffffffff 002 i HasGold
+fp i
+fp o
+f 00000015 000000a3 000 v main
+f 0000000d 00000015 000 v #loader
+v 00000017 0000009b 00000000 o oStore
+v 000000a3 0000064e 00000000 i nBonusMarkDown
+v 000000a3 0000064e 00000004 i nBonusMarkUp
+v 000000a3 0000064e 00000008 o oPC
+v 000000a3 0000064e 0000000c o oStore
+v 000000a5 00000648 00000010 i STATE_FAILED
+v 000000bb 00000648 00000014 i STATE_TIE
+v 000000d1 00000648 00000018 i STATE_WON
+v 000000e7 00000648 0000001c s sTag
+v 00000102 00000648 00000020 i nPlayerSkillRank
+v 0000012b 00000648 00000024 i nNPCSkillRank
+v 00000192 00000648 00000028 i nAdjust
+v 000001a8 00000648 0000002c i nState
+v 000001be 00000648 00000030 i nPreviousRank
+v 00000656 0000080b 00000000 i #retval
+v 00000656 00000805 00000004 o oTarget
+v 00000658 000007ff 00000008 i nCharmMod
+l01 0000004 00000015 00000048
+l01 0000005 00000048 0000005d
+l01 0000007 00000063 00000082
+l01 0000009 00000088 0000008a
+l01 0000011 0000008a 0000009b
+l01 0000013 000000a1 000000a3
+l00 0000174 000000a3 000000b9
+l00 0000175 000000b9 000000cf
+l00 0000176 000000cf 000000e5
+l00 0000177 000000e5 00000100
+l00 0000179 00000100 00000129
+l00 0000181 00000129 00000160
+l00 0000184 00000160 00000170
+l00 0000185 00000176 0000018a
+l00 0000187 00000190 000001a6
+l00 0000209 000001a6 000001bc
+l00 0000210 000001bc 000001f6
+l00 0000217 000001f6 00000255
+l00 0000219 0000025b 0000028d
+l00 0000220 0000028d 000002c0
+l00 0000222 000002c0 000002e3
+l00 0000223 000002e3 00000306
+l00 0000224 00000306 00000326
+l00 0000225 00000326 00000338
+l00 0000227 0000033e 00000354
+l00 0000229 0000035a 0000035c
+l00 0000230 0000035c 0000036e
+l00 0000232 00000374 0000038a
+l00 0000234 00000390 00000392
+l00 0000235 00000392 000003a4
+l00 0000237 000003aa 000003c0
+l00 0000241 000003cc 000003ce
+l00 0000244 000003ce 00000408
+l00 0000246 00000408 00000418
+l00 0000248 0000041e 00000434
+l00 0000250 0000043a 0000043c
+l00 0000251 0000043c 0000044c
+l00 0000253 00000452 00000468
+l00 0000255 0000046e 00000470
+l00 0000256 00000470 00000480
+l00 0000258 00000486 0000049c
+l00 0000263 000004a2 000004b4
+l00 0000265 000004ba 000004d3
+l00 0000267 000004d9 000004db
+l00 0000268 000004db 000004ed
+l00 0000270 000004f3 0000050c
+l00 0000272 00000512 00000514
+l00 0000273 00000514 00000526
+l00 0000275 0000052c 00000545
+l00 0000278 0000054b 0000057f
+l00 0000283 0000057f 0000058f
+l00 0000284 00000595 000005a9
+l00 0000285 000005af 000005c1
+l00 0000286 000005c7 000005dd
+l00 0000287 000005e3 00000603
+l00 0000288 00000603 00000623
+l00 0000289 00000623 00000648
+l00 0000290 0000064e 00000656
+l00 0000124 00000656 0000066c
+l00 0000125 0000066c 0000067f
+l00 0000127 00000685 00000699
+l00 0000129 0000069f 000006a1
+l00 0000130 000006a1 000006b4
+l00 0000132 000006ba 000006ce
+l00 0000134 000006d4 000006d6
+l00 0000135 000006d6 000006e9
+l00 0000137 000006ef 00000703
+l00 0000139 00000709 0000070b
+l00 0000141 00000724 00000738
+l00 0000143 0000073e 00000740
+l00 0000145 00000759 0000076d
+l00 0000147 00000773 00000775
+l00 0000149 0000078e 000007a2
+l00 0000151 000007a8 000007aa
+l00 0000153 000007c3 000007d7
+l00 0000155 000007dd 000007ff
+l00 0000156 00000805 0000080d
