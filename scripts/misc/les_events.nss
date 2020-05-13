@@ -18,15 +18,19 @@ void main()
 
         if (nEventType == "NWNX_ON_USE_SKILL_BEFORE")
         {
-            oPC = OBJECT_SELF;
-            oTarget = NWNX_Object_StringToObject(NWNX_Events_GetEventData("TARGET_OBJECT_ID"));
-            WriteTimestampedLogEntry(GetName(oPC)+" tried to steal from "+GetName(oTarget));
-            //FloatingTextStringOnCreature("You're trying to steal from "+GetName(oTarget), oPC, FALSE);
-            if(GetIsPC(oTarget) || GetIsDM(oTarget) || GetLocalInt(oTarget,"PPDISABLED"))
+            int skillID = StringToInt(NWNX_Events_GetEventData("SKILL_ID"));
+            if(skillID == SKILL_PICK_POCKET)
             {
-                NWNX_Events_SkipEvent();
+                oPC = OBJECT_SELF;
+                oTarget = NWNX_Object_StringToObject(NWNX_Events_GetEventData("TARGET_OBJECT_ID"));
                 WriteTimestampedLogEntry(GetName(oPC)+" tried to steal from "+GetName(oTarget));
-                FloatingTextStringOnCreature("PickPocketing PC's and Plot NPC's Disabled.", oPC, FALSE);
+                //FloatingTextStringOnCreature("You're trying to steal from "+GetName(oTarget), oPC, FALSE);
+                if(GetIsPC(oTarget) || GetIsDM(oTarget) || GetLocalInt(oTarget,"PPDISABLED"))
+                {
+                    NWNX_Events_SkipEvent();
+                    WriteTimestampedLogEntry(GetName(oPC)+" tried to steal from "+GetName(oTarget));
+                    FloatingTextStringOnCreature("PickPocketing PC's and Plot NPC's Disabled.", oPC, FALSE);
+                }
             }
         }
 
