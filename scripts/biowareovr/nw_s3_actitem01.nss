@@ -11,6 +11,7 @@
 //:: Created By: Preston Watamaniuk
 //:: Created On: Dec 19, 2001
 //:://////////////////////////////////////////////
+//:: Modified by The DMFI Team to handle activation of DMFI Wands & Widgets
 
 void main()
 {

@@ -1,4 +1,22 @@
-#include "dmfi_db_inc"
+//::///////////////////////////////////////////////
+//:: DMFI - widget activation processor
+//:: dmfi_activate
+//:://////////////////////////////////////////////
+/*
+  Functions to respond and process DMFI item activations.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: The DMFI Team
+//:: Created On:
+//:://////////////////////////////////////////////
+//:: 2008.05.25 tsunami282 - changes to invisible listeners to work with
+//::                         OnPlayerChat methods.
+//:: 2008.07.10 tsunami282 - add Naming Wand to the exploder.
+//:: 2008.08.15 tsunami282 - move init logic to new include.
+
+#include "dmfi_init_inc"
+
+////////////////////////////////////////////////////////////////////////
 void dmw_CleanUp(object oMySpeaker)
 {
    int nCount;
@@ -30,7 +48,7 @@ void dmw_CleanUp(object oMySpeaker)
    DeleteLocalInt(oMySpeaker, "dmw_started");
 }
 
-
+////////////////////////////////////////////////////////////////////////
 void main()
 {
     object oUser = OBJECT_SELF;
@@ -39,223 +57,18 @@ void main()
     location lLocation = GetLocalLocation(oUser, "dmfi_location");
     string sItemTag = GetTag(oItem);
 
-//initialize the listening commands reminder
-    if (GetLocalInt(GetModule(), "dmfi_voice_initial")!=1 && (GetLocalInt(oUser, "dmfi_reminded")!=1)
-        &&(GetIsDM(oUser) || GetIsDMPossessed(oUser)))
-    {
-        SetLocalInt(oUser, "dmfi_reminded", 1);
-        SendMessageToAllDMs("Target a creature with Voice Widget to initialize system.");
-        FloatingTextStringOnCreature("Target a creature with Voice Widget to initialize system", oUser);
-    }
-
-//*************************************INITIALIZATION CODE***************************************
-//***************************************RUNS ONE TIME ***************************************
-
-//voice stuff is module wide
-
-    if (GetLocalInt(GetModule(), "dmfi_initialized") != 1)
-    {
-        SetLocalInt(GetModule(), "dmfi_initialized", 1);
-        int iLoop = 20610;
-        string sText;
-        while (iLoop < 20680)
-        {
-            sText = GetDMFIPersistentString("dmfi", "hls" + IntToString(iLoop));
-            SetCustomToken(iLoop, sText);
-            iLoop++;
-        }
-        SendMessageToAllDMs("Voice custom tokens initialized.");
-    }
-
-
-//remainder of settings are user based
-
-    if ((GetLocalInt(oUser, "dmfi_initialized")!=1) && (GetIsDM(oUser) || GetIsDMPossessed(oUser)))
-    {
-    //if you have campaign variables set - use those settings
-        if (GetDMFIPersistentInt("dmfi", "Settings", oUser)==1)
-        {
-            FloatingTextStringOnCreature("Settings Restored", oUser, FALSE);
-            SetLocalInt(oUser, "dmfi_initialized", 1);
-
-            int n = GetDMFIPersistentInt("dmfi", "dmfi_alignshift", oUser);
-            SetCustomToken(20781, IntToString(n));
-            SetLocalInt(oUser, "dmfi_alignshift", n);
-            SendMessageToPC(oUser, "Settings: Alignment shift: "+IntToString(n));
-
-
-            n = GetDMFIPersistentInt("dmfi", "dmfi_safe_factions", oUser);
-            SetLocalInt(oUser, "dmfi_safe_factions", n);
-            SendMessageToPC(oUser, "Settings: Factions (1 is DMFI Safe Faction): "+IntToString(n));
-
-            n = GetDMFIPersistentInt("dmfi", "dmfi_damagemodifier", oUser);
-            SetLocalInt(oUser, "dmfi_damagemodifier",n);
-            SendMessageToPC(oUser, "Settings: Damage Modifier: "+IntToString(n));
-
-            n = GetDMFIPersistentInt("dmfi","dmfi_buff_party",oUser);
-            SetLocalInt(oUser, "dmfi_buff_party", n);
-            if (n==1)
-                SetCustomToken(20783, "Party");
-            else
-                SetCustomToken(20783, "Single Target");
-
-            SendMessageToPC(oUser, "Settings: Buff Party (1 is Party): "+IntToString(n));
-
-            string sLevel = GetDMFIPersistentString("dmfi", "dmfi_buff_level", oUser);
-            SetCustomToken(20782, sLevel);
-            SetLocalString(oUser, "dmfi_buff_level", sLevel);
-            SendMessageToPC(oUser, "Settings: Buff Level: "+ sLevel);
-
-            n = GetDMFIPersistentInt("dmfi", "dmfi_dicebag", oUser);
-            SetLocalInt(oUser, "dmfi_dicebag", n);
-
-            string sText;
-            if (n==0)
-            {
-                SetCustomToken(20681, "Private");
-                sText = "Private";
-            }
-            else  if (n==1)
-            {
-                SetCustomToken(20681, "Global");
-                sText = "Global";
-            }
-            else if (n==2)
-            {
-                SetCustomToken(20681, "Local");
-                sText = "Local";
-            }
-            else if (n==3)
-            {
-                SetCustomToken(20681, "DM Only");
-                sText = "DM Only";
-            }
-            SendMessageToPC(oUser, "Settings: Dicebag Reporting: "+sText);
-
-            n = GetDMFIPersistentInt("dmfi", "dmfi_dice_no_animate", oUser);
-            SetLocalInt(oUser, "dmfi_dice_no_animate", n);
-            SendMessageToPC(oUser, "Settings: Roll Animations (1 is OFF): "+IntToString(n));
-
-            float f = GetDMFIPersistentFloat("dmfi", "dmfi_reputation", oUser);
-            SetLocalFloat(oUser, "dmfi_reputation", f);
-            SendMessageToPC(oUser, "Settings: Reputation Adjustment: "+FloatToString(f));
-
-            f = GetDMFIPersistentFloat("dmfi", "dmfi_effectduration", oUser);
-            SetLocalFloat(oUser, "dmfi_effectduration", f);
-            SendMessageToPC(oUser, "Settings: Effect Duration: "+FloatToString(f));
-
-            f = GetDMFIPersistentFloat("dmfi", "dmfi_sound_delay", oUser);
-            SetLocalFloat(oUser, "dmfi_sound_delay", f);
-            SendMessageToPC(oUser, "Settings: Sound Delay: "+FloatToString(f));
-
-            f = GetDMFIPersistentFloat("dmfi", "dmfi_beamduration", oUser);
-            SetLocalFloat(oUser, "dmfi_beamduration", f);
-            SendMessageToPC(oUser, "Settings: Beam Duration: "+FloatToString(f));
-
-            f = GetDMFIPersistentFloat("dmfi", "dmfi_stunduration", oUser);
-            SetLocalFloat(oUser, "dmfi_stunduration", f);
-            SendMessageToPC(oUser, "Settings: Stun Duration: "+FloatToString(f));
-
-            f = GetDMFIPersistentFloat("dmfi", "dmfi_saveamount", oUser);
-            SetLocalFloat(oUser, "dmfi_saveamount", f);
-            SendMessageToPC(oUser, "Settings: Save Adjustment: "+FloatToString(f));
-
-            f = GetDMFIPersistentFloat("dmfi", "dmfi_effectdelay", oUser);
-            SetLocalFloat(oUser, "dmfi_effectdelay", f);
-            SendMessageToPC(oUser, "Settings: Effect Delay: "+FloatToString(f));
-
-
-        }
-        else
-        {
-            FloatingTextStringOnCreature("Default Settings Initialized", oUser, FALSE);
-            //Setting FOUR campaign variables so 1st use will be slow.
-            //Recommend initializing your preferences with no players or
-            //while there is NO fighting.
-            SetLocalInt(oUser, "dmfi_initialized", 1);
-            SetDMFIPersistentInt("dmfi", "Settings", 1, oUser);
-
-            SetCustomToken(20781, "5");
-            SetLocalInt(oUser, "dmfi_alignshift", 5);
-            SetDMFIPersistentInt("dmfi", "dmfi_alignshift", 5, oUser);
-            SendMessageToPC(oUser, "Settings: Alignment shift: 5");
-
-            SetCustomToken(20783, "Single Target");
-            SetLocalInt(oUser, "dmfi_buff_party", 0);
-            SetDMFIPersistentInt("dmfi", "dmfi_buff_party", 0, oUser);
-            SendMessageToPC(oUser, "Settings: Buff set to Single Target: ");
-
-            SetCustomToken(20782, "Low");
-            SetLocalString(oUser, "dmfi_buff_level", "LOW");
-            SetDMFIPersistentString("dmfi", "dmfi_buff_level", "LOW", oUser);
-            SendMessageToPC(oUser, "Settings: Buff Level set to LOW: ");
-
-            SetLocalInt(oUser, "dmfi_dicebag", 0);
-            SetCustomToken(20681, "Private");
-            SetDMFIPersistentInt("dmfi", "dmfi_dicebag", 0, oUser);
-            SendMessageToPC(oUser, "Settings: Dicebag Rolls set to PRIVATE");
-
-            SetLocalInt(oUser, "", 0);
-            SetDMFIPersistentInt("dmfi", "dmfi_safe_factions", 0, oUser);
-            SendMessageToPC(oUser, "Settings: Factions set to BW base behavior");
-
-            SetLocalFloat(oUser, "dmfi_reputation", 5.0);
-            SetCustomToken(20784, "5");
-            SetDMFIPersistentFloat("dmfi", "dmfi_reputation", 5.0, oUser);
-            SendMessageToPC(oUser, "Settings: Reputation adjustment: 5");
-
-            SetDMFIPersistentFloat("dmfi", "dmfi_effectduration", 60.0, oUser);
-            SetLocalFloat(oUser, "dmfi_effectduration", 60.0);
-            SetDMFIPersistentFloat("dmfi", "dmfi_sound_delay", 0.2, oUser);
-            SetLocalFloat(oUser, "dmfi_sound_delay", 0.2);
-            SetDMFIPersistentFloat("dmfi", "dmfi_beamduration", 5.0, oUser);
-            SetLocalFloat(oUser, "dmfi_beamduration", 5.0);
-            SetDMFIPersistentFloat("dmfi", "dmfi_stunduration", 1000.0,  oUser);
-            SetLocalFloat(oUser, "dmfi_stunduration", 1000.0);
-            SetDMFIPersistentFloat("dmfi", "dmfi_saveamount", 5.0, oUser);
-            SetLocalFloat(oUser, "dmfi_saveamount", 5.0);
-            SetDMFIPersistentFloat("dmfi", "dmfi_effectdelay", 1.0, oUser);
-            SetLocalFloat(oUser, "dmfi_effectdelay", 1.0);
-
-            SendMessageToPC(oUser, "Settings: Effect Duration: 60.0");
-            SendMessageToPC(oUser, "Settings: Effect Delay: 1.0");
-            SendMessageToPC(oUser, "Settings: Beam Duration: 5.0");
-            SendMessageToPC(oUser, "Settings: Stun Duration: 1000.0");
-            SendMessageToPC(oUser, "Settings: Sound Delay: 0.2");
-            SendMessageToPC(oUser, "Settings: Save Adjustment: 5.0");
-        }
-    }
-//********************************END INITIALIZATION***************************
-
-
+    // listening system initialization moved to new function
+    dmfiInitialize(oUser);
 
     dmw_CleanUp(oUser);
 
     if (GetStringLeft(sItemTag,8) == "hlslang_")
     {
-        //Jump any existing Voice attached to the user
-        if (GetIsObjectValid(GetLocalObject(oUser, "dmfi_MyVoice")))
-        {
-            AssignCommand(GetLocalObject(oUser, "dmfi_MyVoice"), ClearAllActions());
-            AssignCommand(GetLocalObject(oUser, "dmfi_MyVoice"), ActionJumpToObject(oUser));
-            FloatingTextStringOnCreature("Your current Voice has been jumped to you.", oUser, FALSE);
-        }
-        else //If none exists, create a new voice set to autofollow the user
-        {
-            //Create the Voice
-            object oVoice = CreateObject(OBJECT_TYPE_CREATURE, "dmfi_voice", GetLocation(oUser));
-            //Set the Voice to Autofollow the User
-            AssignCommand(oVoice, ActionForceFollowObject(oUser, 3.0f));
-            //Set Ownership of the Voice to the User
-            SetLocalObject(oUser, "dmfi_MyVoice", oVoice);
-            FloatingTextStringOnCreature("A new Voice has been created.", oUser, FALSE);
-        }
-
-        //Set the Voice to interpret language of the appropriate widget
+        // Remove voice stuff
         string ssLanguage = GetStringRight(sItemTag, GetStringLength(sItemTag) - 8);
         SetLocalInt(oUser, "hls_MyLanguage", StringToInt(ssLanguage));
         SetLocalString(oUser, "hls_MyLanguageName", GetName(oItem));
-        DelayCommand(1.0f, FloatingTextStringOnCreature("You are speaking " + GetName(oItem) + ". Type /dm [(what you want to say in brackets)]", oUser, FALSE));
+        DelayCommand(1.0f, FloatingTextStringOnCreature("You are speaking " + GetName(oItem) + ". Type [(what you want to say in brackets)]", oUser, FALSE));
         return;
     }
 
@@ -328,6 +141,8 @@ void main()
             if(!GetIsObjectValid(GetItemPossessedBy(oOther, "dmfi_dmbook"))) CreateItemOnObject("dmfi_dmbook", oOther);
             if(!GetIsObjectValid(GetItemPossessedBy(oOther, "dmfi_playerbook"))) CreateItemOnObject("dmfi_playerbook", oOther);
             if(!GetIsObjectValid(GetItemPossessedBy(oOther, "dmfi_jail_widget"))) CreateItemOnObject("dmfi_jail_widget", oOther);
+            // 2008.07.10 tsunami282 - add naming wand to the exploder
+            if(!GetIsObjectValid(GetItemPossessedBy(oOther, "dmfi_naming"))) CreateItemOnObject("dmfi_naming", oOther);
             return;
         }
         if (sItemTag == "dmfi_peace")
@@ -357,35 +172,17 @@ void main()
                 oArea = GetNextObjectInArea(GetArea(oUser));
             }
         }
+
+        // update / remove invisible listeners as needed for onplayerchat
         if (sItemTag == "dmfi_voicewidget")
         {
             object oVoice;
-            //Jump any existing Voice attached to the user
-            if (GetIsObjectValid(GetLocalObject(oUser, "dmfi_MyVoice")))
+            if (GetIsObjectValid(oOther)) // do we have a valid target creature?
             {
-                AssignCommand(GetLocalObject(oUser, "dmfi_MyVoice"), ClearAllActions());
-                AssignCommand(GetLocalObject(oUser, "dmfi_MyVoice"), ActionJumpToObject(oUser));
-                FloatingTextStringOnCreature("Your current Voice has been jumped to you.", oUser, FALSE);
-            }
-            else //If none exists, create a new voice set to autofollow the user
-            {
-                //Create the Voice
-                object oVoice = CreateObject(OBJECT_TYPE_CREATURE, "dmfi_voice", GetLocation(oUser));
-                //Set the Voice to Autofollow the User
-                AssignCommand(oVoice, ActionForceFollowObject(oUser, 3.0f));
-                //Set Ownership of the Voice to the User
-                SetLocalObject(oUser, "dmfi_MyVoice", oVoice);
-                FloatingTextStringOnCreature("A new Voice has been created.", oUser, FALSE);
-            }
-            if (GetIsObjectValid(oOther))
-            {
-                SetListening(oOther, TRUE);
-                SetListenPattern(oOther, "**", LISTEN_PATTERN);
-                SetLocalInt(oOther, "hls_Listening", 1); //listen to all text
+                // 2008.05.29 tsunami282 - we don't use creature listen stuff anymore
                 SetLocalObject(oUser, "dmfi_VoiceTarget", oOther);
 
                 FloatingTextStringOnCreature("You have targeted " + GetName(oOther) + " with the Voice Widget", oUser, FALSE);
-                //if(!GetIsObjectValid(GetItemPossessedBy(oOther, "dmfi_voicewidget"))) CreateItemOnObject("dmfi_voicewidget", oOther);
 
                 if (GetLocalInt(GetModule(), "dmfi_voice_initial")!=1)
                 {
@@ -395,7 +192,7 @@ void main()
                 }
                 return;
             }
-            else
+            else // no valid target of voice wand
             {
                 //Jump any existing Voice attached to the user
                 if (GetIsObjectValid(GetLocalObject(oUser, "dmfi_StaticVoice")))
@@ -545,3 +342,4 @@ void main()
         AssignCommand(oUser, ActionStartConversation(OBJECT_SELF, "dmfi_universal", TRUE, FALSE));
     }
 }
+

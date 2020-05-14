@@ -1,5 +1,6 @@
 //DMFI Universal Wand scripts by hahnsoo
 
+////////////////////////////////////////////////////////////////////////
 //This initializes the rest dialog.
 //If limited by Time, report how long it will take before the PC can rest again
 //If DM, tell the DM the interval of time between rests.
@@ -19,9 +20,10 @@ void SetRestTokens(object oPC)
     SetCustomToken(20792, IntToString(iMinutesPerHour));
     SetCustomToken(20793, IntToString(iMinutesPerHour * 2));
     SetCustomToken(20794, IntToString(iMinutesPerHour * 4));
-    SetCustomToken(20795, IntToString(iMinutesPerHour * 8));
-    SetCustomToken(20796, IntToString(iMinutesPerHour * 12));
-    SetCustomToken(20797, IntToString(iMinutesPerHour * 24));
+    SetCustomToken(20795, IntToString(iMinutesPerHour * 6));
+    SetCustomToken(20796, IntToString(iMinutesPerHour * 8));
+    SetCustomToken(20797, IntToString(iMinutesPerHour * 12));
+    SetCustomToken(20798, IntToString(iMinutesPerHour * 24));
 
     if (GetIsDM(oPC))
     {
@@ -53,9 +55,10 @@ void SetRestTokens(object oPC)
                 case 0x00000100: sRest = sRest + "1 hour"; break;
                 case 0x00000200: sRest = sRest + "2 hours"; break;
                 case 0x00000300: sRest = sRest + "4 hours"; break;
-                case 0x00000400: sRest = sRest + "8 hours"; break;
-                case 0x00000500: sRest = sRest + "12 hours"; break;
-                case 0x00000600: sRest = sRest + "24 hours"; break;
+                case 0x00000400: sRest = sRest + "6 hours"; break;
+                case 0x00000500: sRest = sRest + "8 hours"; break;
+                case 0x00000600: sRest = sRest + "12 hours"; break;
+                case 0x00000700: sRest = sRest + "24 hours"; break;
             }
         }
         if (iSettings & 0x00000008) //Placeables
@@ -203,6 +206,7 @@ void SetRestTokens(object oPC)
     }
 }
 
+////////////////////////////////////////////////////////////////////////
 int StartingConditional()
 {
     object oPC = GetPCSpeaker();
@@ -269,6 +273,10 @@ int StartingConditional()
     {
         string sName = GetName(GetLocalObject(oPC, "dmfi_univ_target"));
         SetCustomToken(20680, sName);
+        // pc range single/party
+        int hookparty = GetLocalInt(oPC, "dmfi_MyListenerPartyMode");
+        if (hookparty == 0) SetCustomToken(20681, "*Single* / Party");
+        else SetCustomToken(20681, "Single / *Party*");
         return TRUE;
     }
     else if (sOffset == "voice" &&
@@ -277,6 +285,11 @@ int StartingConditional()
     {
         string sName = GetName(GetLocalObject(oPC, "dmfi_univ_target"));
         SetCustomToken(20680, sName);
+        // loc range earshot/area/module
+        int hookparty = GetLocalInt(oPC, "dmfi_MyListenerPartyMode");
+        if (hookparty == 0) SetCustomToken(20681, "*Earshot* / Area / Module");
+        else if (hookparty == 1) SetCustomToken(20681, "Earshot / *Area* / Module");
+        else SetCustomToken(20681, "Earshot / Area / *Module*");
         return TRUE;
     }
     else if (sOffset == "voice" &&
@@ -286,6 +299,10 @@ int StartingConditional()
     {
         string sName = GetName(GetLocalObject(oPC, "dmfi_univ_target"));
         SetCustomToken(20680, sName);
+        // self bcast one dm/all dm
+        int hookbcast = GetLocalInt(oPC, "dmfi_MyListenerBcastMode");
+        if (hookbcast == 0) SetCustomToken(20681, "*Self* / All DMs");
+        else SetCustomToken(20681, "Self / *All DMs*");
         return TRUE;
     }
     else if (sOffset == "faction" && iOffset==14)
@@ -334,6 +351,12 @@ int StartingConditional()
     else if (sOffset == "rest" && iOffset == 19 && GetIsDM(oPC)) //This is the case of a DM activating the rest menu
     {
         SetRestTokens(oPC);
+        return TRUE;
+    }
+    else if (sOffset == "naming" && iOffset==20)
+    {
+        string sName = GetName(GetLocalObject(oPC, "dmfi_univ_target"));
+        SetCustomToken(20680, sName);
         return TRUE;
     }
     return FALSE;

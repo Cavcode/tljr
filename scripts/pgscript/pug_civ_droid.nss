@@ -6,11 +6,11 @@ void main()
 int nApp;
 int x = Random(4)+1;
 
-if (x==1) {nApp = 873;}
-if (x==2) {nApp = 874;}
-if (x==3) {nApp = 875;}
-if (x==4) {nApp = 877;}
-if (x==5) {nApp = 2050;}
+if (x==1) {nApp = 10058;}
+if (x==2) {nApp = 10055;}
+if (x==3) {nApp = 10056;}
+if (x==4) {nApp = 10057;}
+if (x==5) {nApp = 2158;}
 
 SetCreatureAppearanceType(OBJECT_SELF, nApp);
 

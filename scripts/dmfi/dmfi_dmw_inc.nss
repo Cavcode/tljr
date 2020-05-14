@@ -10,13 +10,13 @@ const int DMFI_LISTENING_GLOBAL = 1;
 // This was ripped wholeheartedly by an example posted by Richterm on the bioboards.
 
 string DST_COLOR_TAGS = GetName(GetObjectByTag("dem_color_text"));
-string DST_COLOR_WHITE = "<cþþþ>";
-string DST_COLOR_YELLOW = "<cþþ >";
-string DST_COLOR_MAGENTA = "<cþ þ>";
-string DST_COLOR_CYAN = "<c þþ>";
-string DST_COLOR_RED = "<cþ  >";
-string DST_COLOR_GREEN = "<c þ >";
-string DST_COLOR_BLUE = "<c  þ>";
+string DST_COLOR_WHITE = GetSubString(DST_COLOR_TAGS, 0, 6);
+string DST_COLOR_YELLOW = GetSubString(DST_COLOR_TAGS, 6, 6);
+string DST_COLOR_MAGENTA = GetSubString(DST_COLOR_TAGS, 12, 6);
+string DST_COLOR_CYAN = GetSubString(DST_COLOR_TAGS, 18, 6);
+string DST_COLOR_RED = GetSubString(DST_COLOR_TAGS, 24, 6);
+string DST_COLOR_GREEN = GetSubString(DST_COLOR_TAGS, 30, 6);
+string DST_COLOR_BLUE = GetSubString(DST_COLOR_TAGS, 36, 6);
 
 // Colors for each type of roll. Change the colors if you like.
 string DMFI_ROLL_COLOR = DST_COLOR_CYAN;
@@ -858,45 +858,46 @@ string dmwand_ClassLevel(object oEntity)
    {
       switch (GetClassByPosition(iIndex,oEntity))
       {
-         case CLASS_TYPE_ABERRATION: sClass ="Aberration";break;
-         case CLASS_TYPE_ANIMAL:     sClass ="Animal"; break;
-         case CLASS_TYPE_ARCANE_ARCHER:sClass ="Arcane Archer";break;
-         case CLASS_TYPE_ASSASSIN:     sClass ="Assassin"; break;
-         case CLASS_TYPE_BARBARIAN:  sClass ="Barbarian";break;
-         case CLASS_TYPE_BARD:         sClass ="Bard"; break;
-         case CLASS_TYPE_BEAST:        sClass ="Beast"; break;
-         case CLASS_TYPE_BLACKGUARD:   sClass ="Blackguard"; break;
-         case CLASS_TYPE_CLERIC:       sClass ="Cleric"; break;
-         case CLASS_TYPE_COMMONER:     sClass ="Commoner";break;
-         case CLASS_TYPE_CONSTRUCT:    sClass ="Construct"; break;
-         case CLASS_TYPE_DIVINECHAMPION:sClass ="Divine Champion"; break;
-         case CLASS_TYPE_DRAGON:       sClass ="Dragon"; break;
-         case CLASS_TYPE_DRAGONDISCIPLE:sClass ="Dragon Disciple"; break;
-         case CLASS_TYPE_DRUID:        sClass ="Druid";break;
-         case CLASS_TYPE_DWARVENDEFENDER:sClass ="Dwarven Defender"; break;
-         case CLASS_TYPE_ELEMENTAL:    sClass ="Elemental"; break;
-         case CLASS_TYPE_FEY:          sClass ="Fey";break;
-         case CLASS_TYPE_FIGHTER:      sClass ="Fighter";  break;
-         case CLASS_TYPE_GIANT:        sClass ="Giant";  break;
-         case CLASS_TYPE_HARPER:       sClass ="Harper"; break;
-         case CLASS_TYPE_HUMANOID:     sClass ="Humanoid"; break;
-         case CLASS_TYPE_INVALID:      sClass ="";break;
-         case CLASS_TYPE_MAGICAL_BEAST:sClass ="Magical Beast"; break;
-         case CLASS_TYPE_MONK:         sClass ="Monk";   break;
-         case CLASS_TYPE_OUTSIDER:     sClass ="Outsider"; break;
-         case CLASS_TYPE_MONSTROUS:    sClass ="Monstrous"; break;
-         case CLASS_TYPE_PALADIN:      sClass ="Paladin";break;
-         case CLASS_TYPE_PALEMASTER:   sClass ="Palemaster"; break;
-         case CLASS_TYPE_RANGER:       sClass ="Ranger";break;
-         case CLASS_TYPE_ROGUE:        sClass ="Rogue";break;
-         case CLASS_TYPE_SHADOWDANCER: sClass ="Shadowdancer"; break;
-         case CLASS_TYPE_SHAPECHANGER: sClass ="Shapechanger";break;
-         case CLASS_TYPE_SHIFTER:      sClass ="Shifter"; break;
-         case CLASS_TYPE_SORCERER:     sClass ="Sorcerer";break;
-         case CLASS_TYPE_UNDEAD:       sClass ="Undead";break;
-         case CLASS_TYPE_VERMIN:       sClass ="Vermin"; break;
-         case CLASS_TYPE_WEAPON_MASTER:sClass ="Weapon Master"; break;
-         case CLASS_TYPE_WIZARD:       sClass ="Wizard"; break;
+         case CLASS_TYPE_ABERRATION:           sClass ="Aberration";break;
+         case CLASS_TYPE_ANIMAL:               sClass ="Animal"; break;
+         case CLASS_TYPE_ARCANE_ARCHER:        sClass ="Arcane Archer";break;
+         case CLASS_TYPE_ASSASSIN:             sClass ="Assassin"; break;
+         case CLASS_TYPE_BARBARIAN:            sClass ="Barbarian";break;
+         case CLASS_TYPE_BARD:                 sClass ="Bard"; break;
+         case CLASS_TYPE_BEAST:                sClass ="Beast"; break;
+         case CLASS_TYPE_BLACKGUARD:           sClass ="Blackguard"; break;
+         case CLASS_TYPE_CLERIC:               sClass ="Cleric"; break;
+         case CLASS_TYPE_COMMONER:             sClass ="Commoner";break;
+         case CLASS_TYPE_CONSTRUCT:            sClass ="Construct"; break;
+         case CLASS_TYPE_DIVINECHAMPION:       sClass ="Divine Champion"; break;
+         case CLASS_TYPE_DRAGON:               sClass ="Dragon"; break;
+         case CLASS_TYPE_DRAGONDISCIPLE:       sClass ="Dragon Disciple"; break;
+         case CLASS_TYPE_DRUID:                sClass ="Druid";break;
+         case CLASS_TYPE_DWARVENDEFENDER:      sClass ="Dwarven Defender"; break;
+         case CLASS_TYPE_ELEMENTAL:            sClass ="Elemental"; break;
+         case CLASS_TYPE_FEY:                  sClass ="Fey";break;
+         case CLASS_TYPE_FIGHTER:              sClass ="Fighter";  break;
+         case CLASS_TYPE_GIANT:                sClass ="Giant";  break;
+         case CLASS_TYPE_HARPER:               sClass ="Harper"; break;
+         case CLASS_TYPE_HUMANOID:             sClass ="Humanoid"; break;
+         case CLASS_TYPE_INVALID:              sClass ="";break;
+         case CLASS_TYPE_MAGICAL_BEAST:        sClass ="Magical Beast"; break;
+         case CLASS_TYPE_MONK:                 sClass ="Monk";   break;
+         case CLASS_TYPE_OUTSIDER:             sClass ="Outsider"; break;
+         case CLASS_TYPE_MONSTROUS:            sClass ="Monstrous"; break;
+         case CLASS_TYPE_PALADIN:              sClass ="Paladin";break;
+         case CLASS_TYPE_PALEMASTER:           sClass ="Palemaster"; break;
+         case CLASS_TYPE_PURPLE_DRAGON_KNIGHT: sClass="Purple Dragon Knight"; break;
+         case CLASS_TYPE_RANGER:               sClass ="Ranger";break;
+         case CLASS_TYPE_ROGUE:                sClass ="Rogue";break;
+         case CLASS_TYPE_SHADOWDANCER:         sClass ="Shadowdancer"; break;
+         case CLASS_TYPE_SHAPECHANGER:         sClass ="Shapechanger";break;
+         case CLASS_TYPE_SHIFTER:              sClass ="Shifter"; break;
+         case CLASS_TYPE_SORCERER:             sClass ="Sorcerer";break;
+         case CLASS_TYPE_UNDEAD:               sClass ="Undead";break;
+         case CLASS_TYPE_VERMIN:               sClass ="Vermin"; break;
+         case CLASS_TYPE_WEAPON_MASTER:        sClass ="Weapon Master"; break;
+         case CLASS_TYPE_WIZARD:               sClass ="Wizard"; break;
       }
 
       // Now depending on which iteration we just went through
@@ -1043,6 +1044,7 @@ string dmwand_ItemInfo(object oItem, int iInt)
       case BASE_ITEM_TORCH: sBaseType ="Torch";break;
       case BASE_ITEM_TOWERSHIELD: sBaseType ="Tower Shield";break;
       case BASE_ITEM_TRAPKIT: sBaseType ="Trap Kit";break;
+      case BASE_ITEM_TRIDENT: sBaseType ="Trident";break;
       case BASE_ITEM_TWOBLADEDSWORD: sBaseType ="2 Bladed Sword";break;
       case BASE_ITEM_WARHAMMER: sBaseType ="Warhammer";break;
       case BASE_ITEM_WHIP : sBaseType ="Whip";break;

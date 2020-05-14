@@ -47,7 +47,7 @@ string BuildLegalString(string S,
     string sResult = "";
     string sNumber = "0123456789";
     string sAlpha = "_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    string sPunct = "`~!@#$%^&*()-=+/:;'?,.<>|\";
+    string sPunct = "`~!@#$%^&*()-=+/:;'?,.<>|\/";
     string sCheck = sAlpha;
 //--First, build the Check String with all the characters we will "recognize"
     if(!SKIP_PUNCTUATION) //--not skipping punctuation, put that in

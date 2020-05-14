@@ -11,6 +11,11 @@
 //:: Created By: Preston Watamaniuk
 //:: Created On: Oct 16, 2001
 //:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Modified By: Deva Winblood
+//:: Modified On: Jan 4th, 2008
+//:: Added Support for Mounted Combat Feat Support
+//:://////////////////////////////////////////////
 
 #include "nw_i0_generic"
 
@@ -50,6 +55,11 @@ void main()
         }
 //END DMFI CODE ADDITIONS****************************
 
+    if (!GetLocalInt(GetModule(),"X3_NO_MOUNTED_COMBAT_FEAT"))
+        { // set variables on target for mounted combat
+            SetLocalInt(OBJECT_SELF,"bX3_LAST_ATTACK_PHYSICAL",TRUE);
+            SetLocalInt(OBJECT_SELF,"nX3_HP_BEFORE",GetCurrentHitPoints(OBJECT_SELF));
+        } // set variables on target for mounted combat
 
     if(GetFleeToExit()) {
         // Run away!
@@ -91,3 +101,4 @@ void main()
         SignalEvent(OBJECT_SELF, EventUserDefined(EVENT_ATTACKED));
     }
 }
+

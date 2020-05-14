@@ -33,11 +33,12 @@ void main()
     object oShouter = GetLastSpeaker();
 
 
+    // 2008.05.25 tsunami282 - removed for NWN 1.69 (no longer needed)
     //DMFI CODE ADDITIONS BEGIN HERE
-    if (GetIsPC(oShouter) || GetIsDM(oShouter) || GetIsDMPossessed(oShouter))
-        {
-        ExecuteScript("dmfi_voice_exe", OBJECT_SELF);
-        }
+    // if (GetIsPC(oShouter) || GetIsDM(oShouter) || GetIsDMPossessed(oShouter))
+    //     {
+    //     ExecuteScript("dmfi_voice_exe", OBJECT_SELF);
+    //     }
 
     if (nMatch == -1 && GetIsPC(oShouter) &&(GetLocalInt(GetModule(), "dmfi_AllMute") || GetLocalInt(OBJECT_SELF, "dmfi_Mute")))
     {

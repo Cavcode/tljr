@@ -128,30 +128,54 @@ float GetRestDuration(object oPC)
     return 10.0f + 0.5f * IntToFloat(GetHitDice(oPC));
 }
 
+// This function is used as a wrapper for the Rest VFX Object
+void DoRestVFX(object oPC, float fDuration, int nEffect) {
+    effect eEffect;
+    if (nEffect == -1) {
+        eEffect = EffectCutsceneImmobilize();
+    } else {
+        eEffect = EffectVisualEffect(nEffect);
+    }
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, ExtraordinaryEffect(eEffect), oPC, fDuration);
+}
+
+
 //This function adds the Blindness/Snore effects
 //Also adds cutscene immobilize to prevent movement
+//Snoring should only occur at start, then follows on the module's hb
 void ApplyRestVFX(object oPC, int iSettings)
 {
+    object oRestVFX = GetObjectByTag("dmfi_restvfxobject");
     effect eSnore = EffectVisualEffect(VFX_IMP_SLEEP); //Sleepy "ZZZ"s
-    effect eBlind = EffectVisualEffect(VFX_DUR_BLACKOUT); //Blindness without actually blinding
-    effect eStop = EffectCutsceneImmobilize();
     float fDuration = GetRestDuration(oPC);
     float fSeconds = 6.0f;
     if (!(iSettings & 0x80000000)) //Immobile Resting flag
     {
-        ApplyEffectToObject(DURATION_TYPE_TEMPORARY, ExtraordinaryEffect(eStop), oPC, fDuration);
+        // Pass a -1 for EffectCutsceneImmobilize.
+        // For a visual effect, simply pass the VFX constant.
+        AssignCommand(oRestVFX, DoRestVFX(oPC, fDuration, -1));
     }
     if (!(iSettings & 0x20000000)) //VFX flag
     {
-        ApplyEffectToObject(DURATION_TYPE_TEMPORARY, ExtraordinaryEffect(eBlind), oPC, fDuration);
+        // AssignCommand(oRestVFX, ApplyEffectToObject(DURATION_TYPE_TEMPORARY, ExtraordinaryEffect(eBlind), oPC, fDuration));
+        AssignCommand(oRestVFX, DoRestVFX(oPC, fDuration, VFX_DUR_BLACKOUT));
         ApplyEffectToObject(DURATION_TYPE_INSTANT, eSnore, oPC);
-        while (fSeconds < fDuration)
-        {
-            DelayCommand(fSeconds, ApplyEffectToObject(DURATION_TYPE_INSTANT, eSnore, oPC));
-            fSeconds += 6.0f;
-        }
     }
 }
+
+
+// Removes blindness & immobilize -- Merle
+void RemoveRestVFX(object oPC) {
+    object oRestVFX = GetObjectByTag("dmfi_restvfxobject");
+    effect eEffect = GetFirstEffect(oPC);
+    while (GetIsEffectValid(eEffect)) {
+        if (GetEffectCreator(eEffect) == oRestVFX) {
+            RemoveEffect(oPC, eEffect);
+        }
+        eEffect = GetNextEffect(oPC);
+    }
+}
+
 
 //This function gets the "Final HP" available to the PC after resting
 int CalculateFinalHitPoints(object oPC, int iSettings)
@@ -276,22 +300,28 @@ int GetIsNearRestingObject(object oPC, int iSettings)
     return FALSE;
 }
 
-void SetNextRestTime(object oPC, int iSettings)
+// Updated to allow 6 hour breaks and to pass in a percentage if rest is interrupted
+void SetNextRestTime(object oPC, int iSettings, float fPercentage = 1.0)
 {
+    if (fPercentage > 1.0 || fPercentage <= 0.0) {
+        fPercentage = 1.0;
+    }
     int iHours = (iSettings & 0x00000f00);
     int iTime = GetTimeHour() + GetCalendarDay() * 24 + GetCalendarMonth() * 24 * 28 + GetCalendarYear() * 24 * 28 * 12;
 
     switch(iHours)
     {
         default:
-        case 0x00000100: SetLocalInt(oPC, "dmfi_r_nextrest", iTime + 1); break;
-        case 0x00000200: SetLocalInt(oPC, "dmfi_r_nextrest", iTime + 2); break;
-        case 0x00000300: SetLocalInt(oPC, "dmfi_r_nextrest", iTime + 4); break;
-        case 0x00000400: SetLocalInt(oPC, "dmfi_r_nextrest", iTime + 8); break;
-        case 0x00000500: SetLocalInt(oPC, "dmfi_r_nextrest", iTime + 12); break;
-        case 0x00000600: SetLocalInt(oPC, "dmfi_r_nextrest", iTime + 24); break;
+        case 0x00000100: SetLocalInt(oPC, "dmfi_r_nextrest", iTime + FloatToInt(IntToFloat(1) * fPercentage)); break;
+        case 0x00000200: SetLocalInt(oPC, "dmfi_r_nextrest", iTime + FloatToInt(IntToFloat(2) * fPercentage)); break;
+        case 0x00000300: SetLocalInt(oPC, "dmfi_r_nextrest", iTime + FloatToInt(IntToFloat(4) * fPercentage)); break;
+        case 0x00000400: SetLocalInt(oPC, "dmfi_r_nextrest", iTime + FloatToInt(IntToFloat(6) * fPercentage)); break;
+        case 0x00000500: SetLocalInt(oPC, "dmfi_r_nextrest", iTime + FloatToInt(IntToFloat(8) * fPercentage)); break;
+        case 0x00000600: SetLocalInt(oPC, "dmfi_r_nextrest", iTime + FloatToInt(IntToFloat(12) * fPercentage)); break;
+        case 0x00000700: SetLocalInt(oPC, "dmfi_r_nextrest", iTime + FloatToInt(IntToFloat(24) * fPercentage)); break;
     }
 }
+
 
 //This function determines whether or not you can rest.
 int DMFI_CanIRest(object oPC, int iSettings)
@@ -395,12 +425,26 @@ void main()
     }
     else if (GetLastRestEventType()==REST_EVENTTYPE_REST_CANCELLED)
     {
-        if ((iSettings & 0x00000020) && GetCurrentHitPoints(oPC) > GetLocalInt(oPC, "dmfi_r_hitpoints") && iSettings & 0x00000001) //HP restriction
+        // Make sure that resting has been initialized and the start time has been set. Otherwise, the Cancelled Rest Event was fired by
+        // the Resting conversation.
+        if (GetLocalInt(oPC, "dmfi_r_init"))
         {
-            effect eDam = EffectDamage(GetMaxHitPoints(oPC) - GetLocalInt(oPC, "dmfi_r_hitpoints"));
-            FloatyText("Your hitpoints have been reset",oPC, iSettings);
-            AssignCommand(oPC, ApplyEffectToObject(DURATION_TYPE_INSTANT, eDam, oPC));
+            int iTime = GetTimeSecond() + GetTimeMinute() * 60 + GetTimeHour() * 3600 + GetCalendarDay() * 24 * 3600 + GetCalendarMonth() *3600 * 24 * 28 + GetCalendarYear() * 24 * 28 * 12 * 3600;
+            int nTimeRested = iTime - GetLocalInt(oPC, "dmfi_r_startseconds");
+            int nFullTime = FloatToInt(GetRestDuration(oPC));
+            float fPercentage = IntToFloat(nTimeRested) / IntToFloat(nFullTime);
+            SetNextRestTime(oPC, iSettings, fPercentage);
+            // SendMessageToPC(oPC, "Rest interrupted; resting for " + IntToString(nTimeRested) + " out of " + IntToString(nFullTime) + " seconds (" + FloatToString(fPercentage) + "%).");
+            SetLocalInt(oPC, "dmfi_r_init", FALSE);
+            if ((iSettings & 0x00000020) && GetCurrentHitPoints(oPC) > GetLocalInt(oPC, "dmfi_r_hitpoints") && iSettings & 0x00000001) //HP restriction
+            {
+                effect eDam = EffectDamage(GetMaxHitPoints(oPC) - GetLocalInt(oPC, "dmfi_r_hitpoints"));
+                FloatyText("Your hitpoints have been reset",oPC, iSettings);
+                AssignCommand(oPC, ApplyEffectToObject(DURATION_TYPE_INSTANT, eDam, oPC));
+
+            }
         }
+        RemoveRestVFX(oPC);
     }
     else if (GetLastRestEventType()==REST_EVENTTYPE_REST_FINISHED)
     {

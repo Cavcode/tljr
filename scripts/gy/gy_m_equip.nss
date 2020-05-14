@@ -55,6 +55,19 @@ void main()
         }
     }*/
 
+
+    if (GetLocalInt(OBJECT_SELF, "IMPRAPID_SHOT") == TRUE)
+    {
+        if ((GetBaseItemType(oItem) != BASE_ITEM_LONGBOW) || (GetBaseItemType(oItem) != BASE_ITEM_SHORTBOW) ||
+        (GetBaseItemType(oItem) != BASE_ITEM_SLING) || (GetBaseItemType(oItem) != BASE_ITEM_LIGHTCROSSBOW))
+        {
+            SetLocalInt(OBJECT_SELF, "IMPRAPID_SHOT", FALSE);
+            RemoveEffect(OBJECT_SELF,EffectModifyAttacks(2));
+            ApplyEffectToObject(DURATION_TYPE_PERMANENT, EffectModifyAttacks(-2), OBJECT_SELF);
+            FloatingTextStringOnCreature("Improved Rapid Shot Deactivated", OBJECT_SELF);
+        }
+    }
+
     // Dual blaster - create offhand blaster
     if (GetBaseItemType(oItem) == BASE_ITEM_SLING)
     {
