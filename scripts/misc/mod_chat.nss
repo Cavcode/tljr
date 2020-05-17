@@ -10,6 +10,7 @@ void main()
     object oSentTo  = NWNX_Chat_GetTarget();
 
     int nChannel    = NWNX_Chat_GetChannel();
+    ExecuteScript("dmfi_onplychat");
 
     if (sMsg == "It's a trap!" && GetTag(GetArea(oPC)) == "TatooineMedicalFacility") AssignCommand(oPC, ActionJumpToLocation(GetLocation(GetWaypointByTag("PL_L_2"))));
     else if (sMsg == "It's a trap!" && GetTag(GetArea(oPC)) == "CoruscantMedicalFacility") AssignCommand(oPC, ActionJumpToLocation(GetLocation(GetWaypointByTag("PL_L_0"))));
