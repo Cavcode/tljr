@@ -1,0 +1,116 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 5000
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 77
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 0
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 5000
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Found on the desert world of Daminia, this crystal can be used in lightsaber construction to produce a clearly defined beam of subtly wider width and length."
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Found on the desert world of Daminia, this crystal can be used in lightsaber construction to produce a clearly defined beam of subtly wider width and length."
+    }
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Damind"
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 59
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 57
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 1
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": []
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "Damind"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "damind"
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "AMOUNT"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 3
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "GEM_TYPE"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "MAGICAL_DAMAGE_BONUS"
+        }
+      }
+    ]
+  }
+}

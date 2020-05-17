@@ -1,0 +1,687 @@
+{
+  "__data_type": "DLG ",
+  "DelayEntry": {
+    "type": "dword",
+    "value": 0
+  },
+  "DelayReply": {
+    "type": "dword",
+    "value": 0
+  },
+  "EndConverAbort": {
+    "type": "resref",
+    "value": ""
+  },
+  "EndConversation": {
+    "type": "resref",
+    "value": ""
+  },
+  "EntryList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "RepliesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 7
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 1,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 6
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 2,
+              "Active": {
+                "type": "resref",
+                "value": "fky_chat_cn_cond"
+              },
+              "Index": {
+                "type": "dword",
+                "value": 5
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 3,
+              "Active": {
+                "type": "resref",
+                "value": "fky_chat_cn_cond"
+              },
+              "Index": {
+                "type": "dword",
+                "value": 4
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 4,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 3
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 5,
+              "Active": {
+                "type": "resref",
+                "value": "fky_chat_cn_cond"
+              },
+              "Index": {
+                "type": "dword",
+                "value": 2
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 6,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 1
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 7,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 0
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            }
+          ]
+        },
+        "Script": {
+          "type": "resref",
+          "value": ""
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Speaker": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "<CUSTOM1711>Main Command Menu<CUSTOM1707> - These commands can be typed into any chat channel (party, talk, shout, etc.) and have the same effect in all of them. They are case insensitive. \n<CUSTOM1702>Commands shown in green must either be sent via tell or targeted with the command targeter. You will be prompted to use the command targeter if you do not target via tell."
+          }
+        }
+      }
+    ]
+  },
+  "NumWords": {
+    "type": "dword",
+    "value": 88
+  },
+  "PreventZoomIn": {
+    "type": "byte",
+    "value": 0
+  },
+  "ReplyList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": []
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": "fky_chat_cn_act"
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "<CUSTOM1703>Nevermind, I do not want to use any commands at this time."
+          }
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 0
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 1
+              },
+              "LinkComment": {
+                "type": "cexostring",
+                "value": ""
+              }
+            }
+          ]
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": "fky_chat_cn_act"
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "<CUSTOM1711>Social Commands"
+          }
+        }
+      },
+      {
+        "__struct_id": 2,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 0
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 1
+              },
+              "LinkComment": {
+                "type": "cexostring",
+                "value": ""
+              }
+            }
+          ]
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": "fky_chat_cn_act"
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "<CUSTOM1711>Metachannels"
+          }
+        }
+      },
+      {
+        "__struct_id": 3,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 0
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 1
+              },
+              "LinkComment": {
+                "type": "cexostring",
+                "value": ""
+              }
+            }
+          ]
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": "fky_chat_cn_act"
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "<CUSTOM1711>Listing Commands"
+          }
+        }
+      },
+      {
+        "__struct_id": 4,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 0
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 1
+              },
+              "LinkComment": {
+                "type": "cexostring",
+                "value": ""
+              }
+            }
+          ]
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": "fky_chat_cn_act"
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "<CUSTOM1711>Language Commands"
+          }
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 0
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 1
+              },
+              "LinkComment": {
+                "type": "cexostring",
+                "value": ""
+              }
+            }
+          ]
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": "fky_chat_cn_act"
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "<CUSTOM1711>Items"
+          }
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 0
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 1
+              },
+              "LinkComment": {
+                "type": "cexostring",
+                "value": ""
+              }
+            }
+          ]
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": "fky_chat_cn_act"
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "<CUSTOM1711>Dice Rolls"
+          }
+        }
+      },
+      {
+        "__struct_id": 7,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 0
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 1
+              },
+              "LinkComment": {
+                "type": "cexostring",
+                "value": ""
+              }
+            }
+          ]
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": "fky_chat_cn_act"
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "<CUSTOM1711>Character Information and Edits"
+          }
+        }
+      }
+    ]
+  },
+  "StartingList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Active": {
+          "type": "resref",
+          "value": ""
+        },
+        "Index": {
+          "type": "dword",
+          "value": 0
+        }
+      }
+    ]
+  }
+}

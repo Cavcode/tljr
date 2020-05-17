@@ -1,0 +1,710 @@
+{
+  "__data_type": "DLG ",
+  "DelayEntry": {
+    "type": "dword",
+    "value": 0
+  },
+  "DelayReply": {
+    "type": "dword",
+    "value": 0
+  },
+  "EndConverAbort": {
+    "type": "resref",
+    "value": "nw_walk_wp"
+  },
+  "EndConversation": {
+    "type": "resref",
+    "value": "nw_walk_wp"
+  },
+  "EntryList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "RepliesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": "pug_apt_ismine"
+              },
+              "Index": {
+                "type": "dword",
+                "value": 5
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 1,
+              "Active": {
+                "type": "resref",
+                "value": "pug_apt_ismine"
+              },
+              "Index": {
+                "type": "dword",
+                "value": 3
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 2,
+              "Active": {
+                "type": "resref",
+                "value": "has50000"
+              },
+              "Index": {
+                "type": "dword",
+                "value": 2
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 3,
+              "Active": {
+                "type": "resref",
+                "value": "pug_ifisdm"
+              },
+              "Index": {
+                "type": "dword",
+                "value": 1
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 4,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 0
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            }
+          ]
+        },
+        "Script": {
+          "type": "resref",
+          "value": ""
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Speaker": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "<CUSTOM587771>"
+          }
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "RepliesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 4
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 1,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 6
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 1
+              },
+              "LinkComment": {
+                "type": "cexostring",
+                "value": ""
+              }
+            }
+          ]
+        },
+        "Script": {
+          "type": "resref",
+          "value": ""
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Speaker": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "<CUSTOM587773>"
+          }
+        }
+      },
+      {
+        "__struct_id": 2,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "RepliesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 7
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            },
+            {
+              "__struct_id": 1,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 6
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            }
+          ]
+        },
+        "Script": {
+          "type": "resref",
+          "value": ""
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Speaker": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "<CUSTOM587772>"
+          }
+        }
+      }
+    ]
+  },
+  "NumWords": {
+    "type": "dword",
+    "value": 40
+  },
+  "PreventZoomIn": {
+    "type": "byte",
+    "value": 0
+  },
+  "ReplyList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": []
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": ""
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "Nevermind.\n"
+          }
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": []
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": "pug_apt_dmtake"
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "Remove current owner."
+          }
+        }
+      },
+      {
+        "__struct_id": 2,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": []
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": "house_buy50k"
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "I'll take it!"
+          }
+        }
+      },
+      {
+        "__struct_id": 3,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 1
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            }
+          ]
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": "pug_apt_transfer"
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "I wish to transfer this property to the person beside me."
+          }
+        }
+      },
+      {
+        "__struct_id": 4,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": []
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": "pug_apt_newownr"
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "Yes."
+          }
+        }
+      },
+      {
+        "__struct_id": 5,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 2
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 0
+              }
+            }
+          ]
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": ""
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "I wish to sell this property immediately at 80% of purchase price."
+          }
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "Active": {
+                "type": "resref",
+                "value": ""
+              },
+              "Index": {
+                "type": "dword",
+                "value": 0
+              },
+              "IsChild": {
+                "type": "byte",
+                "value": 1
+              },
+              "LinkComment": {
+                "type": "cexostring",
+                "value": ""
+              }
+            }
+          ]
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": ""
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "I have changed my mind."
+          }
+        }
+      },
+      {
+        "__struct_id": 7,
+        "Animation": {
+          "type": "dword",
+          "value": 0
+        },
+        "AnimLoop": {
+          "type": "byte",
+          "value": 1
+        },
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Delay": {
+          "type": "dword",
+          "value": 4294967295
+        },
+        "EntriesList": {
+          "type": "list",
+          "value": []
+        },
+        "Quest": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "Script": {
+          "type": "resref",
+          "value": "pug_apt_sell"
+        },
+        "Sound": {
+          "type": "resref",
+          "value": ""
+        },
+        "Text": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "Yes."
+          }
+        }
+      }
+    ]
+  },
+  "StartingList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Active": {
+          "type": "resref",
+          "value": ""
+        },
+        "Index": {
+          "type": "dword",
+          "value": 0
+        }
+      }
+    ]
+  }
+}
