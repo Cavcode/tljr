@@ -29,14 +29,11 @@ void main()
     effect eExplode = EffectVisualEffect(VFX_FNF_FIREBALL);
     effect eVis = EffectVisualEffect(VFX_IMP_FLAME_M);
     effect eDam;
-    object oRocket = GetItemPossessedBy(oCaster, "wristrocket1");
     //Get the spell target location as opposed to the spell target.
     location lTarget = GetSpellTargetLocation();
     //Limit Caster level for the purposes of damage
 
-if (oRocket != OBJECT_INVALID)
-{
-    DestroyObject(oRocket);
+
     if (nCasterLvl > 10)
     {
         nCasterLvl = 10 + ((nCasterLvl-10));      // add some epic progression of 1d6 per 2 levels after 10
@@ -64,7 +61,6 @@ if (oRocket != OBJECT_INVALID)
             ApplyEffectToObject(DURATION_TYPE_INSTANT, eMagic, oTarget);
           }
         }
-    }
 
     //Apply the fireball explosion at the location captured above.
     ApplyEffectAtLocation(DURATION_TYPE_INSTANT, eExplode, lTarget);
@@ -83,7 +79,7 @@ if (oRocket != OBJECT_INVALID)
             if (!MyResistSpell(OBJECT_SELF, oTarget, fDelay))
             {
                 //Roll damage for each target
-                nDamage = d6(nCasterLvl);
+                nDamage = d6(5+nCasterLvl);
                 //Resolve metamagic
                 //Adjust the damage based on the Reflex Save, Evasion and Improved Evasion.
                 nDamage = GetReflexAdjustedDamage(nDamage, oTarget, GetSpellSaveDC(), SAVING_THROW_TYPE_FIRE);
@@ -102,10 +98,6 @@ if (oRocket != OBJECT_INVALID)
        //Select the next target within the spell shape.
        oTarget = GetNextObjectInShape(SHAPE_SPHERE, RADIUS_SIZE_HUGE, lTarget, TRUE, OBJECT_TYPE_CREATURE | OBJECT_TYPE_DOOR | OBJECT_TYPE_PLACEABLE);
     }
-}
-else
-{
-    SendMessageToPC(oCaster, "Your wrist launcher clicks and you realize it's not loaded");
 }
 }
 
