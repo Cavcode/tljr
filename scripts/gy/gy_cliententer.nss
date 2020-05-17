@@ -15,7 +15,7 @@ void main()
     AddJournalQuestEntry("chat", 1, oPC, FALSE, FALSE, FALSE);
     SetPCListening(oPC);
 
-   ExecuteScript("dmfi_onclienter", oPC);
+   //ExecuteScript("fky_chat_clenter", oPC);
 
 
 

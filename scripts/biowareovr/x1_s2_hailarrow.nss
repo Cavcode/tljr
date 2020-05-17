@@ -26,7 +26,7 @@ void main()
 // End of Spell Cast Hook
     object oCaster = OBJECT_SELF;
     int nLevel = GetLevelByClass(44, oCaster); // Get BountyHunter Levels
-    int nCount = 15;
+    int nCount = GetNumItems(oCaster, "wristrocket1");
 
     // Set number of dmg dice
     if (nLevel >= 20)
@@ -64,7 +64,7 @@ void main()
     {
         SendMessageToPC(oCaster, "actual fired Missiles: " + IntToString(nCount));
         nCount = 15;
-        DoMissileStorm(nLevel, nCount, SPELL_ISAACS_GREATER_MISSILE_STORM);
+        DoMissileStorm(nLevel, nCount, SPELL_ISAACS_LESSER_MISSILE_STORM);
         DestroyRockets(oCaster,nCount);
     }
     else

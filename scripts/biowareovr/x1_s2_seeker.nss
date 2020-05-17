@@ -34,14 +34,17 @@ void main()
     object oTarget = GetSpellTargetObject();
     location lTarget = GetLocation(oTarget);
     float fDelay;
-    int nDamage = ArcaneArcherDamageDoneByBow() * 3;
+    int nDamage = ArcaneArcherDamageDoneByBow() *2;
     effect eDam;
     effect eVis = EffectVisualEffect(VFX_IMP_FLAME_M);
+    object oRocket = GetItemPossessedBy(OBJECT_SELF, "wristrocket1");
 
-
+if (oRocket != OBJECT_INVALID)
+{
+    DestroyObject(oRocket);
     if (GetIsObjectValid(oTarget) == TRUE)
     {
-        int nDamage = d3(GetLevelByClass(CLASS_TYPE_ARCANE_ARCHER,OBJECT_SELF))+d20(2);
+        int nDamage = d3(GetLevelByClass(CLASS_TYPE_ARCANE_ARCHER,OBJECT_SELF))+d20(1);
         if (nDamage > 0)
         {
             effect ePhysical = EffectDamage(nDamage, DAMAGE_TYPE_PIERCING,IPGetDamagePowerConstantFromNumber(nBonus));
@@ -83,6 +86,9 @@ void main()
        //Select the next target within the spell shape.
        oTarget = GetNextObjectInShape(SHAPE_SPHERE, RADIUS_SIZE_HUGE, lTarget, TRUE, OBJECT_TYPE_CREATURE | OBJECT_TYPE_DOOR | OBJECT_TYPE_PLACEABLE);
     }
-
-
+}
+else
+{
+    SendMessageToPC(OBJECT_SELF, "Your wrist launcher clicks and you realize it's not loaded");
+}
 }
