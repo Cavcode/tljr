@@ -20,7 +20,7 @@ void main()
                         {
                         AdjustReputation(oPC, oFaction, -100);
                         SetIsTemporaryEnemy(oPC, oFaction, FALSE);
-                        SetPCDislike(oPC, oFaction);
+                        //SetPCDislike(oPC, oFaction);
                         }
                     oFaction = GetNextFactionMember(OBJECT_SELF, FALSE);
 
@@ -73,7 +73,7 @@ void main()
                         {
                         AdjustReputation(oPC, oFaction, -100);
                         SetIsTemporaryEnemy(oPC, oFaction, FALSE);
-                        SetPCDislike(oPC, oFaction);
+                        //SetPCDislike(oPC, oFaction);
                         }
 
                 oFaction = GetNextFactionMember(OBJECT_SELF, FALSE);
