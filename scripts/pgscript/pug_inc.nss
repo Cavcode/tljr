@@ -507,7 +507,7 @@ void PCFactions(object oPC, string sGood, string sBad)
             }
         else if (GetIsEnemy(oPC, oOther)==FALSE && GetIsObjectValid(GetItemPossessedBy(oPC, sGood))==TRUE && GetIsObjectValid(GetItemPossessedBy(oOther, "FringeID"))==TRUE && oOther != oPC && sOtherContract==sContract && GetIsDM(oOther)==FALSE)
             {
-                //SetPCDislike(oPC, oOther);
+                SetPCDislike(oPC, oOther);
             }
         else if (GetIsEnemy(oPC, oOther)==TRUE && GetIsObjectValid(GetItemPossessedBy(oPC, sGood))==TRUE && GetIsObjectValid(GetItemPossessedBy(oOther, "FringeID"))==TRUE && oOther != oPC && sOtherContract!=sContract && GetIsDM(oOther)==FALSE)
             {
@@ -515,7 +515,7 @@ void PCFactions(object oPC, string sGood, string sBad)
             }
         else if (GetIsEnemy(oPC, oOther)==FALSE && GetIsObjectValid(GetItemPossessedBy(oPC, sGood))==TRUE && GetIsObjectValid(GetItemPossessedBy(oOther, sBad))==TRUE && oOther != oPC && GetIsDM(oOther)==FALSE)
             {
-                //SetPCDislike(oPC, oOther);
+                SetPCDislike(oPC, oOther);
             }
         else if (GetIsEnemy(oPC, oOther)==TRUE && GetIsObjectValid(GetItemPossessedBy(oPC, sGood))==TRUE && GetIsObjectValid(GetItemPossessedBy(oOther, sGood))==TRUE && oOther != oPC && GetIsDM(oOther)==FALSE)
             {

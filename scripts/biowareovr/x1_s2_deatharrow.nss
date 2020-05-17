@@ -31,10 +31,9 @@ void main()
         int nTouch = TouchAttackRanged(oTarget, TRUE);
         if (nTouch > 0)
         {
-            int nDamage = nBonus + 80;
+            int nDamage = nBonus;
             if (nDamage > 0)
             {
-                PlaySound("");
                 effect ePhysical = EffectDamage(nDamage, DAMAGE_TYPE_PIERCING,IPGetDamagePowerConstantFromNumber(nBonus));
                 effect eMagic = EffectDamage(nBonus, DAMAGE_TYPE_MAGICAL);
                 ApplyEffectToObject(DURATION_TYPE_INSTANT, ePhysical, oTarget);
@@ -43,14 +42,11 @@ void main()
                 //Fire cast spell at event for the specified target
                 SignalEvent(oTarget, EventSpellCastAt(OBJECT_SELF, GetSpellId()));
 
-                // * if target fails a save DC20 they take a bunch of damage.
-                if (MySavingThrow(SAVING_THROW_REFLEX, oTarget, nBonus/2) == 0)
+                // * if target fails a save DC20 they die
+                if (MySavingThrow(SAVING_THROW_REFLEX, oTarget, nBonus) == 0)
                 {
-                    nDamage = 50;
-                    effect ePhysical = EffectDamage(nDamage, DAMAGE_TYPE_PIERCING,IPGetDamagePowerConstantFromNumber(nBonus));
-                    effect eMagic = EffectDamage(nBonus, DAMAGE_TYPE_MAGICAL);
-                    ApplyEffectToObject(DURATION_TYPE_INSTANT, ePhysical, oTarget);
-                    ApplyEffectToObject(DURATION_TYPE_INSTANT, eMagic, oTarget);
+                    effect eDeath = EffectDeath();
+                    ApplyEffectToObject(DURATION_TYPE_INSTANT, eDeath, oTarget);
                 }
             }
         }
