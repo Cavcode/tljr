@@ -94,44 +94,15 @@ void main()
                   NWNX_Events_SkipEvent();
 
             }
-            else if (bIsShip && (nSubID == 65 || nSubID == 66 || nSubID == 67 || nSubID == 68))
-            {
-                  return;
-            }
 
-            if (bIsShip)
+            if (bIsShip && (nSubID != 65 || nSubID != 66 || nSubID != 67 || nSubID != 68))
             {
                 NWNX_Events_SkipEvent();
                 SendMessageToPC(oPC, "You cannot use that ability while piloting your ship.");
                 WriteTimestampedLogEntry(GetName(oPC)+" FEAT FAILURE #"+IntToString(nSubID)+" due to being a ship.");
             }
-            else
-            {
-                if (nSubID == FEAT_KNOCKDOWN || nSubID == FEAT_IMPROVED_KNOCKDOWN || nSubID == FEAT_DISARM || nSubID == FEAT_IMPROVED_DISARM)
-                {
-                    if(oPC != oTarget)
-                    {
-                        int nDisc = GetSkillRank(SKILL_DISCIPLINE, oTarget);
-                        SendMessageToPC(oTarget, "1:Discipline = " + IntToString(nDisc));
-                        ApplyEffectToObject(DURATION_TYPE_TEMPORARY, EffectSkillIncrease(SKILL_DISCIPLINE, 4), oTarget, fDuration);
-                        SendMessageToPC(oTarget, "1:Discipline = " + IntToString(nDisc));
-                        //nStrMod = GetAbilityModifier(ABILITY_STRENGTH, oPC);
-                        //nAB = GetBaseAttackBonus(oPC);
-                        //SendMessageToPC(oPC, "1: AB = " + IntToString(nAB));
-                        //ApplyEffectToObject(DURATION_TYPE_TEMPORARY, EffectAttackDecrease(4 - nStrMod/3), oPC, fDuration);
-                        //SendMessageToPC(oPC, "2: AB = " + IntToString(nAB));
-                    }
-                }
-             }
-                //else if (nSubID == FEAT_DISARM || nSubID == FEAT_IMPROVED_DISARM)
-                //{
 
-                //nDexMod = GetAbilityModifier(ABILITY_DEXTERITY, oPC);
-                //nAB = GetBaseAttackBonus(oPC);
-                //SendMessageToPC(oPC, "1: AB = " + IntToString(nAB));
-                //ApplyEffectToObject(DURATION_TYPE_TEMPORARY, EffectAttackDecrease(4 - nDexMod/3), oPC, fDuration);
-                //SendMessageToPC(oPC, "2: AB = " + IntToString(nAB));
-            //}
+
         }
 
            else if (nEventType == "NWNX_ON_ENTER_STEALTH_BEFORE")
