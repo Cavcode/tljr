@@ -4785,6 +4785,17 @@
                   },
                   {
                     "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Vine Snake Bite"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "vine_snake_bite"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
                     "RESREF": {
                       "type": "resref",
                       "value": "zep_cre_xornb"
@@ -5835,6 +5846,17 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 16807462
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "GENERIC SKIN"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "zep_sabishb_003"
                     }
                   },
                   {
@@ -13319,6 +13341,44 @@
           "type": "byte",
           "value": 54
         },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "100 Credits"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "100_credits001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "25 Credits"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "25_credits003"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "5 Credits"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "5_credits004"
+              }
+            }
+          ]
+        },
         "STRREF": {
           "type": "dword",
           "value": 6808
@@ -18857,6 +18917,17 @@
                           "RESREF": {
                             "type": "resref",
                             "value": "lightsaber5"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Lightsaber(NPC Apprentice)"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "lightsaber005"
                           }
                         },
                         {

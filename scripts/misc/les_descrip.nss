@@ -9,5 +9,6 @@ void main()
     {
         SendMessageToPC(oPC, "<c þþ>" + descrip + "</c>");
         SendMessageToAllDMs(descrip);
+        SetLocalString(oPC,"flag", flagPC);
     }
 }
